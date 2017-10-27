@@ -4,7 +4,7 @@
 
 * **Version:**
 
-  2
+  1
 
 * **Method:**
 
@@ -209,9 +209,7 @@
 
     Decimal `[field_name]` not a valid decimal
     ```javascript
-    __invalid: {
       "__msg": "[field_name] is invalid."
-    }
     ```
 
     `application_id` already exist
