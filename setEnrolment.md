@@ -212,7 +212,7 @@
       "__msg": "[field_name] is invalid."
     ```
 
-    `application_id` already exist
+    `application_id` already exist (Only if the Application has already been processed. Otherwise this new applciation will replace the revious unprocessed Application)
     ```javascript
       "__msg": "Application ID 'application_id' is not unique."
     ```
