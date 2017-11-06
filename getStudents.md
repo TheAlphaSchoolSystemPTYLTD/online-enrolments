@@ -16,7 +16,7 @@
  
    `commtype [string]` - Communication Rule Type. Must be one of:
     ```HTML
-        All - Communication Types
+        ALL - Communication Types
         ACA – Academic Reports
         ATT – Attendance
         EC – Emergency Contact
