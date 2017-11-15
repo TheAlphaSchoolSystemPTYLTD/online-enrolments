@@ -128,11 +128,11 @@
 
    `f_name [string]` - Father name
 
-   `f_occ [string]` - Father occupation
+   `f_occ [string]` - Father occupation code. Max 3 characters (values will be truncated)
 
    `m_name [string]` - Mother name
 
-   `m_occ [string]` - Mother occupation
+   `m_occ [string]` - Mother occupation code. Max 3 characters (values will be truncated)
 
    `par_name2 [string]` - Parent name 2
 
