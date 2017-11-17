@@ -28,7 +28,7 @@
 
    `parcode [string]` - Parent Code
 
-* **Success Response:**
+* **Success Response:** (Application has been processed)
 
     ```javascript
       {
@@ -130,7 +130,15 @@
         "SUD12_CODE": ""
       }
     ```
- 
+* **Success Response:** (Application has NOT been processed)
+
+    ```javascript
+      {
+        "application_id": "APPLICATION123",
+        "status": "Submitted"
+      }
+    ```
+    
 * **Error Response:**
 
     `studcode` and `parcode` and `application_id` are exclusive
