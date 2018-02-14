@@ -22,11 +22,11 @@
 
    **Conditional:**
 
-   `application_id [string]` - Enrolment Application ID
+   `application_id [string]` - Enrolment Application ID. Invalid if `studcode` or `parcode` supplied.
 
-   `studcode [string]` - Student Code
+   `studcode [string]` - Student Code. Invalid if `application_id` or `parcode` supplied.
 
-   `parcode [string]` - Parent Code
+   `parcode [string]` - Parent Code. Invalid if `application_id` or `studcode` supplied.
 
 * **Success Response:** (Application has been processed)
 
