@@ -2,6 +2,10 @@
 ----
   Returns "Success" if enrolment record successfully inserted, or an array of validation "Errors" if the record is unable to be inserted.
 
+* **Version History:**
+
+    TASS v48.0 - Method Added
+
 * **Version:**
 
   1
