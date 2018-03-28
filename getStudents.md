@@ -2,6 +2,10 @@
 ----
   Returns an array of structured student data in JSON format.
 
+* **Version History:**
+
+    TASS v48.0 - Method Added
+
 * **Version:**
 
   1

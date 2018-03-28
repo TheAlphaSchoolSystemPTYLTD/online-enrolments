@@ -1,108 +1,112 @@
 **getStudentUD**
 ----
-  Returns a structure of standard UD data for a student, or extended UD data for the UD area specified in JSON format.
+	Returns a structure of standard UD data for a student, or extended UD data for the UD area specified in JSON format.
+
+* **Version History:**
+
+    TASS v48.0 - Method Added
 
 * **Version:**
 
-  1
+	1
 
 * **Method:**
 
-  `GET | POST`
+	`GET | POST`
   
-*  **Params:**
+* **Params:**
 
    **Required:**
  
-   `studcode [string]` - Student Code                
+	`studcode [string]` - Student Code                    
 
    **Optional:**
 
-   `areacode [integer]` - UD Area Code
+	`areacode [integer]` - UD Area Code
 
    **Conditional:**
 
-   none
+	none
 
 * **Success Response:**
 
     ```javascript
-      {
-		"UD13_CODE": "SOU",
-		"UD4_FLG": "Y",
-		"UD24_TEXT": "",
-		"UD38_DATE": "",
-		"UD32_DATE": "2017-05-17 00:00:00.0",
-		"UD19_CODE": "",
-		"UD29_TEXT": "",
-		"UD18_CODE": "",
-		"UD23_TEXT": "",
-		"UD5_FLG": "",
-		"UD12_CODE": 486,
-		"UD20_CODE": "",
-		"UD34_DATE": "",
-		"UD37_DATE": "",
-		"UD7_FLG": "",
-		"UD6_FLG": "",
-		"UD10_FLG": "",
-		"UD14_CODE": "NTH",
-		"UD11_CODE": "052",
-		"UD40_DATE": "",
-		"UD8_FLG": "",
-		"UD17_CODE": "HOR",
-		"UD21_TEXT": "",
-		"UD16_CODE": "",
-		"UD27_TEXT": "",
-		"UD9_FLG": "",
-		"UD35_DATE": "",
-		"UD26_TEXT": "",
-		"UD30_TEXT": "",
-		"UD15_CODE": "",
-		"UD1_FLG": "",
-		"UD31_DATE": "2017-11-23 00:00:00.0",
-		"UD28_TEXT": "",
-		"UD22_TEXT": "",
-		"UD25_TEXT": "",
-		"UD2_FLG": "Y",
-		"UD3_FLG": "A",
-		"UD33_DATE": "2017-05-25 00:00:00.0",
-		"UD36_DATE": "",
-		"UD39_DATE": "",
-		"UPDATE_ON": "2017-05-11 17:23:00.0"
-	  }
+    {
+		"ud13_code": "TEN",
+		"ud21_text": "Ice Hockey",
+		"ud16_code": "",
+		"ud4_flg": "N",
+		"ud27_text": "",
+		"ud24_text": "",
+		"ud9_flg": "",
+		"ud38_date": "",
+		"ud32_date": "",
+		"ud19_code": "",
+		"ud35_date": "",
+		"ud29_text": "",
+		"ud26_text": "",
+		"ud30_text": "",
+		"ud18_code": "",
+		"ud23_text": "",
+		"ud5_flg": "",
+		"ud12_code": "HOC",
+		"ud20_code": "",
+		"ud15_code": "",
+		"ud1_flg": "Y",
+		"ud31_date": "",
+		"ud34_date": "",
+		"ud37_date": "",
+		"ud7_flg": "",
+		"ud28_text": "",
+		"ud6_flg": "",
+		"ud10_flg": "",
+		"ud22_text": "Water Polo",
+		"ud25_text": "",
+		"ud14_code": "",
+		"ud11_code": "ATH",
+		"ud2_flg": "Y",
+		"ud3_flg": "Y",
+		"ud40_date": "",
+		"ud33_date": "",
+		"ud8_flg": "",
+		"ud17_code": "",
+		"ud36_date": "",
+		"ud39_date": "",
+	}
     ```
  
 * **Error Response:**
 
-    `studcode` not supplied
+    `codeonly` not supplied
     ```javascript
-      "__msg": "'studcode' IS REQUIRED"
+    "__msg": "'studcode' IS REQUIRED"
     ```
 
     `areacode` not a valid integer
     ```javascript
-      "__msg": "'areacode' MUST BE AN INTEGER"
+    "__msg": "'areacode' MUST BE AN INTEGER"
     ```
     
 * **Sample Parameters:**
 
-  ```javascript
-    studcode=20087&areacode=1
-  ```
+	```javascript
+	studcode=0009130&areacode=4
+	```
 
 * **Sample GET:** (With URL Encoded `token`)
 
-  ```HTML
-    http://api.tasscloud.com.au/tassweb/api/?method=GetStudentUD&appcode=DEMOOE&company=10&token=UpeKwF%2FsK18NbkgH%2BFGM08gB%2BIMIPBrSSN1qJNA5BJQ%3D
-  ```
+	```HTML
+	http://localhost/tassweb/api/?appcode=DEMOOE&v=1&method=GetStudentUD&token=sC%2Bz8gZjKnimKeATtiMMSDam7Skk6OpbUlPoXxxIBko%3D&company=10
+	```
   
 * **Sample POST:**
 
-  ```HTML
-    <form id="postForm" name="postForm" method="POST" action="http://api.tasscloud.com.au/tassweb/api/">
-      <input type="hidden" name="method" value="getStudentUD" />
-      <input type="hidden" name="appcode" value="DEMOOE" />
-      <input type="hidden" name="company" value="10" />
-      <textarea name="token">UpeKwF/sK18NbkgH+FGM08gB+IMIPBrSSN1qJNA5BJQ=</textarea>
-    </form>
-  ```
+	```HTML
+	<form id="postForm" name="postForm" method="POST" action="http://localhost/tassweb/api/">
+		<input type="hidden" name="method" value="GetStudentUD" />
+		<input type="hidden" name="appcode" value="DEMOOE" />
+		<input type="hidden" name="company" value="10" />
+		<input type="hidden" name="v" value="1" />
+		<textarea name="token">sC+z8gZjKnimKeATtiMMSDam7Skk6OpbUlPoXxxIBko=</textarea>
+	</form>
+	```

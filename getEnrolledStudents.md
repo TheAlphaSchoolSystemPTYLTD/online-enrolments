@@ -2,6 +2,10 @@
 ----
   Returns the enrolment details for the students based on the specified parameters, or an empty "DATA" array if no matching students are found in JSON format.
 
+* **Version History:**
+
+    TASS v48.0 - Method Added
+
 * **Version:**
 
   1
