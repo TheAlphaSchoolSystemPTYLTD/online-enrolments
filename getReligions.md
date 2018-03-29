@@ -49,10 +49,6 @@
 			"desc": "Buddhist"
 		},
 		{
-			"code": "CA",
-			"desc": "Calathumpianxx"
-		},
-		{
 			"code": "CH",
 			"desc": "Church of Christ"
 		},
@@ -63,6 +59,10 @@
 		{
 			"code": "ME",
 			"desc": "Methodist"
+		},
+		{
+			"code": "PR",
+			"desc": "Presbyterian"
 		}
 	]
     ```
@@ -88,13 +88,13 @@
 * **Sample GET:** (With URL Encoded `token`)
 
 	```HTML
-	http://localhost/tassweb/api/?appcode=DEMOOE&v=1&method=GetReligions&token=3w6XHPP1j163aHf%2FHRAnLA%3D%3D&company=10
+	http://api.tasscloud.com.au/tassweb/api/?appcode=DEMOOE&v=1&method=GetReligions&token=3w6XHPP1j163aHf%2FHRAnLA%3D%3D&company=10
 	```
   
 * **Sample POST:**
 
 	```HTML
-	<form id="postForm" name="postForm" method="POST" action="http://localhost/tassweb/api/">
+	<form id="postForm" name="postForm" method="POST" action="http://api.tasscloud.com.au/tassweb/api/">
 		<input type="hidden" name="method" value="GetReligions" />
 		<input type="hidden" name="appcode" value="DEMOOE" />
 		<input type="hidden" name="company" value="10" />

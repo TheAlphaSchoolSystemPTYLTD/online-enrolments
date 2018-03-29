@@ -33,16 +33,8 @@
     ```javascript
     "yeargroups": [
 		{
-			"code": -3,
-			"desc": "BB"
-		},
-		{
-			"code": -2,
-			"desc": "AA"
-		},
-		{
 			"code": -1,
-			"desc": "PK"
+			"desc": "K"
 		},
 		{
 			"code": 0,
@@ -95,10 +87,6 @@
 		{
 			"code": 12,
 			"desc": 12
-		},
-		{
-			"code": 13,
-			"desc": 13
 		}
 	]
     ```
@@ -124,13 +112,13 @@
 * **Sample GET:** (With URL Encoded `token`)
 
 	```HTML
-	http://localhost/tassweb/api/?appcode=DEMOOE&v=1&method=GetYearGroups&token=3w6XHPP1j163aHf%2FHRAnLA%3D%3D&company=10
+	http://api.tasscloud.com.au/tassweb/api/?appcode=DEMOOE&v=1&method=GetYearGroups&token=3w6XHPP1j163aHf%2FHRAnLA%3D%3D&company=10
 	```
   
 * **Sample POST:**
 
 	```HTML
-	<form id="postForm" name="postForm" method="POST" action="http://localhost/tassweb/api/">
+	<form id="postForm" name="postForm" method="POST" action="http://api.tasscloud.com.au/tassweb/api/">
 		<input type="hidden" name="method" value="GetYearGroups" />
 		<input type="hidden" name="appcode" value="DEMOOE" />
 		<input type="hidden" name="company" value="10" />
