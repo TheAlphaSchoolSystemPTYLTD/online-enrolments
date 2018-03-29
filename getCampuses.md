@@ -33,32 +33,12 @@
     ```javascript
     "campuses": [
 		{
-			"code": "ARG",
-			"desc": "Argyle Street Campus"
-		},
-		{
-			"code": "D5W",
-			"desc": "De Five Warders Campus"
-		},
-		{
 			"code": "JU",
-			"desc": "Junior School (Billabong Road)"
-		},
-		{
-			"code": "JUS",
-			"desc": "Just made it up campus with 12"
+			"desc": "Junior School (Billabong Rd)"
 		},
 		{
 			"code": "SE",
 			"desc": "Senior School (Curlew St)"
-		},
-		{
-			"code": "THO",
-			"desc": "Thompson Street Campus"
-		},
-		{
-			"code": "ZZZ",
-			"desc": "Banana Cmpy 10 Campus"
 		}
 	]
     ```
@@ -84,14 +64,14 @@
 * **Sample GET:** (With URL Encoded `token`)
 
 	```HTML
-	http://localhost/tassweb/api/?appcode=DEMOOE&v=1&method=GetCampuses&token=3w6XHPP1j163aHf%2FHRAnLA%3D%3D&company=10
+	http://api.tasscloud.com.au/tassweb/api/?appcode=DEMOOE&v=1&method=GetCampuses&token=3w6XHPP1j163aHf%2FHRAnLA%3D%3D&company=10
 	```
   
 * **Sample POST:**
 
 	```HTML
-	<form id="postForm" name="postForm" method="POST" action="http://localhost/tassweb/api/">
-		<input type="hidden" name="method" value="getCampuses" />
+	<form id="postForm" name="postForm" method="POST" action="http://api.tasscloud.com.au/tassweb/api/">
+		<input type="hidden" name="method" value="GetCampuses" />
 		<input type="hidden" name="appcode" value="DEMOOE" />
 		<input type="hidden" name="company" value="10" />
 		<input type="hidden" name="v" value="1" />

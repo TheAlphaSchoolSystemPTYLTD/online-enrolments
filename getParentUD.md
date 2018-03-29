@@ -32,31 +32,31 @@
 
     ```javascript
     {
-		"ud13_code": "AU",
-		"ud21_text": "Medibank Private",
-		"ud16_code": "EDU",
+		"ud13_code": "",
+		"ud21_text": "",
+		"ud16_code": "",
 		"ud4_flg": "Y",
-		"ud24_text": "HIGH_SUITABLE",
+		"ud24_text": "",
 		"ud9_flg": "",
-		"ud19_code": "FRI",
-		"ud18_code": "DR",
-		"ud23_text": "Wheel Whistler",
+		"ud19_code": "",
+		"ud18_code": "",
+		"ud23_text": "",
 		"ud5_flg": "Y",
-		"ud12_code": "ROW",
-		"ud15_code": 1,
-		"ud20_code": "FAC",
+		"ud12_code": "",
+		"ud15_code": "",
+		"ud20_code": "",
 		"ud1_flg": "Y",
-		"ud7_flg": "H",
-		"ud6_flg": "H",
-		"ud10_flg": "Y",
-		"ud22_text": "Cyc'd for Bikes",
+		"ud7_flg": "",
+		"ud6_flg": "",
+		"ud10_flg": "",
+		"ud22_text": "",
 		"ud25_text": "",
-		"ud14_code": "AUS",
-		"ud11_code": "CAN",
+		"ud14_code": "",
+		"ud11_code": "",
 		"ud2_flg": "N",
 		"ud3_flg": "Y",
-		"ud8_flg": "Y",
-		"ud17_code": "DR"
+		"ud8_flg": "",
+		"ud17_code": ""
 	}
     ```
  
@@ -70,23 +70,23 @@
 * **Sample Parameters:**
 
 	```javascript
-	parcode=000055
+	parcode=10040
 	```
 
 * **Sample GET:** (With URL Encoded `token`)
 
 	```HTML
-	http://localhost/tassweb/api/?appcode=DEMOOE&v=1&method=GetParentUD&token=GYdZUneRNspdwvlEwsnwUA%3D%3D&company=10
+	http://api.tasscloud.com.au/tassweb/api/?appcode=DEMOOE&v=1&method=GetParentUD&token=L%2BApeTngUJMNLPgXuxoPUg%3D%3D&company=10
 	```
   
 * **Sample POST:**
 
 	```HTML
-	<form id="postForm" name="postForm" method="POST" action="http://localhost/tassweb/api/">
+	<form id="postForm" name="postForm" method="POST" action="http://api.tasscloud.com.au/tassweb/api/">
 		<input type="hidden" name="method" value="GetParentUD" />
 		<input type="hidden" name="appcode" value="DEMOOE" />
 		<input type="hidden" name="company" value="10" />
 		<input type="hidden" name="v" value="1" />
-		<textarea name="token">GYdZUneRNspdwvlEwsnwUA==</textarea>
+		<textarea name="token">L+ApeTngUJMNLPgXuxoPUg==</textarea>
 	</form>
 	```

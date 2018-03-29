@@ -33,31 +33,31 @@
     ```javascript
     "schools": [
 		{
-			"region_desc": "Melbourne City",
-			"code": "BALCC",
-			"region_code": "MELC",
-			"tass_cmpy_code_desc": "",
-			"export_code": "",
-			"tass_cmpy_code": "",
-			"desc": "Ballarat Christian College"
-		},
-		{
 			"region_desc": "",
-			"code": "BSH",
+			"code": "APR",
 			"region_code": "",
 			"tass_cmpy_code_desc": "",
 			"export_code": "",
 			"tass_cmpy_code": "",
-			"desc": "Brisbane State High School"
+			"desc": "Alpha Preparatory School"
 		},
 		{
-			"region_desc": "Bundaberg Cluster",
-			"code": "BUNDC",
-			"region_code": "BUND",
+			"region_desc": "",
+			"code": "APRO",
+			"region_code": "",
 			"tass_cmpy_code_desc": "",
 			"export_code": "",
 			"tass_cmpy_code": "",
-			"desc": "Bundaberg Christian School"
+			"desc": "Alpha Progressive School"
+		},
+		{
+			"region_desc": "",
+			"code": "APS",
+			"region_code": "",
+			"tass_cmpy_code_desc": "",
+			"export_code": "",
+			"tass_cmpy_code": "",
+			"desc": "Alpha Primary School"
 		},
 		{
 			"region_desc": "",
@@ -66,7 +66,7 @@
 			"tass_cmpy_code_desc": "",
 			"export_code": "",
 			"tass_cmpy_code": "",
-			"desc": "Everton Highxx"
+			"desc": "Everton High"
 		}
 	]
     ```
@@ -92,13 +92,13 @@
 * **Sample GET:** (With URL Encoded `token`)
 
 	```HTML
-	http://localhost/tassweb/api/?appcode=DEMOOE&v=1&method=GetFeederSchools&token=3w6XHPP1j163aHf%2FHRAnLA%3D%3D&company=10
+	http://api.tasscloud.com.au/tassweb/api/?appcode=DEMOOE&v=1&method=GetFeederSchools&token=3w6XHPP1j163aHf%2FHRAnLA%3D%3D&company=10
 	```
   
 * **Sample POST:**
 
 	```HTML
-	<form id="postForm" name="postForm" method="POST" action="http://localhost/tassweb/api/">
+	<form id="postForm" name="postForm" method="POST" action="http://api.tasscloud.com.au/tassweb/api/">
 		<input type="hidden" name="method" value="GetFeederSchools" />
 		<input type="hidden" name="appcode" value="DEMOOE" />
 		<input type="hidden" name="company" value="10" />

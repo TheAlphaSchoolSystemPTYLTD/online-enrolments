@@ -45,16 +45,8 @@
 			"desc": "Parent Past Student"
 		},
 		{
-			"code": "SC",
-			"desc": "Scholarship"
-		},
-		{
 			"code": "SI",
 			"desc": "Sister in School"
-		},
-		{
-			"code": "TC",
-			"desc": "Teacher in School"
 		}
 	]
     ```
@@ -80,13 +72,13 @@
 * **Sample GET:** (With URL Encoded `token`)
 
 	```HTML
-	http://localhost/tassweb/api/?appcode=DEMOOE&v=1&method=GetPreviousConnections&token=3w6XHPP1j163aHf%2FHRAnLA%3D%3D&company=10
+	http://api.tasscloud.com.au/tassweb/api/?appcode=DEMOOE&v=1&method=GetPreviousConnections&token=3w6XHPP1j163aHf%2FHRAnLA%3D%3D&company=10
 	```
   
 * **Sample POST:**
 
 	```HTML
-	<form id="postForm" name="postForm" method="POST" action="http://localhost/tassweb/api/">
+	<form id="postForm" name="postForm" method="POST" action="http://api.tasscloud.com.au/tassweb/api/">
 		<input type="hidden" name="method" value="GetPreviousConnections" />
 		<input type="hidden" name="appcode" value="DEMOOE" />
 		<input type="hidden" name="company" value="10" />

@@ -32,46 +32,46 @@
 
     ```javascript
     {
-		"ud13_code": "TEN",
-		"ud21_text": "Ice Hockey",
-		"ud16_code": "",
-		"ud4_flg": "N",
+		"ud13_code": "WST",
+		"ud21_text": 840127123,
+		"ud16_code": "HAW",
+		"ud4_flg": "",
 		"ud27_text": "",
 		"ud24_text": "",
 		"ud9_flg": "",
 		"ud38_date": "",
-		"ud32_date": "",
-		"ud19_code": "",
+		"ud32_date": "2017-05-27 00:00:00.0",
+		"ud19_code": "TOW",
 		"ud35_date": "",
 		"ud29_text": "",
 		"ud26_text": "",
 		"ud30_text": "",
-		"ud18_code": "",
-		"ud23_text": "",
+		"ud18_code": "MP",
+		"ud23_text": "82108301238",
 		"ud5_flg": "",
-		"ud12_code": "HOC",
-		"ud20_code": "",
-		"ud15_code": "",
+		"ud12_code": "052",
+		"ud20_code": "KED",
+		"ud15_code": "MP",
 		"ud1_flg": "Y",
-		"ud31_date": "",
+		"ud31_date": "2017-05-17 00:00:00.0",
 		"ud34_date": "",
 		"ud37_date": "",
 		"ud7_flg": "",
 		"ud28_text": "",
 		"ud6_flg": "",
 		"ud10_flg": "",
-		"ud22_text": "Water Polo",
-		"ud25_text": "",
-		"ud14_code": "",
-		"ud11_code": "ATH",
-		"ud2_flg": "Y",
+		"ud22_text": "",
+		"ud25_text": "Mathew Bell",
+		"ud14_code": "NTH",
+		"ud11_code": 486,
+		"ud2_flg": "",
 		"ud3_flg": "Y",
 		"ud40_date": "",
-		"ud33_date": "",
+		"ud33_date": "2018-05-17 00:00:00.0",
 		"ud8_flg": "",
-		"ud17_code": "",
+		"ud17_code": "MOS",
 		"ud36_date": "",
-		"ud39_date": "",
+		"ud39_date": ""
 	}
     ```
  
@@ -90,23 +90,23 @@
 * **Sample Parameters:**
 
 	```javascript
-	studcode=0009130&areacode=4
+	studcode=20114&areacode=1
 	```
 
 * **Sample GET:** (With URL Encoded `token`)
 
 	```HTML
-	http://localhost/tassweb/api/?appcode=DEMOOE&v=1&method=GetStudentUD&token=sC%2Bz8gZjKnimKeATtiMMSDam7Skk6OpbUlPoXxxIBko%3D&company=10
+	http://api.tasscloud.com.au/tassweb/api/?appcode=DEMOOE&v=1&method=GetStudentUD&token=sh4YUZg05q22WN2%2FpPq3bsgB%2BIMIPBrSSN1qJNA5BJQ%3D&company=10
 	```
   
 * **Sample POST:**
 
 	```HTML
-	<form id="postForm" name="postForm" method="POST" action="http://localhost/tassweb/api/">
+	<form id="postForm" name="postForm" method="POST" action="http://api.tasscloud.com.au/tassweb/api/">
 		<input type="hidden" name="method" value="GetStudentUD" />
 		<input type="hidden" name="appcode" value="DEMOOE" />
 		<input type="hidden" name="company" value="10" />
 		<input type="hidden" name="v" value="1" />
-		<textarea name="token">sC+z8gZjKnimKeATtiMMSDam7Skk6OpbUlPoXxxIBko=</textarea>
+		<textarea name="token">sh4YUZg05q22WN2\/pPq3bsgB+IMIPBrSSN1qJNA5BJQ=</textarea>
 	</form>
 	```

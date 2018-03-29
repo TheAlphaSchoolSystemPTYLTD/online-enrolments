@@ -37,6 +37,10 @@
 			"desc": "Accountant"
 		},
 		{
+			"code": "EM2",
+			"desc": "Ambulance / Paramedic"
+		},
+		{
 			"code": "BAR",
 			"desc": "Barrister"
 		},
@@ -49,16 +53,12 @@
 			"desc": "Butcher"
 		},
 		{
-			"code": "PIL",
-			"desc": "Commercial Airline Pilot"
+			"code": "DNS",
+			"desc": "Dental Nurse"
 		},
 		{
-			"code": "COM",
-			"desc": "Composer"
-		},
-		{
-			"code": "SPY",
-			"desc": "Covert Intelligence Officer"
+			"code": "DEN",
+			"desc": "Dentist"
 		}
 	]
     ```
@@ -84,13 +84,13 @@
 * **Sample GET:** (With URL Encoded `token`)
 
 	```HTML
-	http://localhost/tassweb/api/?appcode=DEMOOE&v=1&method=GetOccupations&token=3w6XHPP1j163aHf%2FHRAnLA%3D%3D&company=10
+	http://api.tasscloud.com.au/tassweb/api/?appcode=DEMOOE&v=1&method=GetOccupations&token=3w6XHPP1j163aHf%2FHRAnLA%3D%3D&company=10
 	```
   
 * **Sample POST:**
 
 	```HTML
-	<form id="postForm" name="postForm" method="POST" action="http://localhost/tassweb/api/">
+	<form id="postForm" name="postForm" method="POST" action="http://api.tasscloud.com.au/tassweb/api/">
 		<input type="hidden" name="method" value="GetOccupations" />
 		<input type="hidden" name="appcode" value="DEMOOE" />
 		<input type="hidden" name="company" value="10" />
