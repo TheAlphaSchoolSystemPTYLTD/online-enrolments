@@ -31,7 +31,7 @@
 * **Success Response:**
 
     ```javascript
-    {
+    "ud": {
 		"ud13_code": "WST",
 		"ud21_text": 840127123,
 		"ud16_code": "HAW",
