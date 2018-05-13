@@ -35,8 +35,8 @@
 		{
 			"flag_name": "UD1_FLG",
 			"id": 1,
-			"flag_value": "",
-			"desc": "Interviewed (Prin)",
+			"flag_value": "01",
+			"desc": "Learning Support",
 			"name": "UD1_DESC"
 		},
 		...,
@@ -45,46 +45,31 @@
 			"id": 11,
 			"lookups": [
 				{
-				"code": "ARG",
-				"desc": "Argyle St"
+					"code": "L",
+					"desc": "Learners"
 				},
 				{
-				"code": "BH",
-				"desc": "Bisbane Home"
+					"code": "O",
+					"desc": "Open"
 				},
 				{
-				"code": "BWN",
-				"desc": "Bowen Hills"
-				},
-				{
-				"code": "ISP",
-				"desc": "Interstate Private"
-				},
-				{
-				"code": "ISG",
-				"desc": "Interstate Public"
-				},
-				{
-				"code": "OTH",
-				"desc": "Other"
-				},
-				{
-				"code": "STP",
-				"desc": "St. Peter's"
+					"code": "P",
+					"desc": "Provisional"
 				}
 			],
 			"flag_value": 11,
-			"desc": "Campus",
+			"desc": "Drivers Licence",
 			"name": "UD11_DESC"
 		},
 		...,
 		{
-			"flag_name": "UD25_FLG",
-			"id": 25,
+			"flag_name": "UD22_FLG",
+			"id": 22,
 			"flag_value": "",
-			"desc": "Priority Points",
-			"name": "UD25_DESC"
+			"desc": "2nd Pref Yr",
+			"name": "UD22_DESC"
 		}
+		...
 	]
     ```
  
@@ -113,13 +98,13 @@
 * **Sample GET:** (With URL Encoded `token`)
 
 	```HTML
-	https://local.tassweb.net.au/tassweb/api/?appcode=DEMOOE&v=2&method=GetStudentUDSetup&token=%2BxYxT3JovxoE2deoaH6feDfyAn%2FcVL0KSCAUjcFpnXM%3D&company=10
+	https://api.tassweb.com.au/tassweb/api/?appcode=DEMOOE&v=2&method=GetStudentUDSetup&token=%2BxYxT3JovxoE2deoaH6feDfyAn%2FcVL0KSCAUjcFpnXM%3D&company=10
 	```
   
 * **Sample POST:**
 
 	```HTML
-	<form id="postForm" name="postForm" method="POST" action="https://local.tassweb.net.au/tassweb/api/">
+	<form id="postForm" name="postForm" method="POST" action="https://api.tassweb.com.au/tassweb/api/">
 		<input type="hidden" name="method" value="getStudentUDSetup">
 		<input type="hidden" name="appcode" value="DEMOOE">
 		<input type="hidden" name="company" value="10">
