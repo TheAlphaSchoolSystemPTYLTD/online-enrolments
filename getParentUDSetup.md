@@ -36,7 +36,7 @@
 			"flag_name": "UD1_FLG",
 			"id": 1,
 			"flag_value": "",
-			"desc": "Active Church Attend",
+			"desc": "Active Church Att.",
 			"name": "UD1_DESC"
 		},
 		...,
@@ -45,46 +45,51 @@
 			"id": 11,
 			"lookups": [
 				{
-					"code": "FOO",
-					"desc": "Football"
+					"code": "CAN",
+					"desc": "Cantonese"
 				},
 				{
-					"code": "GOL",
-					"desc": "Golf"
+					"code": "ENG",
+					"desc": "English"
 				},
 				{
-					"code": "HOC",
-					"desc": "Hockey"
+					"code": "FRE",
+					"desc": "French"
 				},
 				{
-					"code": "NET",
-					"desc": "Netball"
+					"code": "GER",
+					"desc": "German"
 				},
 				{
-					"code": "RUG",
-					"desc": "Rugby"
+					"code": "IND",
+					"desc": "Indonesian"
 				},
 				{
-					"code": "SOC",
-					"desc": "Soccer"
+					"code": "NZ",
+					"desc": "Kiwi"
 				},
 				{
-					"code": "TEN",
-					"desc": "Tennis"
+					"code": "MAL",
+					"desc": "Malaysian"
+				},
+				{
+					"code": "MAN",
+					"desc": "Mandarin"
 				}
 			],
-			"flag_value": "",
-			"desc": "Sporting Interest",
+			"flag_value": 11,
+			"desc": "Mothers Religion",
 			"name": "UD11_DESC"
 		},
 		...,
 		{
-			"flag_name": "UD25_FLG",
-			"id": 25,
-			"flag_value": 22,
-			"desc": "Employer's Name",
-			"name": "UD25_DESC"
+			"flag_name": "UD22_FLG",
+			"id": 22,
+			"flag_value": 21,
+			"desc": "Mothers Employer",
+			"name": "UD22_DESC"
 		}
+		...
 	]
     ```
  
@@ -113,13 +118,13 @@
 * **Sample GET:** (With URL Encoded `token`)
 
 	```HTML
-	https://local.tassweb.net.au/tassweb/api/?appcode=DEMOOE&v=2&method=GetParentUDSetup&token=%2BxYxT3JovxoE2deoaH6feDfyAn%2FcVL0KSCAUjcFpnXM%3D&company=10
+	https://api.tassweb.com.au/tassweb/api/?appcode=DEMOOE&v=2&method=GetParentUDSetup&token=%2BxYxT3JovxoE2deoaH6feDfyAn%2FcVL0KSCAUjcFpnXM%3D&company=10
 	```
   
 * **Sample POST:**
 
 	```HTML
-	<form id="postForm" name="postForm" method="POST" action="https://local.tassweb.net.au/tassweb/api/">
+	<form id="postForm" name="postForm" method="POST" action="https://api.tassweb.com.au/tassweb/api/">
 		<input type="hidden" name="method" value="getParentUDSetup">
 		<input type="hidden" name="appcode" value="DEMOOE">
 		<input type="hidden" name="company" value="10">
