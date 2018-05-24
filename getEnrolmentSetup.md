@@ -160,13 +160,13 @@
 * **Sample GET:** (With URL Encoded `token`)
 
 	```HTML
-	https://local.tassweb.net.au/tassweb/api/?appcode=DEMOOE&v=2&method=GetEnrolmentSetup&token=queKxGSB6mqjLBTnIbKMis7T5t325qzTd63o3vWRs66biSN5GZVZJ9BXHdqHfiEt&company=10
+	https://api.tasscloud.com.au/tassweb/api/?appcode=DEMOOE&v=2&method=GetEnrolmentSetup&token=queKxGSB6mqjLBTnIbKMis7T5t325qzTd63o3vWRs66biSN5GZVZJ9BXHdqHfiEt&company=10
 	```
   
 * **Sample POST:**
 
 	```HTML
-	<form id="postForm" name="postForm" method="POST" action="https://local.tassweb.net.au/tassweb/api/">
+	<form id="postForm" name="postForm" method="POST" action="https://api.tasscloud.com.au/tassweb/api/">
 		<input type="hidden" name="method" value="GetEnrolmentSetup">
 		<input type="hidden" name="appcode" value="DEMOOE">
 		<input type="hidden" name="company" value="10">
