@@ -4,6 +4,7 @@
 	
 * **Version History:**
 
+	TASS v48.2 - Method Included
 	TASS v49.4 - Method Added
 
 * **Version:**
@@ -80,8 +81,8 @@
 			"cash_acct_code": "01-6100-00-00",
 			"last_post_date": "2018-01-16 00:00:00.0",
 			"auto_num_flg": "Y",
-			"sender_email": "tass.testing@gmail.com",
-			"contact_email": "tass.testing@gmail.com",
+			"sender_email": "",
+			"contact_email": "",
 			"stat_fmt": 33,
 			"next_auto_num": "002152",
 			"contact_url": "www.parentaccounts.com.au",
@@ -97,7 +98,7 @@
 			"depref_jour_code": "REF",
 			"other4_desc": "Bookshop",
 			"contact_name": "Steven Bursar",
-			"cc_email": "tass.testing@gmail.com",
+			"cc_email": "",
 			"split_rcpt_flg": "N",
 			"par_code_fmt": 999999,
 			"next_bank_dep_num": 150,
