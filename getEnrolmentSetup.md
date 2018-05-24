@@ -1,4 +1,4 @@
-**getParentUDSetup**
+**getEnrolmentSetup**
 ----
 	Returns a structured Enrolment Setup data including enrolment, student and fee information in JSON format.
 	
