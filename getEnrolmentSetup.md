@@ -90,7 +90,7 @@
 			"other4_bank_code": "",
 			"bld_flg": "D",
 			"other4_acct_code": "01-0410-00-00",
-			"bf_rec_mess": "Voluntary Building Fund donation to Somerville House Building Fund\r\n\r\nYour financial involvement reinforces and recognises the support provided by past families and members of the current School community by providing assistance with the School's ongoing development programs.  We are most appreciative of your investment in the School's future.\r\n\r\nSection 30-15 of the Income Tax Assessment Act 1997 allows for tax deductibility for this gift.  Please use this letter as an official receipt for taxation purposes.",
+			"bf_rec_mess": "Voluntary Building Fund donation to TASS School Fund\r\n\r\nYour financial involvement reinforces and recognises the support provided by past families and members of the current School community by providing assistance with the School's ongoing development programs.  We are most appreciative of your investment in the School's future.\r\n\r\nSection 30-15 of the Income Tax Assessment Act 1997 allows for tax deductibility for this gift.  Please use this letter as an official receipt for taxation purposes.",
 			"disc_acct_code": "01-0130-00-00",
 			"ar_acct_code": "01-6200-00-00",
 			"bld_amt": 50,
