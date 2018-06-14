@@ -43,7 +43,6 @@
 			"year_zero": "P",
 			"contact_fax": "",
 			"contact_phone": "",
-			"mm_flg": "Y",
 			"year_negthree": "BB",
 			"dol_flg": "N",
 			"stud_code_fmt": 9999999,
@@ -121,14 +120,12 @@
 		"enrolment": {
 			"contact_name": "Sevlar Vorumchack",
 			"commtype_code": "TK",
-			"par_code_fmt": 999999,
 			"pref_flg": "N",
 			"contact_url": "www.Svorumchack.com.au",
 			"contact_fax": "a",
 			"auto_xfer_flg": "Y",
 			"contact_phone": "a",
 			"tfer_notes": "Y",
-			"stud_code_fmt": 9999999,
 			"use_receipts": "Y",
 			"transfer_deposits": "Y",
 			"adv_fee_acct": "01-8100-00-00"
