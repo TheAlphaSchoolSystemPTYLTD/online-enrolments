@@ -68,55 +68,11 @@
 
 	`visa_subclass [string]` - Visa Subclass.
 
-	`sud1_flg [string]` - UD Flag Field 1.
+	`sud1_flg [string]` to `sud9_flg [string] - UD Flag Field 1 - 10.
 
-	`sud2_flg [string]` - UD Flag Field 2.
+	`sud11_code [string]` to `sud20_code [string]` - Table Reference Fields 11 - 20.
 
-	`sud3_flg [string]` - UD Flag Field 3.
-
-	`sud4_flg [string]` - UD Flag Field 4.
-
-	`sud5_flg [string]` - UD Flag Field 5.
-
-	`sud6_flg [string]` - UD Flag Field 6.
-
-	`sud7_flg [string]` - UD Flag Field 7.
-
-	`sud8_flg [string]` - UD Flag Field 8.
-
-	`sud9_flg [string]` - UD Flag Field 9.
-
-	`sud10_flg [string]` - UD Flag Field 10.
-
-	`sud11_code [string]` - Table Reference Fields 11.
-
-	`sud12_code [string]` - Table Reference Fields 12.
-
-	`sud13_code [string]` - Table Reference Fields 13.
-
-	`sud14_code [string]` - Table Reference Fields 14.
-
-	`sud15_code [string]` - Table Reference Fields 15.
-
-	`sud16_code [string]` - Table Reference Fields 16.
-
-	`sud17_code [string]` - Table Reference Fields 17.
-
-	`sud18_code [string]` - Table Reference Fields 18.
-
-	`sud19_code [string]` - Table Reference Fields 19.
-
-	`sud20_code [string]` - Table Reference Fields 20.
-
-	`sud21_text [string]` - UD Text Fields 21.
-
-	`sud22_text [string]` - UD Text Fields 22.
-
-	`sud23_text [string]` - UD Text Fields 23.
-
-	`sud24_text [string]` - UD Text Fields 24.
-
-	`sud25_text [string]` - UD Text Fields 25.
+	`sud21_text [string]` to `sud25_text [string]` - Table Reference Fields 20 - 25.
 
 	**Conditional:**
 
