@@ -14,5 +14,8 @@ Online Enrolments API
   * getResidencyStatuses
   * getStudents
   * getStudentUD
+  * getStudentUDAreaSetup
   * getYearGroups
+  * setEnrolledStudents
   * setEnrolment
+  * setStudentUDArea
