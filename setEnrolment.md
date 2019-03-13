@@ -175,14 +175,19 @@
    `sms_flg2 [string]` - SMS flag 2
 
    `rec_type [string]` - Receipt Type
+    D = Deposit (Refundable)
+    A = Advance (Fees Prepayment)
+    G = General (Revenue Recognised)
+    E = Enrolment Fee (Revenue Deferred)
 
    `rec_date [date dd/mm/yyyy]` - Receipt Date
 
-   `web_cash_num [integer]` - Receipt Number
+   `web_cash_num [integer]` - Online Receipt Reference Number
 
    `cash_amt [decimal]` - Receipt Amount
 
    `batch_num [integer]` - Batch Number
+    Where populated, it will be a 9 digit numeric string based on the Settlement Date (yyyymmdd) prefixed with a “6”
 
    **Conditional:**
 
@@ -236,7 +241,7 @@
       "__msg": "Boarder is invalid."
     ```
 
-    `boarder` not 'G' or 'A' or 'D'
+    `rec_type` not 'D' or 'G' or 'A' or 'D'
     ```javascript
       "__msg": "Receipt Type is invalid."
     ```
