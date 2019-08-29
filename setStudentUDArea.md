@@ -5,6 +5,10 @@
 * **Version:**
 
 	2
+  
+* **Version History:**
+
+  	Add validation for attachment_file, and remove return property `stud_code` from result in Version 51.4.
 
 * **Method:**
 
@@ -48,7 +52,6 @@
 				"eud31_date": "2019-02-08",
 				"eud21_text": "testing",
 				"eud1_flg": "Y",
-				"STUD_CODE": "0010090",
 				"eud11_code": 10,
 				"eud12_code": 890,
 				"eud41_attach_id": "C5141223-DE66-686C-AC6701EAF7CE800F",
@@ -184,6 +187,7 @@
 	__invalid: {
 		"[field]": "Value is not a valid date."
 	}
+	```
 
 	`eud41_attach_id` [string] to `eud50_attach_id` [string] is empty, or only one of attachment_file and attachment_file_name is passed in
 	```javascript
@@ -216,7 +220,7 @@
 	`eud41_attach_id` [string] to `eud50_attach_id` [string] attachment_file is not base64 encoded
 	```javascript
 	__invalid: {
-		"attachment_file": "attachment_file is not base64 encoded."
+		"attachment_file": "attachment_file must be a base-64 encoded string."
 	}
 	```
 
