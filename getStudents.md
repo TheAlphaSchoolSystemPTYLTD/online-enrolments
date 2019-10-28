@@ -6,6 +6,8 @@
 
     TASS v48.0 - Method Added
 
+    TASS v51.4 - Return a new field par_e_mail2 as email2 in contacts.
+
 * **Version:**
 
   1
@@ -52,6 +54,7 @@
                     "address_description": "Correspondence",
                     "parent_name2": "",
                     "email": "bell@nowhere.com.au",
+                    "email2": "bell2@somewhere.com.au",
                     "work_phone": "3456 8711",
                     "state_code": "QLD",
                     "mother_name": "Lyn Bell",
@@ -76,6 +79,7 @@
                     "address_description": "Mother",
                     "parent_name2": "",
                     "email": "bell@nowhere.com.au",
+                    "email2": "",
                     "work_phone": "3456 8711",
                     "state_code": "QLD",
                     "mother_name": "Lyn Bell",
