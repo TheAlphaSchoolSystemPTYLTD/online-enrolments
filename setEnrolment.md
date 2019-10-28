@@ -1,10 +1,12 @@
 **setEnrolment**
 ----
-  Returns "Success" if enrolment record successfully inserted, or an array of validation "Errors" if the record is unable to be inserted.
+  Returns "Success" if enrolment record successfully inserted, or returns "Invalid" and an array of validation "Errors" if the record is unable to be inserted .
 
 * **Version History:**
 
     TASS v48.0 - Method Added
+
+    TASS v51.4 - Added a new field par_e_mail2. Added validation for e_mail, par_e_mail, and par_e_mail2.
 
 * **Version:**
 
@@ -166,6 +168,8 @@
 
    `par_e_mail [string]` - Parent email
 
+   `par_e_mail2 [string]` - Parent email2
+
    `mobile1 [string]` - Mobile 1
 
    `sms_flg1 [string]` - SMS flag 1
@@ -249,6 +253,36 @@
     `cash_amt` must be 0.00 or a positive number with 2 decimal points
     ```javascript
       "__msg": "Receipt Amount is invalid."
+    ```
+
+    `e_mail` length longer than 60
+    ```javascript
+      "__msg": "e_mail cannot be longer than 60 characters."
+    ```
+
+    `e_mail` must be a valid Email
+    ```javascript
+      "__msg": "e_mail is invalid."
+    ```
+
+    `par_e_mail` length longer than 60
+    ```javascript
+      "__msg": "par_e_mail cannot be longer than 60 characters."
+    ```
+
+    `par_e_mail` must be a valid Email
+    ```javascript
+      "__msg": "par_e_mail is invalid."
+    ```
+
+    `par_e_mail2` length longer than 60
+    ```javascript
+      "__msg": "par_e_mail2 cannot be longer than 60 characters."
+    ```
+
+    `par_e_mail2` must be a valid Email
+    ```javascript
+      "__msg": "par_e_mail2 is invalid."
     ```
 
 * **Sample Parameters:**
