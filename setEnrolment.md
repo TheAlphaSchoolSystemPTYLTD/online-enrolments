@@ -8,6 +8,8 @@
 
     TASS v51.4 - Added a new field par_e_mail2. Added validation for e_mail, par_e_mail, and par_e_mail2.
 
+    TASS v52.0 - Add 17 new fields `stud_first_name`, `stud_other_names`, `stud_preferred_surname`, `f_title`, `f_initials`, `f_surname`, `f_first_name`, `f_other_names`, `f_preferred_name`, `f_suffix`, `m_title`, `m_initials`, `m_surname`, `m_first_name`, `m_other_names`, `m_preferred_name`, `m_suffix`. User needs to either supply m_name & f_name or parents' name tokens.
+
 * **Version:**
 
   1
@@ -16,191 +18,252 @@
 
   `GET | POST`
   
-*  **Params:**
+* **Params:**
 
-   **Required:**
- 
-   `application_id [string]` - Enrolment Application ID
+    **Required:**
 
-   `stud_surname [string]` - Student Surname
+    `application_id [string]` - Enrolment Application ID
 
-   `given_name [string]` - Student Given Name(s)
+    `stud_surname [string]` - Student Surname
 
-   `preferred_name [string]` - Student Preferred Name
+    `given_name [string]` - Student Given Name(s)
 
-   `dob [date dd/mm/yyyy]` - Student Date of Birth
+    `preferred_name [string]` - Student Preferred Name
 
-   `sex [string]` - Student Gender ("M" or "F")
+    `dob [date dd/mm/yyyy]` - Student Date of Birth
 
-   `entry_yr [integer]` - Year of Student Entry
+    `sex [string]` - Student Gender ("M" or "F")
 
-   `entry_ygrp [integer]` - Student Year Group when Starting
+    `entry_yr [integer]` - Year of Student Entry
 
-   `boarder [string]` - Is the Student a Boarder ("Y" or "N")
+    `entry_ygrp [integer]` - Student Year Group when Starting
 
-   `doa [date dd/mm/yyyy]` - Date of Enrolment Application
+    `boarder [string]` - Is the Student a Boarder ("Y" or "N")
 
-   `par_surname [string]` - Parent Surname
+    `doa [date dd/mm/yyyy]` - Date of Enrolment Application
 
-   `par_name [string]` - Parent Full Name
+    `par_surname [string]` - Parent Surname
 
-   **Optional:**
+    `par_name [string]` - Parent Full Name
 
-   `religion [string]` - Student Religion
+    **Optional:**
 
-   `curr_year_grp [integer]` - Current Year Group
+    `religion [string]` - Student Religion
 
-   `curr_school [string]` - Current School
+    `curr_year_grp [integer]` - Current Year Group
 
-   `prosp_flg [string]` - Stage 1 Flag
+    `curr_school [string]` - Current School
 
-   `prosp_date [date dd/mm/yyyy]` - Stage 1 Date
+    `prosp_flg [string]` - Stage 1 Flag
 
-   `followup_flg [string]` - Stage 2 Flag
+    `prosp_date [date dd/mm/yyyy]` - Stage 1 Date
 
-   `followup_date [date dd/mm/yyyy]` - Stage 2 Date
+    `followup_flg [string]` - Stage 2 Flag
 
-   `hold_paid [string]` - Stage 3 Flag
+    `followup_date [date dd/mm/yyyy]` - Stage 2 Date
 
-   `hpaid_date [date dd/mm/yyyy]` - Stage 3 Date
+    `hold_paid [string]` - Stage 3 Flag
 
-   `interview_flg [string]` - Stage 4 Flag
+    `hpaid_date [date dd/mm/yyyy]` - Stage 3 Date
 
-   `interview_date [date dd/mm/yyyy]` - Stage 4 Date
+    `interview_flg [string]` - Stage 4 Flag
 
-   `assess_flg [string]` - Stage 5 Flag
+    `interview_date [date dd/mm/yyyy]` - Stage 4 Date
 
-   `assess_date [date dd/mm/yyyy]` - Stage 5 Date
+    `assess_flg [string]` - Stage 5 Flag
 
-   `place_offered [string]` - Stage 6 Flag
+    `assess_date [date dd/mm/yyyy]` - Stage 5 Date
 
-   `offer_date [date dd/mm/yyyy]` - Stage 6 Date
+    `place_offered [string]` - Stage 6 Flag
 
-   `accept_paid [string]` - Stage 7 Flag
+    `offer_date [date dd/mm/yyyy]` - Stage 6 Date
 
-   `accept_date [date dd/mm/yyyy]` - Stage 7 Date
+    `accept_paid [string]` - Stage 7 Flag
 
-   `e_mail [string]` - Student Email
+    `accept_date [date dd/mm/yyyy]` - Stage 7 Date
 
-   `campus_code [string]` - Student Campus
+    `e_mail [string]` - Student Email
 
-   `mob_phone [string]` - Student Mobile Phone
+    `campus_code [string]` - Student Campus
 
-   `resident_sts [string]` - Student Residency Status
+    `mob_phone [string]` - Student Mobile Phone
 
-   `visa_expiry [date dd/mm/yyyy]` - Student Visa Expiry
+    `resident_sts [string]` - Student Residency Status
 
-   `visa_subclass [string]` - Student Visa Subclass
+    `visa_expiry [date dd/mm/yyyy]` - Student Visa Expiry
 
-   `date_arrival [date dd/mm/yyyy]` - Student Date Arrival in Aus
+    `visa_subclass [string]` - Student Visa Subclass
 
-   `s_indig_sts [string]` - MCEECDYA Student Indigenous Status
+    `date_arrival [date dd/mm/yyyy]` - Student Date Arrival in Aus
 
-   `mse_code [string]` - MCEECDYA Mother School Education
+    `s_indig_sts [string]` - MCEECDYA Student Indigenous Status
 
-   `fse_code [string]` - MCEECDYA Father School Education
+    `mse_code [string]` - MCEECDYA Mother School Education
 
-   `mnse_code [string]` - MCEECDYA Mother Non-School Education
+    `fse_code [string]` - MCEECDYA Father School Education
 
-   `fnse_code [string]` - MCEECDYA Father Non-School Education
+    `mnse_code [string]` - MCEECDYA Mother Non-School Education
 
-   `mocc_code [string]` - MCEECDYA Mother Occupation Group
+    `fnse_code [string]` - MCEECDYA Father Non-School Education
 
-   `focc_code [string]` - MCEECDYA Father Occupation Group
+    `mocc_code [string]` - MCEECDYA Mother Occupation Group
 
-   `slote_code [string]` - MCEECDYA Student Language other than English Code
+    `focc_code [string]` - MCEECDYA Father Occupation Group
 
-   `mlote_code [string]` - MCEECDYA Mother Language other than English Code
+    `slote_code [string]` - MCEECDYA Student Language other than English Code
 
-   `flote_code [string]` - MCEECDYA Father Language other than English Code
+    `mlote_code [string]` - MCEECDYA Mother Language other than English Code
 
-   `scob_code [string]` - MCEECDYA Student Country of Birth
+    `flote_code [string]` - MCEECDYA Father Language other than English Code
 
-   `arrive_yr [string]` - Student year of arrival in Australia.
+    `scob_code [string]` - MCEECDYA Student Country of Birth
 
-   `sud1_flg to sud10_flg [string]` - Student user defined flag
+    `arrive_yr [string]` - Student year of arrival in Australia.
 
-   `sud11_code to sud20_code [string]` - Student user defined code
+    `sud1_flg to sud10_flg [string]` - Student user defined flag
 
-   `sud21_text to sud25_text [string]` - Student user defined text
+    `sud11_code to sud20_code [string]` - Student user defined code
 
-   `prev_conn [string]` - Previous connections
+    `sud21_text to sud25_text [string]` - Student user defined text
 
-   `pud1_flg to pud10_flg [string]` - Parent user defined flag
+    `prev_conn [string]` - Previous connections
 
-   `pud11_code to pud20_code [string]` - Parent user defined code
+    `pud1_flg to pud10_flg [string]` - Parent user defined flag
 
-   `pud21_text to pud25_text [string]` - Parent user defined text
+    `pud11_code to pud20_code [string]` - Parent user defined code
 
-   `f_name [string]` - Father name
+    `pud21_text to pud25_text [string]` - Parent user defined text
 
-   `f_occ [string]` - Father occupation code. Max 3 characters (values will be truncated)
+    `f_occ [string]` - Father occupation code. Max 3 characters (values will be truncated)
 
-   `m_name [string]` - Mother name
+    `m_occ [string]` - Mother occupation code. Max 3 characters (values will be truncated)
 
-   `m_occ [string]` - Mother occupation code. Max 3 characters (values will be truncated)
+    `par_name2 [string]` - Parent name 2
 
-   `par_name2 [string]` - Parent name 2
+    `addr1 [string]` - Address 1
 
-   `addr1 [string]` - Address 1
+    `addr2 [string]` - Address 2
 
-   `addr2 [string]` - Address 2
+    `addr3 [string]` - Address 3
 
-   `addr3 [string]` - Address 3
+    `town_sub [string]` - Town suburb 
 
-   `town_sub [string]` - Town suburb 
+    `state_code [string]` - State code
 
-   `state_code [string]` - State code
+    `post_code [string]` - Post code
 
-   `post_code [string]` - Post code
+    `country [string]` - Country
 
-   `country [string]` - Country
+    `dpid_text [string]` - Address Barcode (DPID Barcode)
 
-   `dpid_text [string]` - Address Barcode (DPID Barcode)
+    `home_phone [string]` - Home phone
 
-   `home_phone [string]` - Home phone
+    `bus_phone [string]` - Business phone
 
-   `bus_phone [string]` - Business phone
+    `fax [string]` - Fax
 
-   `fax [string]` - Fax
+    `salutation [string]` - Salutation
 
-   `salutation [string]` - Salutation
+    `par_e_mail [string]` - Parent email
 
-   `par_e_mail [string]` - Parent email
+    `par_e_mail2 [string]` - Parent email2
 
-   `par_e_mail2 [string]` - Parent email2
+    `mobile1 [string]` - Mobile 1
 
-   `mobile1 [string]` - Mobile 1
+    `sms_flg1 [string]` - SMS flag 1
 
-   `sms_flg1 [string]` - SMS flag 1
+    `mobile2 [string]` - Mobile 2
 
-   `mobile2 [string]` - Mobile 2
+    `sms_flg2 [string]` - SMS flag 2
 
-   `sms_flg2 [string]` - SMS flag 2
-
-   `rec_type [string]` - Receipt Type  \
+    `rec_type [string]` - Receipt Type  \
     D = Deposit (Refundable)  \
     A = Advance (Fees Prepayment)  \
     G = General (Revenue Recognised)  \
     E = Enrolment Fee (Revenue Deferred)
-    
-   `rec_date [date dd/mm/yyyy]` - Receipt Date
 
-   `web_cash_num [integer]` - Online Receipt Reference Number
+    `rec_date [date dd/mm/yyyy]` - Receipt Date
 
-   `cash_amt [decimal]` - Receipt Amount
+    `web_cash_num [integer]` - Online Receipt Reference Number
 
-   `batch_num [integer]` - Batch Number  \
+    `cash_amt [decimal]` - Receipt Amount
+
+    `batch_num [integer]` - Batch Number  \
     Where populated, it will be a 9 digit numeric string based on the Settlement Date (yyyymmdd) prefixed with a “6”
 
-   **Conditional:**
+    `stud_first_name [string]` - Student First Name
 
-   none
+    `stud_other_names [string]` - Student Other Names
+
+    `stud_preferred_surname [string]` - Student Preferred Surname
+
+    `f_title [string]` - Father Title
+
+    `f_initials [string]` - Father Initials
+
+    `f_surname [string]` - Father Surname (will use `par_surname` if not supplied)
+
+    `f_other_names [string]` - Father Other Names
+
+    `f_preferred_name [string]` - Father Preferred Name
+
+    `f_suffix [string]` - Father Suffix
+
+    `m_title [string]` - Mother Title
+
+    `m_initials [string]` - Mother Initials
+
+    `m_surname [string]` - Mother Surname (will use `par_surname` if not supplied)
+
+    `m_other_names [string]` - Mother Other Names
+
+    `m_preferred_name [string]` - Mother Preferred Name
+
+    `m_suffix [string]` - Mother Suffix
+
+    **Conditional:**
+
+    `f_name [string]` - Father name (required when `f_first_name` is not supplied)
+
+    `m_name [string]` - Mother name (required when `m_first_name` is not supplied)
+
+    `f_first_name [string]` - Father First Name (required when `f_name` is not supplied)
+
+    `m_first_name [string]` - Mother First Name (required when `m_name` is not supplied)
 
 * **Success Response:**
 
     ```javascript
-      "__status": "success"
+    {
+        "__status": "success",
+        "token": {
+            "sex": "M",
+            "application_id": "ANTONY05",
+            "m_initials": "",
+            "par_surname": "Austin",
+            "m_preferred_name": "May",
+            "entry_ygrp": 11,
+            "par_name": "John & Mary",
+            "dob": "2000-01-01",
+            "preferred_name": "Pie",
+            "doa": "2018-09-29",
+            "boarder": "N",
+            "timestamp": "{ts '2019-11-26 09:03:08'}",
+            "m_title": "Mrss",
+            "m_suffix": "Msuf",
+            "f_surname": "",
+            "f_initials": "",
+            "given_name": "Edward",
+            "f_other_name": "Fid",
+            "m_first_name": "Mary",
+            "f_title": "Mr",
+            "stud_surname": "Anton",
+            "m_other_name": "Mid",
+            "f_first_name": "John",
+            "m_surname": "Austin",
+            "entry_yr": 2018
+        }
+    }
     ```
  
 * **Error Response:**
@@ -285,10 +348,30 @@
       "__msg": "par_e_mail2 is invalid."
     ```
 
+    `m_name` and `m_first_name` not supplied
+    ```javascript
+      "__msg": "Either m_name or m_first_name is required."
+    ```
+
+    `f_name` and `f_first_name` not supplied
+    ```javascript
+      "__msg": "Either f_name or f_first_name is required."
+    ```
+
+    `m_name` supplied but has only one word
+    ```javascript
+      "__msg": "m_name must contain at least two words (first_name & surname)."
+    ```
+
+    `f_name` supplied but has only one word
+    ```javascript
+      "__msg": "f_name must contain at least two words (first_name & surname)."
+    ```
+
 * **Sample Parameters:**
 
   ```javascript
-    application_id=ANTONY02&stud_surname=Anton&given_name=Miracle&preferred_name=Fabulous&dob=1998-07-07&sex=M&entry_yr=2017&entry_ygrp=11&boarder=N&doa=2017-09-29&par_surname=Austin&par_name=John %26 Mary
+    application_id=ANTONY05&stud_surname=Anton&given_name=Edward&preferred_name=Pie&dob=2000-01-01&sex=M&entry_yr=2018&entry_ygrp=11&boarder=N&doa=2018-09-29&par_surname=Austin&par_name=John %26 Mary&m_title=Mrss&m_initials=&m_surname=Austin&m_first_name=Mary&m_other_name=Mid&m_preferred_name=May&m_suffix=Msuf&f_title=Mr&f_initials=&f_surname=&f_first_name=John&f_other_name=Fid
   ```
 
 * **Sample GET:** (With URL Encoded `token`)
