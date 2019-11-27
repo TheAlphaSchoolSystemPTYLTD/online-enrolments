@@ -197,11 +197,21 @@
 
     `stud_preferred_surname [string]` - Student Preferred Surname
 
+    **Conditional:**
+
+    `f_name [string]` - Father name (invalid when name tokens supplied, required when not supplied. Format: "Title FirstName Other Names Surname")
+
+    `m_name [string]` - Mother name (invalid when name tokens supplied, required when not supplied. Format: "Title FirstName Other Names Surname")
+
+    `Name Tokens`:
+
     `f_title [string]` - Father Title
 
     `f_initials [string]` - Father Initials
 
-    `f_surname [string]` - Father Surname (will use `par_surname` if not supplied)
+    `f_surname [string]` - Father Surname
+
+    `f_first_name [string]` - Father First Name
 
     `f_other_names [string]` - Father Other Names
 
@@ -213,7 +223,9 @@
 
     `m_initials [string]` - Mother Initials
 
-    `m_surname [string]` - Mother Surname (will use `par_surname` if not supplied)
+    `m_surname [string]` - Mother Surname
+
+    `m_first_name [string]` - Mother First Name
 
     `m_other_names [string]` - Mother Other Names
 
@@ -221,47 +233,27 @@
 
     `m_suffix [string]` - Mother Suffix
 
-    **Conditional:**
-
-    `f_first_name [string]` - Father First Name (required when `f_name` is not supplied)
-
-    `m_first_name [string]` - Mother First Name (required when `m_name` is not supplied)
-
-    `f_name [string]` - Father name (required when `f_first_name` is not supplied)
-
-    `m_name [string]` - Mother name (required when `m_first_name` is not supplied)
-
 * **Success Response:**
 
     ```javascript
     {
         "__status": "success",
         "token": {
+            "given_name": "Edward",
             "sex": "M",
             "application_id": "ANTONY05",
-            "m_initials": "",
             "par_surname": "Austin",
-            "m_preferred_name": "May",
-            "entry_ygrp": 11,
-            "par_name": "John & Mary",
-            "dob": "2000-01-01",
-            "preferred_name": "Pie",
-            "doa": "2018-09-29",
-            "boarder": "N",
-            "timestamp": "{ts '2019-11-26 09:03:08'}",
-            "m_title": "Mrss",
-            "m_suffix": "Msuf",
-            "f_surname": "",
-            "f_initials": "",
-            "given_name": "Edward",
-            "f_other_names": "Fid",
-            "m_first_name": "Mary",
-            "f_title": "Mr",
             "stud_surname": "Anton",
-            "m_other_names": "Mid",
-            "f_first_name": "John",
-            "m_surname": "Austin",
-            "entry_yr": 2018
+            "entry_ygrp": 11,
+            "preferred_name": "Pie",
+            "dob": "2000-01-01",
+            "par_name": "John & Mary",
+            "f_name": "Mr John Fid Austin",
+            "boarder": "N",
+            "doa": "2019-09-29",
+            "timestamp": "{ts '2019-11-27 09:49:11'}",
+            "m_name": "Mrs Mary Mid Austin",
+            "entry_yr": 2019
         }
     }
     ```
@@ -348,40 +340,30 @@
       "__msg": "par_e_mail2 is invalid."
     ```
 
-    `m_name` and `m_first_name` not supplied
+    `m_name` & `f_name` and `Name Tokens` not supplied
     ```javascript
-      "__msg": "Either m_name or m_first_name is required."
+      "__msg": "m_name/f_name required when name tokens not supplied."
     ```
 
-    `f_name` and `f_first_name` not supplied
+    `m_name` & `f_name` and `Name Tokens` both supplied
     ```javascript
-      "__msg": "Either f_name or f_first_name is required."
-    ```
-
-    `m_name` and `m_first_name` both supplied
-    ```javascript
-      "__msg": "Cannot supply both m_name and m_first_name at the same time."
-    ```
-
-    `f_name` and `f_first_name` both supplied
-    ```javascript
-      "__msg": "Cannot supply both f_name and f_first_name at the same time."
+      "__msg": "m_name/f_name invalid when name tokens supplied."
     ```
 
     `m_name` supplied but has only one word
     ```javascript
-      "__msg": "m_name must contain at least two words separated by a space (first_name & surname)."
+      "__msg": "m_name must contain at least two words (first_name & surname) separated by one space."
     ```
 
     `f_name` supplied but has only one word
     ```javascript
-      "__msg": "f_name must contain at least two words separated by a space (first_name & surname)."
+      "__msg": "f_name must contain at least two words (first_name & surname) separated by one space."
     ```
 
 * **Sample Parameters:**
 
   ```javascript
-    application_id=ANTONY05&stud_surname=Anton&given_name=Edward&preferred_name=Pie&dob=2000-01-01&sex=M&entry_yr=2018&entry_ygrp=11&boarder=N&doa=2018-09-29&par_surname=Austin&par_name=John %26 Mary&m_title=Mrss&m_initials=&m_surname=Austin&m_first_name=Mary&m_other_names=Mid&m_preferred_name=May&m_suffix=Msuf&f_title=Mr&f_initials=&f_surname=&f_first_name=John&f_other_names=Fid
+    application_id=ANTONY05&stud_surname=Anton&given_name=Edward&preferred_name=Pie&dob=2000-01-01&sex=M&entry_yr=2019&entry_ygrp=11&boarder=N&doa=2019-09-29&par_surname=Austin&par_name=John %26 Mary&m_name=Mrs Mary Mid Austin&f_name=Mr John Fid Austin
   ```
 
 * **Sample GET:** (With URL Encoded `token`)
