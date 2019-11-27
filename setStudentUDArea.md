@@ -8,7 +8,9 @@
   
 * **Version History:**
 
-  	Add validation for attachment_file, and remove return property `stud_code` from result in Version 51.4.
+  	TASS v51.4 - Add validation for attachment_file, and remove return property `stud_code` from result.
+
+  	TASS v52 - Remove Base-64 encoded validation for field attachment_file in.
 
 * **Method:**
 
@@ -36,7 +38,7 @@
 
 	**Conditional:**
 
-	`attachment_file [string]` - field is required where ‘attachment_file_name’ is supplied.
+	`attachment_file [string]` - field is required where ‘attachment_file_name’ is supplied. (URLEncoded Format is RECOMMENDED)
 
 	`attachment_file_name [string]` - field is required where ‘attachment_file’ is supplied.
 
@@ -214,13 +216,6 @@
 	```javascript
 	__invalid: {
 		"attachment_file_name": "attachment_file_name must be between 1 and 255 characters."
-	}
-	```
-
-	`eud41_attach_id` [string] to `eud50_attach_id` [string] attachment_file is not base64 encoded
-	```javascript
-	__invalid: {
-		"attachment_file": "attachment_file must be a base-64 encoded string."
 	}
 	```
 
