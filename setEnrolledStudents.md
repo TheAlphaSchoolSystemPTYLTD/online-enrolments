@@ -2,10 +2,14 @@
 ----
 	Returns "success" and a count of updated students, or a structure of invalid validations "__invalid" belonging to student(s).
 
+* **Version History:**
+
+    TASS v52.0 - Add 3 new optional fields `first_name`, `other_name`, `preferred_surname`.
+
 * **Version:**
 
 	2
-
+    
 * **Method:**
 
 	`GET | POST`
@@ -45,6 +49,12 @@
 	`accept_paid [string]` - Stage 7 flag.
 
 	**Optional:**
+
+	`first_name [string]` - First Name.
+
+	`other_name [string]` - Other Name.
+
+	`preferred_surname [string]` - Preferred Surname.
 	
 	`campus_code [string]` - Campus.
 
@@ -68,7 +78,7 @@
 
 	`visa_subclass [string]` - Visa Subclass.
 
-	`sud1_flg [string]` to `sud9_flg [string] - UD Flag Field 1 - 10.
+	`sud1_flg [string]` to `sud9_flg [string]` - UD Flag Field 1 - 10.
 
 	`sud11_code [string]` to `sud20_code [string]` - Table Reference Fields 11 - 20.
 
@@ -93,72 +103,76 @@
 * **Success Response:**
 
 	```javascript
-	"success": "You successfully saved 1 student(s).",
-	"token": {
-		"timestamp": "{ts '2019-02-08 10:00:34'}",
-		"enrolledstudent": [
-			{
-				"resident_sts": "AUS",
-				"sud21_text": "Visa79447",
-				"sud1_flg": "Y",
-				"curr_school": "EVT",
-				"sud16_code": "CP",
-				"accept_date": "2014-05-18 00:00:00.000",
-				"followup_flg": "Y",
-				"entry_ygrp": -1,
-				"sud9_flg": 5,
-				"dob": "2000-09-25 00:00:00.000",
-				"boarder": "N",
-				"offer_date": "2014-04-02 00:00:00.000",
-				"sud17_code": "SMK",
-				"id": "0010090",
-				"given_name": "Beef",
-				"assess_flg": "Y",
-				"sud3_flg": "N",
-				"sud14_code": "FA",
-				"sud11_code": "STP",
-				"date_arrival": "2014-02-13 00:00:00.000",
-				"accept_paid": "Y",
-				"campus_code": "JU",
-				"sud23_text": 1,
-				"hold_paid": "Y",
-				"religion": "AG",
-				"visa_subclass": 123,
-				"hpaid_date": "2013-11-20 00:00:00.000",
-				"sud2_flg": 1,
-				"mob_phone": "",
-				"visa_expiry": "2015-02-12 00:00:00.000",
-				"sud13_code": "SWI",
-				"sud24_text": 2019,
-				"sud5_flg": "N",
-				"sex": "M",
-				"sud10_flg": "Y",
-				"sud19_code": "NOK",
-				"followup_date": "2013-11-14 00:00:00.000",
-				"assess_date": "2014-03-07 00:00:00.000",
-				"sud4_flg": "N",
-				"curr_year_grp": 8,
-				"preferred_name": "Pie",
-				"interview_flg": "Y",
-				"surname": "Angus",
-				"sud25_text": 1,
-				"sud8_flg": "N",
-				"sud7_flg": "N",
-				"prosp_flg": "Y",
-				"e_mail": "angus_beef@abc.com",
-				"sud22_text": "Passport44119",
-				"sud18_code": 30,
-				"sud15_code": "EXA",
-				"STUD_CODE": "0010090",
-				"place_offered": "Y",
-				"sud6_flg": "Y",
-				"prosp_date": "2013-10-05 00:00:00.000",
-				"interview_date": "2014-02-09 00:00:00.000",
-				"entry_yr": 2019,
-				"sud12_code": "AUS",
-				"sud20_code": "ABC"
-			}
-		]
+	{
+		"success": "You successfully saved 1 student(s).",
+		"token": {
+			"enrolledstudent": [
+				{
+					"resident_sts": "AUS",
+					"sud21_text": "Visa79447",
+					"sud1_flg": "Y",
+					"curr_school": "EVT",
+					"sud16_code": "CP",
+					"accept_date": "2019-03-20 00:00:00.000",
+					"followup_flg": "Y",
+					"entry_ygrp": 7,
+					"sud9_flg": 5,
+					"dob": "1995-10-14 00:00:00.000",
+					"boarder": "Y",
+					"offer_date": "2018-01-01 00:00:00.000",
+					"sud17_code": "SMK",
+					"id": "0010245",
+					"given_name": "Ian Peter",
+					"assess_flg": "Y",
+					"sud3_flg": "N",
+					"sud14_code": "FA",
+					"sud11_code": "STP",
+					"date_arrival": "2014-02-13 00:00:00.000",
+					"preferred_surname": "Aardvaark",
+					"accept_paid": "Y",
+					"campus_code": "JU",
+					"sud23_text": 1,
+					"hold_paid": "Y",
+					"religion": "AG",
+					"visa_subclass": 123,
+					"other_name": "Peter",
+					"hpaid_date": "2018-01-01 00:00:00.000",
+					"sud2_flg": 1,
+					"visa_expiry": "2018-01-01 00:00:00.000",
+					"mob_phone": "0420221002",
+					"sud13_code": "SWI",
+					"sud24_text": 2019,
+					"sud5_flg": "N",
+					"sex": "M",
+					"sud10_flg": "Y",
+					"sud19_code": "NOK",
+					"assess_date": "2018-01-01 00:00:00.000",
+					"followup_date": "2018-01-01 00:00:00.000",
+					"first_name": "Ian",
+					"sud4_flg": "N",
+					"curr_year_grp": 8,
+					"preferred_name": "Freddy",
+					"interview_flg": "Y",
+					"surname": "Aardvaark",
+					"sud25_text": 1,
+					"sud8_flg": "N",
+					"sud7_flg": "N",
+					"prosp_flg": "Y",
+					"e_mail": "abc_news@abc.com",
+					"sud22_text": "Passport44119",
+					"sud18_code": 30,
+					"sud15_code": "EXA",
+					"STUD_CODE": "0010245",
+					"place_offered": "Y",
+					"sud6_flg": "Y",
+					"prosp_date": "2018-01-01 00:00:00.000",
+					"interview_date": "2018-01-01 00:00:00.000",
+					"entry_yr": 2019,
+					"sud12_code": "AUS",
+					"sud20_code": "ABC"
+				}
+			]
+		}
 	}
 	```
  
@@ -451,71 +465,74 @@
 * **Sample Parameters:**
 
 	```javascript
-		{
-			"enrolledstudent":
-			[
-				{
-					"id":"0010090",
-					"surname":"Angus",
-					"boarder":"N",
-					"campus_code":"JU",
-					"curr_school":"EVT",
-					"curr_year_grp":"8",
-					"date_arrival":"2014-02-13 00:00:00.000",
-					"dob":"2000-09-25 00:00:00.000",
-					"e_mail":"angus_beef@abc.com",
-					"entry_yr":"2019",
-					"entry_ygrp":"-1",
-					"sex":"M",
-					"given_name":"Beef",
-					"mob_phone":"",
-					"preferred_name":"Pie",
-					"religion":"AG",
-					"resident_sts":"AUS",
-					"visa_expiry":"2015-02-12 00:00:00.000",
-					"visa_subclass":"123",
-					"prosp_flg":"Y",
-					"prosp_date":"2013-10-05 00:00:00.000",
-					"followup_flg":"Y",
-					"followup_date":"2013-11-14 00:00:00.000",
-					"hold_paid":"Y",
-					"hpaid_date":"2013-11-20 00:00:00.000",
-					"interview_flg":"Y",
-					"interview_date":"2014-02-09 00:00:00.000",
-					"assess_flg":"Y",
-					"assess_date":"2014-03-07 00:00:00.000",
-					"place_offered":"Y",
-					"offer_date":"2014-04-02 00:00:00.000",
-					"accept_paid":"Y",
-					"accept_date":"2014-05-18 00:00:00.000",
-					"sud1_flg":"Y",
-					"sud2_flg":"1",
-					"sud3_flg":"N",
-					"sud4_flg":"N",
-					"sud5_flg":"N",
-					"sud6_flg":"Y",
-					"sud7_flg":"N",
-					"sud8_flg":"N",
-					"sud9_flg":"5",
-					"sud10_flg":"Y",
-					"sud11_code":"STP",
-					"sud12_code":"AUS",
-					"sud13_code":"SWI",
-					"sud14_code":"FA ",
-					"sud15_code":"EXA",
-					"sud16_code":"CP ",
-					"sud17_code":"SMK",
-					"sud18_code":"30",
-					"sud19_code":"NOK",
-					"sud20_code":"ABC",
-					"sud21_text":"Visa79447",
-					"sud22_text":"Passport44119 ",
-					"sud23_text":"1",
-					"sud24_text":"2019",
-					"sud25_text":"1"
-				}
-			]
-		}
+	{
+		"enrolledstudent":
+		[
+			{
+				"id":"0010245",
+				"surname":"Aardvaark",
+				"boarder":"Y",
+				"campus_code":"JU",
+				"curr_school":"EVT",
+				"curr_year_grp":"8",
+				"date_arrival":"2014-02-13 00:00:00.000",
+				"dob":"1995-10-14 00:00:00.000",
+				"e_mail":"abc_news@abc.com",
+				"entry_yr":"2019",
+				"entry_ygrp":"7",
+				"sex":"M",
+				"given_name":"Ian Peter",
+				"mob_phone":"0420221002",
+				"preferred_name":"Freddy",
+				"religion":"AG",
+				"resident_sts":"AUS",
+				"visa_expiry":"2018-01-01 00:00:00.000",
+				"visa_subclass":"123",
+				"prosp_flg":"Y",
+				"prosp_date":"2018-01-01 00:00:00.000",
+				"followup_flg":"Y",
+				"followup_date":"2018-01-01 00:00:00.000",
+				"hold_paid":"Y",
+				"hpaid_date":"2018-01-01 00:00:00.000",
+				"interview_flg":"Y",
+				"interview_date":"2018-01-01 00:00:00.000",
+				"assess_flg":"Y",
+				"assess_date":"2018-01-01 00:00:00.000",
+				"place_offered":"Y",
+				"offer_date":"2018-01-01 00:00:00.000",
+				"accept_paid":"Y",
+				"accept_date":"2019-03-20 00:00:00.000",
+				"sud1_flg":"Y",
+				"sud2_flg":"1",
+				"sud3_flg":"N",
+				"sud4_flg":"N",
+				"sud5_flg":"N",
+				"sud6_flg":"Y",
+				"sud7_flg":"N",
+				"sud8_flg":"N",
+				"sud9_flg":"5",
+				"sud10_flg":"Y",
+				"sud11_code":"STP",
+				"sud12_code":"AUS",
+				"sud13_code":"SWI",
+				"sud14_code":"FA ",
+				"sud15_code":"EXA",
+				"sud16_code":"CP ",
+				"sud17_code":"SMK",
+				"sud18_code":"30",
+				"sud19_code":"NOK",
+				"sud20_code":"ABC",
+				"sud21_text":"Visa79447",
+				"sud22_text":"Passport44119 ",
+				"sud23_text":"1",
+				"sud24_text":"2019",
+				"sud25_text":"1",
+				"first_name" : "Ian",
+				"other_name" : "Peter",
+				"preferred_surname" : "Aardvaark"
+			}
+		]
+	}
 	```
 
 * **Sample GET:** (With URL Encoded `token`)
