@@ -195,7 +195,7 @@
 
     `stud_other_names [string]` - Student Other Names
 
-    `stud_preferred_surname [string]` - Student Preferred Surname
+    `stud_preferred_surname [string]` - Student Preferred Surname (use stud_surname if not supplied)
 
     **Conditional:**
 
@@ -339,7 +339,7 @@
     ```javascript
       "__msg": "par_e_mail2 is invalid."
     ```
-
+    
     `m_name` & `f_name` and `Name Tokens` not supplied
     ```javascript
       "__msg": "m_name/f_name required when name tokens not supplied."
