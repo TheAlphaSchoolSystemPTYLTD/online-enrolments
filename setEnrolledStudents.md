@@ -4,7 +4,7 @@
 
 * **Version History:**
 
-    TASS v52.0 - Add 3 new optional fields `first_name`, `other_name`, `preferred_surname`.
+    TASS v52.0 - Add 2 new fields `first_name`, `other_name`, and `preferred_surname`. `given_name` is now a conditional field that accepts 101 characters.
 
 * **Version:**
 
@@ -30,8 +30,6 @@
 
 	`sex [string]` - Gender.
 
-	`given_name [string]` - Given Names.
-
 	`preferred_name [string]` - Preferred Name.
 
 	`prosp_flg [string]` - Stage 1 flag.
@@ -50,11 +48,9 @@
 
 	**Optional:**
 
-	`first_name [string]` - First Name.
-
 	`other_name [string]` - Other Name.
 
-	`preferred_surname [string]` - Preferred Surname.
+	`preferred_surname [string]` - Preferred Surname (use surname if not supplied).
 	
 	`campus_code [string]` - Campus.
 
@@ -100,6 +96,10 @@
 
 	`accept_date [date dd/mm/yyyy or yyyy-mm-dd]` - Stage 7 date. Required if stage 7 Flag is set to "Y".
 
+	`given_name [string]` - Given Names (invalid when `first_name` supplied, required when not supplied).
+
+	`first_name [string]` - First Name (invalid when `given_name` supplied, required when not supplied).
+
 * **Success Response:**
 
 	```javascript
@@ -122,7 +122,6 @@
 					"offer_date": "2018-01-01 00:00:00.000",
 					"sud17_code": "SMK",
 					"id": "0010245",
-					"given_name": "Ian Peter",
 					"assess_flg": "Y",
 					"sud3_flg": "N",
 					"sud14_code": "FA",
@@ -248,7 +247,7 @@
 	}
 	```
 
-	`surname [string]` exceeds 30 characters
+	`surname` exceeds 30 characters
 	```javascript
 	__invalid: {
 		"surname": "surname exceeds 30 characters."
@@ -290,21 +289,21 @@
 	}
 	```
 
-	`given_name [string]` exceeds 30 characters
+	`given_name` exceeds 101 characters
 	```javascript
 	__invalid: {
-		"given_name": "given_name exceeds 30 characters."
+		"given_name": "given_name exceeds 101 characters."
 	}
 	```
 
-	`preferred_name [string]` exceeds 20 characters
+	`preferred_name` exceeds 20 characters
 	```javascript
 	__invalid: {
 		"preferred_name": "preferred_name exceeds 20 characters."
 	}
 	```
 
-	`campus_code [string]` exceeds 3 characters
+	`campus_code` exceeds 3 characters
 	```javascript
 	__invalid: {
 		"campus_code": "campus_code exceeds 3 characters."
@@ -318,7 +317,7 @@
 	} 
 	```
 
-	`curr_school [string]` exceeds 5 characters
+	`curr_school` exceeds 5 characters
 	```javascript
 	__invalid: {
 		"curr_school": "curr_school exceeds 5 characters."
@@ -353,14 +352,14 @@
 	} 
 	```
 
-	`mob_phone [string]` exceeds 30 characters
+	`mob_phone` exceeds 30 characters
 	```javascript
 	__invalid: {
 		"mob_phone": "mob_phone exceeds 30 characters."
 	}
 	```
 
-	`religion [string]` exceeds 2 characters
+	`religion` exceeds 2 characters
 	```javascript
 	__invalid: {
 		"religion": "religion exceeds 2 characters."
@@ -374,7 +373,7 @@
 	} 
 	```
 
-	`resident_sts [string]` exceeds 3 characters
+	`resident_sts` exceeds 3 characters
 	```javascript
 	__invalid: {
 		"resident_sts": "resident_sts exceeds 3 characters."
@@ -395,7 +394,7 @@
 	} 
 	```
 
-	`visa_subclass [string]` exceeds 6 characters
+	`visa_subclass` exceeds 6 characters
 	```javascript
 	__invalid: {
 		"visa_subclass": "visa_subclass exceeds 6 characters."
@@ -427,38 +426,73 @@
 	} 
 	```
 
-	`sud1_flg` [string] to `sud10_flg` [string] exceeds 1 characters
+	`sud1_flg` to `sud10_flg` exceeds 1 characters
 	```javascript
 	__invalid: {
 		"[field]": "[field] exceeds [field's length limit] characters."
 	}
 	```
 
-	`sud1_flg` [string] to `sud10_flg` [string] is not a valid value from [A-Z and 0-9]
+	`sud1_flg` to `sud10_flg` is not a valid value from [A-Z and 0-9]
 	```javascript
 	__invalid: {
 		"[field]": "Value is not a valid <strong>alphanumeric code</strong>."
 	}
 	```
 
-	`sud11_code` [string] to `sud20_code` [string] exceeds 3 characters
+	`sud11_code` to `sud20_code` exceeds 3 characters
 	```javascript
 	__invalid: {
 		"[field]": "[field] exceeds [field's length limit] characters."
 	}
 	```
 
-	`sud11_code` [string] to `sud20_code` [string] is not set up in table udtable
+	`sud11_code` to `sud20_code` is not set up in table udtable
 	```javascript
 	__invalid: {
 		"[field]": "[field] is not a valid ud field."
 	}
 	```
 
-	`sud20_text` [string] to `sud25_text` [string] exceeds 20 characters
+	`sud20_text` to `sud25_text` exceeds 20 characters
 	```javascript
 	__invalid: {
 		"[field]": "[field] exceeds [field's length limit] characters."
+	}
+	```
+
+	`first_name` exceeds 50 characters
+	```javascript
+	__invalid: {
+		"first_name": "first_name exceeds 50 characters."
+	}
+	```
+
+	`other_name` exceeds 50 characters
+	```javascript
+	__invalid: {
+		"other_name": "other_name exceeds 50 characters."
+	}
+	```
+
+	`preferred_surname` exceeds 50 characters
+	```javascript
+	__invalid: {
+		"preferred_surname": "preferred_surname exceeds 50 characters."
+	}
+	```
+
+	`given_name` and `first_name` not supplied
+	```javascript
+	__invalid: {
+		"given_name": "given_name required when first_name not supplied."
+	}
+	```
+
+	`given_name` and `first_name` both supplied
+	```javascript
+	__invalid: {
+		"given_name": "given_name invalid when first_name supplied."
 	}
 	```
 
@@ -481,7 +515,6 @@
 				"entry_yr":"2019",
 				"entry_ygrp":"7",
 				"sex":"M",
-				"given_name":"Ian Peter",
 				"mob_phone":"0420221002",
 				"preferred_name":"Freddy",
 				"religion":"AG",
