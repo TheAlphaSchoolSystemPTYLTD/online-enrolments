@@ -10,7 +10,7 @@
 
   	TASS v51.4 - Add validation for attachment_file, and remove return property `stud_code` from result.
 
-  	TASS v52 - Remove Base-64 encoded validation for field attachment_file in.
+  	TASS v51.4.095 - Remove Base-64 encoded validation for field attachment_file in. Added support for URL Encoded value for the attachment_file field. (Recommended)
 
 * **Method:**
 
