@@ -345,6 +345,16 @@
       "__msg": "m_name/f_name required when name tokens not supplied."
     ```
 
+    `m_name` and `Name Tokens` both supplied
+    ```javascript
+      "__msg": "m_name invalid when name tokens supplied."
+    ```
+
+    `f_name` and `Name Tokens` both supplied
+    ```javascript
+      "__msg": "f_name invalid when name tokens supplied."
+    ```
+
     `m_name` & `f_name` and `Name Tokens` both supplied
     ```javascript
       "__msg": "m_name/f_name invalid when name tokens supplied."
