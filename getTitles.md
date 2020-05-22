@@ -8,7 +8,11 @@
 
 * **Version:**
 
-	1
+	3
+
+* **Permission:**
+
+  	Employee/HR > Employee/HR Setup > Titles (tab)
 
 * **Method:**
 

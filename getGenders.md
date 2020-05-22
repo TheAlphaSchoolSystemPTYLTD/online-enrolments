@@ -8,7 +8,11 @@
 
 * **Version:**
 
-	1
+	3
+
+* **Permission:**
+
+  	Community Plus > Genders Setup
 
 * **Method:**
 
