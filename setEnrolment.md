@@ -10,6 +10,8 @@
 
     TASS v52.0 - Add 17 new fields `stud_first_name`, `stud_other_names`, `stud_preferred_surname`, `f_title`, `f_initials`, `f_surname`, `f_first_name`, `f_other_names`, `f_preferred_name`, `f_suffix`, `m_title`, `m_initials`, `m_surname`, `m_first_name`, `m_other_names`, `m_preferred_name`, `m_suffix`. User needs to either supply parents' name tokens or `m_name` & `f_name`.
 
+    TASS v53.0 - Added two new fields m_p1_sex, f_p2_sex.
+
 * **Version:**
 
   1
@@ -32,7 +34,7 @@
 
     `dob [date dd/mm/yyyy]` - Student Date of Birth
 
-    `sex [string]` - Student Gender ("M" or "F")
+    `sex [string]` - Student Gender
 
     `entry_yr [integer]` - Year of Student Entry
 
@@ -233,6 +235,10 @@
 
     `m_suffix [string]` - Mother Suffix
 
+    `m_p1_sex [string]` - Mother / Parent 1 Gender
+
+    `f_p2_sex [string]` - Father / Parent 2 Gender
+
 * **Success Response:**
 
     ```javascript
@@ -253,7 +259,9 @@
             "doa": "2019-09-29",
             "timestamp": "{ts '2019-11-27 09:49:11'}",
             "m_name": "Mrs Mary Mid Austin",
-            "entry_yr": 2019
+            "entry_yr": 2019,
+            "m_p1_sex": "F",
+            "f_p2_sex": "M"
         }
     }
     ```
@@ -290,7 +298,7 @@
       "__msg": "Application ID 'application_id' exceeded 50 characters."
     ```
 
-    `sex` not 'M' or 'F'
+    `sex` not defined in genders setup
     ```javascript
       "__msg": "Student Gender is invalid."
     ```
@@ -345,6 +353,16 @@
       "__msg": "m_name/f_name required when name tokens not supplied."
     ```
 
+    `m_name` and `Name Tokens` both supplied
+    ```javascript
+      "__msg": "m_name invalid when name tokens supplied."
+    ```
+
+    `f_name` and `Name Tokens` both supplied
+    ```javascript
+      "__msg": "f_name invalid when name tokens supplied."
+    ```
+
     `m_name` & `f_name` and `Name Tokens` both supplied
     ```javascript
       "__msg": "m_name/f_name invalid when name tokens supplied."
@@ -358,6 +376,16 @@
     `f_name` supplied but has only one word
     ```javascript
       "__msg": "f_name must contain at least two name tokens (first_name & surname)."
+    ```
+
+    `m_p1_sex` not defined in genders setup
+    ```javascript
+      "__msg": "Mother / Parent 1 Gender is invalid."
+    ```
+
+    `f_p2_sex` not defined in genders setup
+    ```javascript
+      "__msg": "Father / Parent 2 Gender is invalid."
     ```
 
 * **Sample Parameters:**

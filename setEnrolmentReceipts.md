@@ -137,7 +137,7 @@
 	`trans_amt` not supplied
 	```javascript
 	__invalid: {
-		"trans_amt": "'trans_amt' is required."
+		"trans_amt": "Invalid amount."
 	}
 	```
 
@@ -172,14 +172,14 @@
 	`dist_amt` not supplied
 	```javascript
 	__invalid: {
-		"dist_amt": "'dist_amt' is required."
+		"dist_amt": "Invalid amount."
 	}
 	```
 
 	`tax_amt` not supplied
 	```javascript
 	__invalid: {
-		"tax_amt": "'tax_amt' is required."
+		"tax_amt": "Invalid amount."
 	}
 	```
 
