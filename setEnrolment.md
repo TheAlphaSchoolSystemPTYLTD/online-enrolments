@@ -12,6 +12,8 @@
 
     TASS v53.0 - Added two new fields m_p1_sex, f_p2_sex.
 
+    TASS v54.0 - Add validation for `m_p1_sex`, `f_p2_sex` against m_name and f_name or their name tokens.
+
 * **Version:**
 
   1
@@ -235,9 +237,9 @@
 
     `m_suffix [string]` - Mother Suffix
 
-    `m_p1_sex [string]` - Mother / Parent 1 Gender
+    `m_p1_sex [string]` - Mother / Parent 1 [strPositionLabels.motherLabel] Gender
 
-    `f_p2_sex [string]` - Father / Parent 2 Gender
+    `f_p2_sex [string]` - Father / Parent 2 [strPositionLabels.fatherLabel] Gender
 
 * **Success Response:**
 
@@ -251,17 +253,17 @@
             "par_surname": "Austin",
             "stud_surname": "Anton",
             "entry_ygrp": 11,
+            "batch_num": 912345678,
             "preferred_name": "Pie",
             "dob": "2000-01-01",
             "par_name": "John & Mary",
             "f_name": "Mr John Fid Austin",
             "boarder": "N",
             "doa": "2019-09-29",
-            "timestamp": "{ts '2019-11-27 09:49:11'}",
-            "m_name": "Mrs Mary Mid Austin",
-            "entry_yr": 2019,
             "m_p1_sex": "F",
-            "f_p2_sex": "M"
+            "timestamp": "{ts '2020-09-10 17:38:25'}",
+            "m_name": "Mrs Mary Mid Austin",
+            "entry_yr": 2020
         }
     }
     ```
@@ -380,18 +382,28 @@
 
     `m_p1_sex` not defined in genders setup
     ```javascript
-      "__msg": "Mother / Parent 1 Gender is invalid."
+      "__msg": "[strPositionLabels.motherLabel] Gender is invalid."
     ```
 
     `f_p2_sex` not defined in genders setup
     ```javascript
-      "__msg": "Father / Parent 2 Gender is invalid."
+      "__msg": "[strPositionLabels.fatherLabel] Gender is invalid."
+    ```
+
+    `m_p1_sex` supplied but `m_name` or mother name tokens is/are not supplied
+    ```javascript
+      "__msg": "[strPositionLabels.motherLabel] Gender must be empty string."
+    ```
+
+    `f_p2_sex` supplied but `f_name` or father name tokens is/are not supplied
+    ```javascript
+      "__msg": "[strPositionLabels.fatherLabel] Gender must be empty string."
     ```
 
 * **Sample Parameters:**
 
   ```javascript
-    application_id=ANTONY05&stud_surname=Anton&given_name=Edward&preferred_name=Pie&dob=2000-01-01&sex=M&entry_yr=2019&entry_ygrp=11&boarder=N&doa=2019-09-29&par_surname=Austin&par_name=John %26 Mary&m_name=Mrs Mary Mid Austin&f_name=Mr John Fid Austin
+    application_id=ANTONY05&stud_surname=Anton&given_name=Edward&preferred_name=Pie&dob=2000-01-01&sex=M&entry_yr=2020&entry_ygrp=11&boarder=N&doa=2019-09-29&par_surname=Austin&par_name=John %26 Mary&m_name=Mrs Mary Mid Austin&f_name=Mr John Fid Austin&m_p1_sex=F&f_p2_sex=M&batch_num=612345678
   ```
 
 * **Sample GET:** (With URL Encoded `token`)
