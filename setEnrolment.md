@@ -10,6 +10,10 @@
 
     TASS v52.0 - Add 17 new fields `stud_first_name`, `stud_other_names`, `stud_preferred_surname`, `f_title`, `f_initials`, `f_surname`, `f_first_name`, `f_other_names`, `f_preferred_name`, `f_suffix`, `m_title`, `m_initials`, `m_surname`, `m_first_name`, `m_other_names`, `m_preferred_name`, `m_suffix`. User needs to either supply parents' name tokens or `m_name` & `f_name`.
 
+    TASS v53.0 - Added two new fields m_p1_sex, f_p2_sex.
+
+    TASS v54.0 - Add validation for `m_p1_sex`, `f_p2_sex` against m_name and f_name or their name tokens.
+
 * **Version:**
 
   1
@@ -32,7 +36,7 @@
 
     `dob [date dd/mm/yyyy]` - Student Date of Birth
 
-    `sex [string]` - Student Gender ("M" or "F")
+    `sex [string]` - Student Gender
 
     `entry_yr [integer]` - Year of Student Entry
 
@@ -233,6 +237,10 @@
 
     `m_suffix [string]` - Mother Suffix
 
+    `m_p1_sex [string]` - Mother / Parent 1 [strPositionLabels.motherLabel] Gender
+
+    `f_p2_sex [string]` - Father / Parent 2 [strPositionLabels.fatherLabel] Gender
+
 * **Success Response:**
 
     ```javascript
@@ -245,15 +253,17 @@
             "par_surname": "Austin",
             "stud_surname": "Anton",
             "entry_ygrp": 11,
+            "batch_num": 912345678,
             "preferred_name": "Pie",
             "dob": "2000-01-01",
             "par_name": "John & Mary",
             "f_name": "Mr John Fid Austin",
             "boarder": "N",
             "doa": "2019-09-29",
-            "timestamp": "{ts '2019-11-27 09:49:11'}",
+            "m_p1_sex": "F",
+            "timestamp": "{ts '2020-09-10 17:38:25'}",
             "m_name": "Mrs Mary Mid Austin",
-            "entry_yr": 2019
+            "entry_yr": 2020
         }
     }
     ```
@@ -290,7 +300,7 @@
       "__msg": "Application ID 'application_id' exceeded 50 characters."
     ```
 
-    `sex` not 'M' or 'F'
+    `sex` not defined in genders setup
     ```javascript
       "__msg": "Student Gender is invalid."
     ```
@@ -345,6 +355,16 @@
       "__msg": "m_name/f_name required when name tokens not supplied."
     ```
 
+    `m_name` and `Name Tokens` both supplied
+    ```javascript
+      "__msg": "m_name invalid when name tokens supplied."
+    ```
+
+    `f_name` and `Name Tokens` both supplied
+    ```javascript
+      "__msg": "f_name invalid when name tokens supplied."
+    ```
+
     `m_name` & `f_name` and `Name Tokens` both supplied
     ```javascript
       "__msg": "m_name/f_name invalid when name tokens supplied."
@@ -360,10 +380,30 @@
       "__msg": "f_name must contain at least two name tokens (first_name & surname)."
     ```
 
+    `m_p1_sex` not defined in genders setup
+    ```javascript
+      "__msg": "[strPositionLabels.motherLabel] Gender is invalid."
+    ```
+
+    `f_p2_sex` not defined in genders setup
+    ```javascript
+      "__msg": "[strPositionLabels.fatherLabel] Gender is invalid."
+    ```
+
+    `m_p1_sex` supplied but `m_name` or mother name tokens is/are not supplied
+    ```javascript
+      "__msg": "[strPositionLabels.motherLabel] Gender must be empty string."
+    ```
+
+    `f_p2_sex` supplied but `f_name` or father name tokens is/are not supplied
+    ```javascript
+      "__msg": "[strPositionLabels.fatherLabel] Gender must be empty string."
+    ```
+
 * **Sample Parameters:**
 
   ```javascript
-    application_id=ANTONY05&stud_surname=Anton&given_name=Edward&preferred_name=Pie&dob=2000-01-01&sex=M&entry_yr=2019&entry_ygrp=11&boarder=N&doa=2019-09-29&par_surname=Austin&par_name=John %26 Mary&m_name=Mrs Mary Mid Austin&f_name=Mr John Fid Austin
+    application_id=ANTONY05&stud_surname=Anton&given_name=Edward&preferred_name=Pie&dob=2000-01-01&sex=M&entry_yr=2020&entry_ygrp=11&boarder=N&doa=2019-09-29&par_surname=Austin&par_name=John %26 Mary&m_name=Mrs Mary Mid Austin&f_name=Mr John Fid Austin&m_p1_sex=F&f_p2_sex=M&batch_num=612345678
   ```
 
 * **Sample GET:** (With URL Encoded `token`)

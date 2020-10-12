@@ -275,10 +275,31 @@
 	} 
 	```
 
-	`entry_ygrp` have value less than -3
+	`curr_year_grp` have value less than -3
 	```javascript
 	__invalid: {
-		"entry_ygrp": "must be greater than or equal to -3."
+		"curr_year_grp": "must be greater than or equal to [current_year]."
+	} 
+	```
+
+	`curr_year_grp` have value greater than 16
+	```javascript
+	__invalid: {
+		"curr_year_grp": "must be less than or equal to 16."
+	} 
+	```
+
+	`entry_ygrp` have value less than [Minimum Year Group] in Parent Setup
+	```javascript
+	__invalid: {
+		"entry_ygrp": "must be greater than or equal to [Minimum Year Group]."
+	} 
+	```
+
+	`entry_ygrp` have value greater than [Maximum Year Group] in Parent Setup
+	```javascript
+	__invalid: {
+		"entry_ygrp": "must be less than or equal to [Maximum Year Group]."
 	} 
 	```
 
