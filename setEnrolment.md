@@ -13,6 +13,8 @@
     TASS v53.0 - Added two new fields m_p1_sex, f_p2_sex.
 
     TASS v54.0 - Add validation for `m_p1_sex`, `f_p2_sex` against m_name and f_name or their name tokens.
+    
+    TASS v54.2 - `stud_surname`, `given_name`, `preferred_name` fields will now accept 50, 101, 50 characters each.
 
 * **Version:**
 
@@ -30,9 +32,9 @@
 
     `stud_surname [string]` - Student Surname - Length must be between 1 and 50 Characters
 
-    `given_name [string]` - Student Given Name(s) - Length must be between 1 and 30 Characters
+    `given_name [string]` - Student Given Name(s) - Length must be between 1 and 101 Characters
 
-    `preferred_name [string]` - Student Preferred Name - Length must be between 1 and 20 Characters
+    `preferred_name [string]` - Student Preferred Name - Length must be between 1 and 50 Characters
 
     `dob [date dd/mm/yyyy]` - Student Date of Birth
 
