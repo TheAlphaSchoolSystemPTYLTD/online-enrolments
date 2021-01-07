@@ -6,7 +6,7 @@
 
     TASS v52.0 - Add 2 new fields `first_name`, `other_name`, and `preferred_surname`. `given_name` is now a conditional field that accepts 101 characters.
     
-    TASS v54.2 - `surname`, `preferred_name` fields are now accept 50characters.
+    TASS v54.2 - `surname`, `preferred_name` fields will now accept 50 characters.
 
 * **Version:**
 
