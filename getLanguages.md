@@ -31,12 +31,30 @@
 * **Success Response:**
 
     ```javascript
-    "languages": [
+{
+	"languages": [
 		{
-			"code": "ENG",
-			"desc": "English"
+			"code": 3901,
+			"desc": "Albanian"
+		},
+		{
+			"code": 7301,
+			"desc": "Korean"
+		},
+		{
+			"code": 6900,
+			"desc": "Other Southeast Asian Languages"
 		}
-	]
+	],
+	"__status": "success",
+	"__tassversion": "01.000.043.0",
+	"__invalid": {},
+	"__locks": {},
+	"token": {
+		"timestamp": "{ts '2021-01-18 16:58:48'}",
+		"codeonly": false
+	}
+}
     ```
  
 * **Error Response:**
