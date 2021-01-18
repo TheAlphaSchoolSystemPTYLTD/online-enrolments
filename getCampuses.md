@@ -31,16 +31,30 @@
 * **Success Response:**
 
     ```javascript
-    "campuses": [
-		{
-			"code": "JU",
-			"desc": "Junior School (Billabong Rd)"
-		},
-		{
-			"code": "SE",
-			"desc": "Senior School (Curlew St)"
+    {
+		"campuses": [
+			{
+				"code": "ARG",
+				"desc": "Argyle Street Campus"
+			},
+			{
+				"code": "D5W",
+				"desc": "De Five Warders Campus"
+			},
+			{
+				"code": "JU",
+				"desc": "Junior School (Billabong Road)"
+			}
+		],
+		"__status": "success",
+		"__tassversion": "01.052.0.000",
+		"__invalid": {},
+		"__locks": {},
+		"token": {
+			"timestamp": "{ts '2021-01-18 15:28:13'}",
+			"codeonly": false
 		}
-	]
+	}
     ```
  
 * **Error Response:**
