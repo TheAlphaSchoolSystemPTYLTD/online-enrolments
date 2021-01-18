@@ -31,36 +31,30 @@
 * **Success Response:**
 
     ```javascript
-    "occupations": [
-		{
-			"code": "ACC",
-			"desc": "Accountant"
-		},
-		{
-			"code": "EM2",
-			"desc": "Ambulance / Paramedic"
-		},
-		{
-			"code": "BAR",
-			"desc": "Barrister"
-		},
-		{
-			"code": "BUI",
-			"desc": "Builder"
-		},
-		{
-			"code": "BUT",
-			"desc": "Butcher"
-		},
-		{
-			"code": "DNS",
-			"desc": "Dental Nurse"
-		},
-		{
-			"code": "DEN",
-			"desc": "Dentist"
-		}
-	]
+{
+	"occupations": [
+			{
+				"code": "ACC",
+				"desc": "Accountant"
+			},
+			{
+				"code": "BAR",
+				"desc": "Barrister"
+			},
+			{
+				"code": "BUI",
+				"desc": "Builder"
+			},
+	],
+	"__status": "success",
+	"__tassversion": "01.000.043.0",
+	"__invalid": {},
+	"__locks": {},
+	"token": {
+		"timestamp": "{ts '2021-01-19 09:26:38'}",
+		"codeonly": false
+	}
+}
     ```
  
 * **Error Response:**
