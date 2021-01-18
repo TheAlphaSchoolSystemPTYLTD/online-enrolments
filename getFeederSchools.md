@@ -31,44 +31,45 @@
 * **Success Response:**
 
     ```javascript
-    "schools": [
-		{
-			"region_desc": "",
-			"code": "APR",
-			"region_code": "",
-			"tass_cmpy_code_desc": "",
-			"export_code": "",
-			"tass_cmpy_code": "",
-			"desc": "Alpha Preparatory School"
-		},
-		{
-			"region_desc": "",
-			"code": "APRO",
-			"region_code": "",
-			"tass_cmpy_code_desc": "",
-			"export_code": "",
-			"tass_cmpy_code": "",
-			"desc": "Alpha Progressive School"
-		},
-		{
-			"region_desc": "",
-			"code": "APS",
-			"region_code": "",
-			"tass_cmpy_code_desc": "",
-			"export_code": "",
-			"tass_cmpy_code": "",
-			"desc": "Alpha Primary School"
-		},
-		{
-			"region_desc": "",
-			"code": "EVT",
-			"region_code": "",
-			"tass_cmpy_code_desc": "",
-			"export_code": "",
-			"tass_cmpy_code": "",
-			"desc": "Everton High"
-		}
-	]
+{
+	"schools": [
+			{
+				"region_desc": "Melbourne City",
+				"code": "BALCC",
+				"region_code": "MELC",
+				"tass_cmpy_code_desc": "",
+				"export_code": "",
+				"tass_cmpy_code": "",
+				"desc": "Ballarat Christian College"
+			},
+			{
+				"region_desc": "",
+				"code": "BSH",
+				"region_code": "",
+				"tass_cmpy_code_desc": "",
+				"export_code": "",
+				"tass_cmpy_code": "",
+				"desc": "Brisbane State High School"
+			},
+			{
+				"region_desc": "Bundaberg Cluster",
+				"code": "BUNDC",
+				"region_code": "BUND",
+				"tass_cmpy_code_desc": "",
+				"export_code": "",
+				"tass_cmpy_code": "",
+				"desc": "Bundaberg Christian School"
+			}
+	],
+	"__status": "success",
+	"__tassversion": "01.000.043.0",
+	"__invalid": {},
+	"__locks": {},
+	"token": {
+		"timestamp": "{ts '2021-01-18 16:42:43'}",
+		"codeonly": false
+	}
+}
     ```
  
 * **Error Response:**
