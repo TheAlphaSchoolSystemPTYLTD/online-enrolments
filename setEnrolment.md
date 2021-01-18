@@ -10,6 +10,12 @@
 
     TASS v52.0 - Add 17 new fields `stud_first_name`, `stud_other_names`, `stud_preferred_surname`, `f_title`, `f_initials`, `f_surname`, `f_first_name`, `f_other_names`, `f_preferred_name`, `f_suffix`, `m_title`, `m_initials`, `m_surname`, `m_first_name`, `m_other_names`, `m_preferred_name`, `m_suffix`. User needs to either supply parents' name tokens or `m_name` & `f_name`.
 
+    TASS v53.0 - Added two new fields m_p1_sex, f_p2_sex.
+
+    TASS v54.0 - Add validation for `m_p1_sex`, `f_p2_sex` against m_name and f_name or their name tokens.
+    
+    TASS v54.2 - `stud_surname`, `given_name`, `preferred_name` fields will now accept 50, 101, 50 characters each.
+
 * **Version:**
 
   1
@@ -22,161 +28,161 @@
 
     **Required:**
 
-    `application_id [string]` - Enrolment Application ID
+    `application_id [string]` - Enrolment Application ID - Length must be between 1 and 50 Characters
 
-    `stud_surname [string]` - Student Surname
+    `stud_surname [string]` - Student Surname - Length must be between 1 and 50 Characters
 
-    `given_name [string]` - Student Given Name(s)
+    `given_name [string]` - Student Given Name(s) - Length must be between 1 and 101 Characters
 
-    `preferred_name [string]` - Student Preferred Name
+    `preferred_name [string]` - Student Preferred Name - Length must be between 1 and 50 Characters
 
     `dob [date dd/mm/yyyy]` - Student Date of Birth
 
-    `sex [string]` - Student Gender ("M" or "F")
+    `sex [string]` - Student Gender - Length must be between 1 and 3 Characters
 
     `entry_yr [integer]` - Year of Student Entry
 
     `entry_ygrp [integer]` - Student Year Group when Starting
 
-    `boarder [string]` - Is the Student a Boarder ("Y" or "N")
+    `boarder [string]` - Is the Student a Boarder - Length must be 1 Character(Y/N) 
 
     `doa [date dd/mm/yyyy]` - Date of Enrolment Application
 
-    `par_surname [string]` - Parent Surname
+    `par_surname [string]` - Parent Surname - Length must be between 1 and 30 Characters
 
-    `par_name [string]` - Parent Full Name
+    `par_name [string]` - Parent Full Name - Length must be between 1 and 61 Characters
 
     **Optional:**
 
-    `religion [string]` - Student Religion
+    `religion [string]` - Student Religion - Length must be between 1 and 2 Characters
 
     `curr_year_grp [integer]` - Current Year Group
 
-    `curr_school [string]` - Current School
+    `curr_school [string]` - Current School - Length must be between 1 and 5 Characters
 
-    `prosp_flg [string]` - Stage 1 Flag
+    `prosp_flg [string]` - Stage 1 Flag - Length must be 1 Character(Y/N)
 
     `prosp_date [date dd/mm/yyyy]` - Stage 1 Date
 
-    `followup_flg [string]` - Stage 2 Flag
+    `followup_flg [string]` - Stage 2 Flag - Length must be 1 Character(Y/N)
 
     `followup_date [date dd/mm/yyyy]` - Stage 2 Date
 
-    `hold_paid [string]` - Stage 3 Flag
+    `hold_paid [string]` - Stage 3 Flag - Length must be 1 Character(Y/N)
 
     `hpaid_date [date dd/mm/yyyy]` - Stage 3 Date
 
-    `interview_flg [string]` - Stage 4 Flag
+    `interview_flg [string]` - Stage 4 Flag - Length must be 1 Character(Y/N)
 
     `interview_date [date dd/mm/yyyy]` - Stage 4 Date
 
-    `assess_flg [string]` - Stage 5 Flag
+    `assess_flg [string]` - Stage 5 Flag - Length must be 1 Character(Y/N)
 
     `assess_date [date dd/mm/yyyy]` - Stage 5 Date
 
-    `place_offered [string]` - Stage 6 Flag
+    `place_offered [string]` - Stage 6 Flag - Length must be 1 Character(Y/N)
 
     `offer_date [date dd/mm/yyyy]` - Stage 6 Date
 
-    `accept_paid [string]` - Stage 7 Flag
+    `accept_paid [string]` - Stage 7 Flag - Length must be 1 Character(Y/N)
 
     `accept_date [date dd/mm/yyyy]` - Stage 7 Date
 
-    `e_mail [string]` - Student Email
+    `e_mail [string]` - Student Email - Length must be between 1 and 60 Characters
 
-    `campus_code [string]` - Student Campus
+    `campus_code [string]` - Student Campus - Length must be between 1 and 3 Characters
 
-    `mob_phone [string]` - Student Mobile Phone
+    `mob_phone [string]` - Student Mobile Phone - Length must be between 1 and 30 Characters
 
-    `resident_sts [string]` - Student Residency Status
+    `resident_sts [string]` - Student Residency Status - Length must be between 1 and 3 Characters
 
     `visa_expiry [date dd/mm/yyyy]` - Student Visa Expiry
 
-    `visa_subclass [string]` - Student Visa Subclass
+    `visa_subclass [string]` - Student Visa Subclass - Length must be between 1 and 6 Characters
 
     `date_arrival [date dd/mm/yyyy]` - Student Date Arrival in Aus
 
-    `s_indig_sts [string]` - MCEECDYA Student Indigenous Status
+    `s_indig_sts [string]` - MCEECDYA Student Indigenous Status - Length must be 1 Character
 
-    `mse_code [string]` - MCEECDYA Mother School Education
+    `mse_code [string]` - MCEECDYA Mother School Education - Length must be 1 Character
 
-    `fse_code [string]` - MCEECDYA Father School Education
+    `fse_code [string]` - MCEECDYA Father School Education - Length must be 1 Character
 
-    `mnse_code [string]` - MCEECDYA Mother Non-School Education
+    `mnse_code [string]` - MCEECDYA Mother Non-School Education - Length must be 1 Character
 
-    `fnse_code [string]` - MCEECDYA Father Non-School Education
+    `fnse_code [string]` - MCEECDYA Father Non-School Education - Length must be 1 Character
 
-    `mocc_code [string]` - MCEECDYA Mother Occupation Group
+    `mocc_code [string]` - MCEECDYA Mother Occupation Group - Length must be 1 Character
 
-    `focc_code [string]` - MCEECDYA Father Occupation Group
+    `focc_code [string]` - MCEECDYA Father Occupation Group - Length must be 1 Character
 
-    `slote_code [string]` - MCEECDYA Student Language other than English Code
+    `slote_code [string]` - MCEECDYA Student Language other than English Code - Length must be between 1 and 4 Characters
 
-    `mlote_code [string]` - MCEECDYA Mother Language other than English Code
+    `mlote_code [string]` - MCEECDYA Mother Language other than English Code - Length must be between 1 and 4 Characters
 
-    `flote_code [string]` - MCEECDYA Father Language other than English Code
+    `flote_code [string]` - MCEECDYA Father Language other than English Code - Length must be between 1 and 4 Characters
 
-    `scob_code [string]` - MCEECDYA Student Country of Birth
+    `scob_code [string]` - MCEECDYA Student Country of Birth - Length must be between 1 and 4 Characters
 
-    `arrive_yr [string]` - Student year of arrival in Australia.
+    `arrive_yr [string]` - Student year of arrival in Australia - Length must be between 1 and 4 Characters
 
-    `sud1_flg to sud10_flg [string]` - Student user defined flag
+    `sud1_flg to sud10_flg [string]` - Student user defined flag - Length must be 1 Character
 
-    `sud11_code to sud20_code [string]` - Student user defined code
+    `sud11_code to sud20_code [string]` - Student user defined code - Length must be between 1 and 3 Characters
 
-    `sud21_text to sud25_text [string]` - Student user defined text
+    `sud21_text to sud25_text [string]` - Student user defined text - Length must be between 1 and 20 Characters
 
-    `prev_conn [string]` - Previous connections
+    `prev_conn [string]` - Previous connections - Length must be between 1 and 2 Characters
 
-    `pud1_flg to pud10_flg [string]` - Parent user defined flag
+    `pud1_flg to pud10_flg [string]` - Parent user defined flag - Length must be 1 Character
 
-    `pud11_code to pud20_code [string]` - Parent user defined code
+    `pud11_code to pud20_code [string]` - Parent user defined code - Length must be between 1 and 3 Characters
 
-    `pud21_text to pud25_text [string]` - Parent user defined text
+    `pud21_text to pud25_text [string]` - Parent user defined text - Length must be between 1 and 20 Characters
 
-    `f_occ [string]` - Father occupation code. Max 3 characters (values will be truncated)
+    `f_occ [string]` - Father occupation code - Length must be between 1 and 3 Characters(values will be truncated)
 
-    `m_occ [string]` - Mother occupation code. Max 3 characters (values will be truncated)
+    `m_occ [string]` - Mother occupation code - Length must be between 1 and 3 Characters(values will be truncated)
 
-    `par_name2 [string]` - Parent name 2
+    `par_name2 [string]` - Parent name 2 - Length must be between 1 and 30 Characters
 
-    `addr1 [string]` - Address 1
+    `addr1 [string]` - Address 1 - Length must be between 1 and 50 Characters
 
-    `addr2 [string]` - Address 2
+    `addr2 [string]` - Address 2 - Length must be between 1 and 50 Characters
 
-    `addr3 [string]` - Address 3
+    `addr3 [string]` - Address 3 - Length must be between 1 and 50 Characters
 
-    `town_sub [string]` - Town suburb 
+    `town_sub [string]` - Town suburb - Length must be between 1 and 30 Characters
 
-    `state_code [string]` - State code
+    `state_code [string]` - State code - Length must be between 1 and 3 Characters
 
-    `post_code [string]` - Post code
+    `post_code [string]` - Post code - Length must be between 1 and 10 Characters
 
-    `country [string]` - Country
+    `country [string]` - Country - Length must be between 1 and 20 Characters
 
-    `dpid_text [string]` - Address Barcode (DPID Barcode)
+    `dpid_text [string]` - Address Barcode (DPID Barcode) - Length must be between 1 and 40 Characters
 
-    `home_phone [string]` - Home phone
+    `home_phone [string]` - Home phone - Length must be between 1 and 30 Characters
 
-    `bus_phone [string]` - Business phone
+    `bus_phone [string]` - Business phone - Length must be between 1 and 30 Characters
 
-    `fax [string]` - Fax
+    `fax [string]` - Fax - Length must be between 1 and 30 Characters
 
-    `salutation [string]` - Salutation
+    `salutation [string]` - Salutation - Length must be between 1 and 60 Characters
 
-    `par_e_mail [string]` - Parent email
+    `par_e_mail [string]` - Parent email - Length must be between 1 and 140 Characters
 
-    `par_e_mail2 [string]` - Parent email2
+    `par_e_mail2 [string]` - Parent email2 - Length must be between 1 and 140 Characters
 
-    `mobile1 [string]` - Mobile 1
+    `mobile1 [string]` - Mobile 1 - Length must be between 1 and 30 Characters
 
-    `sms_flg1 [string]` - SMS flag 1
+    `sms_flg1 [string]` - SMS flag 1 - Length must be 1 Character(Y/N)
 
-    `mobile2 [string]` - Mobile 2
+    `mobile2 [string]` - Mobile 2 - Length must be between 1 and 30 Characters
 
-    `sms_flg2 [string]` - SMS flag 2
+    `sms_flg2 [string]` - SMS flag 2 - Length must be 1 Character(Y/N)
 
-    `rec_type [string]` - Receipt Type  \
+    `rec_type [string]` - Receipt Type - Length must be 1 Character \ 
     D = Deposit (Refundable)  \
     A = Advance (Fees Prepayment)  \
     G = General (Revenue Recognised)  \
@@ -186,16 +192,16 @@
 
     `web_cash_num [integer]` - Online Receipt Reference Number
 
-    `cash_amt [decimal]` - Receipt Amount
+    `cash_amt [decimal (16,2)]` - Receipt Amount
 
     `batch_num [integer]` - Batch Number  \
     Where populated, it will be a 9 digit numeric string based on the Settlement Date (yyyymmdd) prefixed with a “6”
 
-    `stud_first_name [string]` - Student First Name
+    `stud_first_name [string]` - Student First Name - Length must be between 1 and 50 Characters
 
-    `stud_other_names [string]` - Student Other Names
+    `stud_other_names [string]` - Student Other Names - Length must be between 1 and 50 Characters
 
-    `stud_preferred_surname [string]` - Student Preferred Surname (use stud_surname if not supplied)
+    `stud_preferred_surname [string]` - Student Preferred Surname (use stud_surname if not supplied) - Length must be between 1 and 50 Characters
 
     **Conditional:**
 
@@ -205,33 +211,37 @@
 
     `Name Tokens`:
 
-    `f_title [string]` - Father Title
+    `f_title [string]` - Father Title - Length must be between 1 and 10 Characters
 
-    `f_initials [string]` - Father Initials
+    `f_initials [string]` - Father Initials - Length must be between 1 and 5 Characters
 
-    `f_surname [string]` - Father Surname
+    `f_surname [string]` - Father Surname - Length must be between 1 and 50 Characters
 
-    `f_first_name [string]` - Father First Name
+    `f_first_name [string]` - Father First Name - Length must be between 1 and 50 Characters
 
-    `f_other_names [string]` - Father Other Names
+    `f_other_names [string]` - Father Other Names - Length must be between 1 and 50 Characters
 
-    `f_preferred_name [string]` - Father Preferred Name
+    `f_preferred_name [string]` - Father Preferred Name - Length must be between 1 and 50 Characters
 
-    `f_suffix [string]` - Father Suffix
+    `f_suffix [string]` - Father Suffix - Length must be between 1 and 50 Characters
 
-    `m_title [string]` - Mother Title
+    `m_title [string]` - Mother Title - Length must be between 1 and 10 Characters
 
-    `m_initials [string]` - Mother Initials
+    `m_initials [string]` - Mother Initials - Length must be between 1 and 5 Characters
 
-    `m_surname [string]` - Mother Surname
+    `m_surname [string]` - Mother Surname - Length must be between 1 and 50 Characters
 
-    `m_first_name [string]` - Mother First Name
+    `m_first_name [string]` - Mother First Name - Length must be between 1 and 50 Characters
 
-    `m_other_names [string]` - Mother Other Names
+    `m_other_names [string]` - Mother Other Names - Length must be between 1 and 50 Characters
 
-    `m_preferred_name [string]` - Mother Preferred Name
+    `m_preferred_name [string]` - Mother Preferred Name - Length must be between 1 and 50 Characters
 
-    `m_suffix [string]` - Mother Suffix
+    `m_suffix [string]` - Mother Suffix - Length must be between 1 and 50 Characters
+
+    `m_p1_sex [string]` - Mother / Parent 1 [strPositionLabels.motherLabel] Gender - Length must be between 1 and 3 Characters
+
+    `f_p2_sex [string]` - Father / Parent 2 [strPositionLabels.fatherLabel] Gender - Length must be between 1 and 3 Characters
 
 * **Success Response:**
 
@@ -245,15 +255,17 @@
             "par_surname": "Austin",
             "stud_surname": "Anton",
             "entry_ygrp": 11,
+            "batch_num": 912345678,
             "preferred_name": "Pie",
             "dob": "2000-01-01",
             "par_name": "John & Mary",
             "f_name": "Mr John Fid Austin",
             "boarder": "N",
             "doa": "2019-09-29",
-            "timestamp": "{ts '2019-11-27 09:49:11'}",
+            "m_p1_sex": "F",
+            "timestamp": "{ts '2020-09-10 17:38:25'}",
             "m_name": "Mrs Mary Mid Austin",
-            "entry_yr": 2019
+            "entry_yr": 2020
         }
     }
     ```
@@ -290,7 +302,7 @@
       "__msg": "Application ID 'application_id' exceeded 50 characters."
     ```
 
-    `sex` not 'M' or 'F'
+    `sex` not defined in genders setup
     ```javascript
       "__msg": "Student Gender is invalid."
     ```
@@ -345,6 +357,16 @@
       "__msg": "m_name/f_name required when name tokens not supplied."
     ```
 
+    `m_name` and `Name Tokens` both supplied
+    ```javascript
+      "__msg": "m_name invalid when name tokens supplied."
+    ```
+
+    `f_name` and `Name Tokens` both supplied
+    ```javascript
+      "__msg": "f_name invalid when name tokens supplied."
+    ```
+
     `m_name` & `f_name` and `Name Tokens` both supplied
     ```javascript
       "__msg": "m_name/f_name invalid when name tokens supplied."
@@ -360,10 +382,30 @@
       "__msg": "f_name must contain at least two name tokens (first_name & surname)."
     ```
 
+    `m_p1_sex` not defined in genders setup
+    ```javascript
+      "__msg": "[strPositionLabels.motherLabel] Gender is invalid."
+    ```
+
+    `f_p2_sex` not defined in genders setup
+    ```javascript
+      "__msg": "[strPositionLabels.fatherLabel] Gender is invalid."
+    ```
+
+    `m_p1_sex` supplied but `m_name` or mother name tokens is/are not supplied
+    ```javascript
+      "__msg": "[strPositionLabels.motherLabel] Gender must be empty string."
+    ```
+
+    `f_p2_sex` supplied but `f_name` or father name tokens is/are not supplied
+    ```javascript
+      "__msg": "[strPositionLabels.fatherLabel] Gender must be empty string."
+    ```
+
 * **Sample Parameters:**
 
   ```javascript
-    application_id=ANTONY05&stud_surname=Anton&given_name=Edward&preferred_name=Pie&dob=2000-01-01&sex=M&entry_yr=2019&entry_ygrp=11&boarder=N&doa=2019-09-29&par_surname=Austin&par_name=John %26 Mary&m_name=Mrs Mary Mid Austin&f_name=Mr John Fid Austin
+    application_id=ANTONY05&stud_surname=Anton&given_name=Edward&preferred_name=Pie&dob=2000-01-01&sex=M&entry_yr=2020&entry_ygrp=11&boarder=N&doa=2019-09-29&par_surname=Austin&par_name=John %26 Mary&m_name=Mrs Mary Mid Austin&f_name=Mr John Fid Austin&m_p1_sex=F&f_p2_sex=M&batch_num=612345678
   ```
 
 * **Sample GET:** (With URL Encoded `token`)
