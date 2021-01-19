@@ -71,28 +71,29 @@
 	```javascript
 	{
 		"success": "You successfully uploaded 1 enrolment receipt(s).",
+		"__tassversion": "01.000.043.0",
 		"token": {
-			"timestamp": "{ts '2019-12-11 14:16:30'}",
+			"timestamp": "{ts '2021-01-19 15:23:30'}",
 			"enrolmentReceipts": [
 				{
 					"receipt_num": "",
 					"seq_num": 1,
-					"sundry_name": "Fang",
+					"sundry_name": "Renowa",
 					"enrol_rec_type": "G",
-					"dist_amt": 10,
+					"dist_amt": 1000,
 					"comment": "Enrolment Fee",
-					"tax_amt": 1,
+					"tax_amt": 100,
 					"town_sub": "",
 					"state_code": "",
-					"trans_amt": 11,
-					"par_code": "002119",
+					"trans_amt": 1100,
+					"par_code": "002629",
 					"addr3": "",
 					"addr2": "",
-					"submit_time": "2019-11-28 10:00:00.000",
+					"submit_time": "2020-12-19 10:00:00.000",
 					"addr1": "",
-					"stud_code": "0020974",
+					"stud_code": "0021372",
 					"country": "",
-					"batch_num": 20191129,
+					"batch_num": 20211901,
 					"acct_code": "01-0290-00-00",
 					"post_code": "",
 					"id": 1,
@@ -447,26 +448,26 @@
 * **Sample Parameters:**
 
 	```javascript
-	{
+	 {
 		"enrolmentReceipts":
 		[
 			{
 				"id":"1",
-				"submit_time":"2019-11-28 10:00:00.000",
-				"trans_amt":"11.00",
-				"batch_num":"20191129",
-				"sundry_name":"Fang",
+				"submit_time":"2020-12-19 10:00:00.000",
+				"trans_amt":"1100.00",
+				"batch_num":"20211901",
+				"sundry_name":"Renowa",
 				"comment":"Enrolment Fee",
 				"acct_code":"01-0290-00-00",
-				"dist_amt":"10.00",
-				"tax_amt":"1.00",
+				"dist_amt":"1000.00",
+				"tax_amt":"100.00",
 				"tax_code":"AO",
 				"enrol_rec_type":"G",
-				"par_code":"002119",
-				"stud_code":"0020974"
+				"par_code":"002629",
+				"stud_code":"0021372"
 			}
 		]
-	}
+	 }
 	```
 
 * **Sample GET:** (With URL Encoded `token`)
