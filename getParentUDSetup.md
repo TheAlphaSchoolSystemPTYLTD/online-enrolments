@@ -31,66 +31,48 @@
 * **Success Response:**
 
     ```javascript
-    "ud": [
-		{
-			"flag_name": "UD1_FLG",
-			"id": 1,
-			"flag_value": "",
-			"desc": "Active Church Att.",
-			"name": "UD1_DESC"
-		},
-		...,
-		{
-			"flag_name": "UD11_FLG",
-			"id": 11,
-			"lookups": [
-				{
-					"code": "CAN",
-					"desc": "Cantonese"
-				},
-				{
-					"code": "ENG",
-					"desc": "English"
-				},
-				{
-					"code": "FRE",
-					"desc": "French"
-				},
-				{
-					"code": "GER",
-					"desc": "German"
-				},
-				{
-					"code": "IND",
-					"desc": "Indonesian"
-				},
-				{
-					"code": "NZ",
-					"desc": "Kiwi"
-				},
-				{
-					"code": "MAL",
-					"desc": "Malaysian"
-				},
-				{
-					"code": "MAN",
-					"desc": "Mandarin"
-				}
-			],
-			"flag_value": 11,
-			"desc": "Mothers Religion",
-			"name": "UD11_DESC"
-		},
-		...,
-		{
-			"flag_name": "UD22_FLG",
-			"id": 22,
-			"flag_value": 21,
-			"desc": "Mothers Employer",
-			"name": "UD22_DESC"
+	{
+		"ud": [
+			{
+				"flag_name": "UD1_FLG",
+				"id": 1,
+				"flag_value": "",
+				"desc": "Active Church Attend",
+				"name": "UD1_DESC"
+			},
+			...,
+			{
+				"flag_name": "UD12_FLG",
+				"id": 12,
+				"lookups": [
+					{
+						"code": "BCC",
+						"desc": "Brisbane City Church"
+					},
+					{
+						"code": "BUL",
+						"desc": "Bulimba"
+					}
+				],
+				"flag_value": "",
+				"desc": "Local Church",
+				"name": "UD12_DESC"
+			},
+			...,
+			{
+				"flag_name": "UD25_FLG",
+				"id": 25,
+				"flag_value": 22,
+				"desc": "Employer's Name",
+				"name": "UD25_DESC"
+			}
+		],
+		"__tassversion": "01.000.043.0",
+		"token": {
+				"includelookups": true,
+				"timestamp": "{ts '2021-01-19 09:52:45'}"
 		}
-		...
-	]
+	}
     ```
  
 * **Error Response:**
