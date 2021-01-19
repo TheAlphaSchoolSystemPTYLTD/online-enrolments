@@ -31,44 +31,45 @@
 * **Success Response:**
 
     ```javascript
-    "statuses": [
-		{
-			"census_flg": "Y",
-			"code": "AV",
-			"expcode": "NACPR1",
-			"citizen_flg": "N",
-			"permres_flg": "N",
-			"res_exp_code": "NACPR1",
-			"desc": "Approved Student"
-		},
-		{
-			"census_flg": "Y",
-			"code": "AC",
-			"expcode": "AC",
-			"citizen_flg": "Y",
-			"permres_flg": "Y",
-			"res_exp_code": "AC",
-			"desc": "Australian Citizen"
-		},
-		{
-			"census_flg": "N",
-			"code": "OS",
-			"expcode": "NACPR",
-			"citizen_flg": "N",
-			"permres_flg": "N",
-			"res_exp_code": "NACPR",
-			"desc": "Overseas Student"
-		},
-		{
-			"census_flg": "Y",
-			"code": "PR",
-			"expcode": "PRA",
-			"citizen_flg": "N",
-			"permres_flg": "Y",
-			"res_exp_code": "PRA",
-			"desc": "Permanent Resident"
+	{
+		"statuses": [
+			{
+				"census_flg": "Y",
+				"code": "AUS",
+				"expcode": "XXXX34",
+				"citizen_flg": "Y",
+				"permres_flg": "N",
+				"res_exp_code": "XXXX34",
+				"desc": "Australian Citizen"
+			},
+			{
+				"census_flg": "Y",
+				"code": "PR",
+				"expcode": "",
+				"citizen_flg": "N",
+				"permres_flg": "Y",
+				"res_exp_code": "",
+				"desc": "Australian Permanent Resident"
+			},
+			{
+				"census_flg": "N",
+				"code": "FFS",
+				"expcode": "FULLFEESTUD",
+				"citizen_flg": "N",
+				"permres_flg": "N",
+				"res_exp_code": "FULLFEESTUD",
+				"desc": "Full Fee paying Overseas Student"
+			}
+		],
+		"__status": "success",
+		"__tassversion": "01.000.043.0",
+		"__invalid": {},
+		"__locks": {},
+		"token": {
+			"timestamp": "{ts '2021-01-19 10:17:57'}",
+			"codeonly": false
 		}
-	]
+	}
     ```
  
 * **Error Response:**
