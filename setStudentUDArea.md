@@ -45,21 +45,24 @@
 * **Success Response:**
 
 	```javascript
-	"success": "You successfully saved 1 student(s).",
-	"token": {
-		"timestamp": "{ts '2019-02-12 16:58:07'}",
-		"area_code": 1,
-		"studentudarea": [
-			{
-				"eud31_date": "2019-02-08",
-				"eud21_text": "testing",
-				"eud1_flg": "Y",
-				"eud11_code": 10,
-				"eud12_code": 890,
-				"eud41_attach_id": "C5141223-DE66-686C-AC6701EAF7CE800F",
-				"id": "0010090"
-			}
-		]
+	{
+		"success": "You successfully saved 1 student(s).",
+		"__tassversion": "01.000.043.0",
+		"token": {
+			"timestamp": "{ts '2021-01-19 15:27:50'}",
+			"area_code": 1,
+			"studentudarea": [
+					{
+					"eud31_date": "2021-01-18",
+					"eud21_text": "testing",
+					"eud1_flg": "Y",
+					"eud11_code": 10,
+					"eud12_code": 890,
+					"eud41_attach_id": "FB227E4A-FE87-3E54-811AB5B47BB43223",
+					"id": "0021372"
+					}
+			]
+		}
 	}
 	```
  
@@ -222,25 +225,25 @@
 * **Sample Parameters:**
 
 	```javascript
-	{
-		"area_code":"1",
-		"studentudarea":
-		[
-			{
-				"id":"0010090",
-				"eud1_flg":"Y",
-				"eud11_code":"10",
-				"eud12_code":"890",
-				"eud21_text":"testing",
-				"eud31_date":"2019-02-08",
-				"eud41_attach_id":
-				{
-					"attachment_file_name":"test",
-					"attachment_file":"ClRoaXMgaXMgYSB0ZXN0IGZpbGUuCkRvIG5vdCBpbmNsdWRlIGEgdGFibGUhISEKTmFtZQlRdWFudGl0eQlWYWx1ZQppUGFkCTEJNTAwCmlQaG9uZQkxCTEwMDAKVG90YWwJMgkxNTAw"
-				}
-			}
-		]
-	}
+ {
+ 	"area_code":"1",
+ 	"studentudarea":
+ 	[
+ 		{
+ 			"id":"0021372",
+ 			"eud1_flg":"Y",
+ 			"eud11_code":"10",
+ 			"eud12_code":"890",
+ 			"eud21_text":"testing",
+ 			"eud31_date":"2021-01-18",
+ 			"eud41_attach_id":
+ 			{
+ 				"attachment_file_name":"test",
+ 				"attachment_file":"ClRoaXMgaXMgYSB0ZXN0IGZpbGUuCkRvIG5vdCBpbmNsdWRlIGEgdGFibGUhISEKTmFtZQlRdWFudGl0eQlWYWx1ZQppUGFkCTEJNTAwCmlQaG9uZQkxCTEwMDAKVG90YWwJMgkxNTAw"
+ 			}
+ 		}
+ 	]
+ }
 	```
 
 * **Sample GET:** (With URL Encoded `token`)
