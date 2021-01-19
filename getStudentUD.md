@@ -31,47 +31,59 @@
 * **Success Response:**
 
     ```javascript
-    "ud": {
-		"ud13_code": "WST",
-		"ud21_text": 840127123,
-		"ud16_code": "HAW",
-		"ud4_flg": "",
-		"ud27_text": "",
-		"ud24_text": "",
-		"ud9_flg": "",
-		"ud38_date": "",
-		"ud32_date": "2017-05-27 00:00:00.0",
-		"ud19_code": "TOW",
-		"ud35_date": "",
-		"ud29_text": "",
-		"ud26_text": "",
-		"ud30_text": "",
-		"ud18_code": "MP",
-		"ud23_text": "82108301238",
-		"ud5_flg": "",
-		"ud12_code": "052",
-		"ud20_code": "KED",
-		"ud15_code": "MP",
-		"ud1_flg": "Y",
-		"ud31_date": "2017-05-17 00:00:00.0",
-		"ud34_date": "",
-		"ud37_date": "",
-		"ud7_flg": "",
-		"ud28_text": "",
-		"ud6_flg": "",
-		"ud10_flg": "",
-		"ud22_text": "",
-		"ud25_text": "Mathew Bell",
-		"ud14_code": "NTH",
-		"ud11_code": 486,
-		"ud2_flg": "",
-		"ud3_flg": "Y",
-		"ud40_date": "",
-		"ud33_date": "2018-05-17 00:00:00.0",
-		"ud8_flg": "",
-		"ud17_code": "MOS",
-		"ud36_date": "",
-		"ud39_date": ""
+	{
+		"ud": {
+			"ud13_code": "SUN",
+			"ud21_text": 56,
+			"ud16_code": "MEN",
+			"ud4_flg": "",
+			"ud27_text": "",
+			"ud24_text": 44,
+			"ud9_flg": "",
+			"ud38_date": "",
+			"ud32_date": "",
+			"ud19_code": "TOW",
+			"ud35_date": "",
+			"ud29_text": "",
+			"ud26_text": "",
+			"ud30_text": "",
+			"ud18_code": "BON",
+			"ud23_text": 5678,
+			"ud5_flg": "",
+			"ud12_code": "052",
+			"ud20_code": "MOG",
+			"ud15_code": "MP",
+			"ud1_flg": "N",
+			"ud31_date": "",
+			"ud34_date": "",
+			"ud37_date": "",
+			"ud7_flg": "",
+			"ud28_text": "",
+			"ud10_flg": "",
+			"ud6_flg": "",
+			"ud22_text": 567,
+			"ud25_text": 12,
+			"ud14_code": "NON",
+			"ud11_code": 486,
+			"ud2_flg": "Y",
+			"ud3_flg": "Y",
+			"ud40_date": "",
+			"ud33_date": "",
+			"ud8_flg": "",
+			"ud17_code": "MOS",
+			"ud36_date": "",
+			"ud39_date": "",
+			"update_on": ""
+		},
+		"__status": "success",
+		"__tassversion": "01.000.043.0",
+		"__invalid": {},
+		"__locks": {},
+		"token": {
+			"areacode": 1,
+			"timestamp": "{ts '2021-01-19 10:42:29'}",
+			"studcode": "0009096"
+		}
 	}
     ```
  
@@ -90,7 +102,7 @@
 * **Sample Parameters:**
 
 	```javascript
-	studcode=20114&areacode=1
+	studcode=0009096&areacode=1
 	```
 
 * **Sample GET:** (With URL Encoded `token`)
