@@ -246,28 +246,33 @@
 * **Success Response:**
 
     ```javascript
-    {
-        "__status": "success",
-        "token": {
-            "given_name": "Edward",
-            "sex": "M",
-            "application_id": "ANTONY05",
-            "par_surname": "Austin",
-            "stud_surname": "Anton",
-            "entry_ygrp": 11,
-            "batch_num": 912345678,
-            "preferred_name": "Pie",
+  {
+      "__status": "success",
+      "errors": [],
+      "__tassversion": "01.000.043.0",
+      "__invalid": {},
+      "__locks": {},
+      "token": {
+            "given_name": "Posy",
+            "sex": "F",
+            "application_id": 20211901,
+            "par_surname": "Renowa",
+            "stud_surname": "Renowa",
+            "f_p2_sex": "M",
+            "entry_ygrp": 1,
+            "batch_num": 612345678,
+            "preferred_name": "Posy",
             "dob": "2000-01-01",
-            "par_name": "John & Mary",
-            "f_name": "Mr John Fid Austin",
+            "par_name": "Hugh & Rachel",
+            "f_name": "Hugh Renowa",
             "boarder": "N",
             "doa": "2019-09-29",
             "m_p1_sex": "F",
-            "timestamp": "{ts '2020-09-10 17:38:25'}",
-            "m_name": "Mrs Mary Mid Austin",
-            "entry_yr": 2020
-        }
-    }
+            "timestamp": "{ts '2021-01-19 15:00:29'}",
+            "m_name": "Rachel Clearland",
+            "entry_yr": 2021
+      }
+  }
     ```
  
 * **Error Response:**
@@ -404,9 +409,9 @@
 
 * **Sample Parameters:**
 
-  ```javascript
-    application_id=ANTONY05&stud_surname=Anton&given_name=Edward&preferred_name=Pie&dob=2000-01-01&sex=M&entry_yr=2020&entry_ygrp=11&boarder=N&doa=2019-09-29&par_surname=Austin&par_name=John %26 Mary&m_name=Mrs Mary Mid Austin&f_name=Mr John Fid Austin&m_p1_sex=F&f_p2_sex=M&batch_num=612345678
-  ```
+    ```javascript
+  application_id=20211901&stud_surname=Renowa&given_name=Posy&preferred_name=Posy&dob=2000-01-01&sex=F&entry_yr=2021&entry_ygrp=1&boarder=N&doa=2019-09-29&par_surname=Renowa&par_name=Hugh %26 Rachel&m_name=Rachel Clearland&f_name=Hugh Renowa&m_p1_sex=F&f_p2_sex=M&batch_num=612345678
+    ```
 
 * **Sample GET:** (With URL Encoded `token`)
 
