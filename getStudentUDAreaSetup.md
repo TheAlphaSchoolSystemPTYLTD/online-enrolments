@@ -33,109 +33,103 @@
 * **Success Response:**
 
     ```javascript
-    "ud_area_setup": [
-		{
-			"area_desc": "Student Stengths",
-			"area_code": 0
-		},
-		{
-			"area_desc": "Transport",
-			"area_code": 1
-		},
-		{
-			"area_desc": "Parent Access",
-			"area_code": 2
-		},
-		{
-			"area_desc": "Learning Needs",
-			"area_code": 3
-		},
-		{
-			"area_desc": "Seasonal Sport",
-			"area_code": 4
-		},
-		{
-			"area_desc": "Enrolment Testing",
-			"area_code": 5
-		},
-		{
-			"area_desc": "Enterprise Student Ranking",
-			"area_code": 500
+	{
+		"ud_area_setup": [
+				{
+					"area_desc": "Restrictions/Privileges",
+					"area_code": 8
+				},
+				{
+					"area_desc": "Special Needs",
+					"area_code": 9
+				},
+				{
+					"area_desc": "Transport",
+					"area_code": 1
+				},
+				{
+					"area_desc": "Parent Access",
+					"area_code": 2
+				}
+		],
+		"__tassversion": "01.000.043.0",
+		"token": {
+			"includelookups": true,
+			"timestamp": "{ts '2021-01-19 10:50:06'}"
 		}
-	]
+	}	
 	```
 
-	```javascript
-	"ud_area_field_setup": [
-		{
-			"eudfld1_desc": "Train pass",
-			"area_code": 1,
-			"eudfld1_trig": "",
-			"eudfld1_sort": 1
-		},
-		{
-			"eudfld2_sort": 1,
-			"area_code": 1,
-			"eudfld2_trig": "",
-			"eudfld2_desc": "Bus pass"
-		},
-		{
-			"eudfld24_desc": "Ferry Pass",
-			"eudfld24_sort": 1,
-			"eudfld24_trig": "",
-			"area_code": 1
-		},
-		{
-			"eudfld25_trig": "",
-			"eudfld25_desc": "Approved Passengers",
-			"area_code": 1,
-			"eudfld25_sort": 1
-		},
-		{
-			"eudfld31_sort": 5,
-			"area_code": 1,
-			"eudfld31_trig": "Y",
-			"eudfld31_desc": "Bus Pass Renewal date"
-		},
-		{
-			"eudfld41_sort": 1,
-			"eudfld41_desc": "what is this?",
+    ```javascript
+	{
+		"ud_area_field_setup": [
+				{
+					"eudfld1_desc": "Train pass",
+					"area_code": 1,
+					"eudfld1_trig": "",
+					"eudfld1_sort": 1
+				},
+				{
+					"eudfld2_sort": 1,
+					"area_code": 1,
+					"eudfld2_trig": "",
+					"eudfld2_desc": "Bus pass"
+				},
+				{
+					"eudfld3_trig": "Y",
+					"eudfld3_sort": 1,
+					"eudfld3_desc": "Authorised Tpt",
+					"area_code": 1
+				},
+				{
+					"eudfld11_sort": 1,
+					"eudfld11_trig": "",
+					"area_code": 1,
+					"eudfld11_desc": "Gov Bus 1"
+				}
+		],
+		"__tassversion": "01.000.043.0",
+		"area_code": 1,
+		"token": {
+			"includelookups": true,
+			"timestamp": "{ts '2021-01-19 10:53:51'}",
 			"area_code": 1
 		}
-	],
-	"area_code": 1
+	}	
 	```
 
-	```javascript
+    ```javascript
+{
 	"ud_area_ref_data": [
-		{
-			"eud_desc": "#523",
-			"eud_code": "052"
-		},
-		{
-			"eud_desc": "Love",
-			"eud_code": 10
-		},
-		{
-			"eud_desc": "#163",
-			"eud_code": 163
-		},
-		{
-			"eud_desc": "#486",
-			"eud_code": 486
-		},
-		{
-			"eud_desc": "#890",
-			"eud_code": 890
-		}
+			{
+				"eud_desc": "#523",
+				"eud_code": "052"
+			},
+			{
+				"eud_desc": "Love",
+				"eud_code": 10
+			},
+			{
+				"eud_desc": "#163",
+				"eud_code": 163
+			},
+			{
+				"eud_desc": "#486",
+				"eud_code": 486
+			},
+			{
+				"eud_desc": "#890",
+				"eud_code": 890
+			}
 	],
+	"__tassversion": "01.000.043.0",
 	"token": {
 		"eudfld_num": 11,
 		"includelookups": true,
-		"timestamp": "{ts '2019-02-08 14:02:16'}",
+		"timestamp": "{ts '2021-01-19 10:58:37'}",
 		"area_code": 1
 	}
-
+}
     ```
  
 * **Error Response:**
