@@ -35,23 +35,23 @@
 * **Success Response:**
 
     ```javascript
-{
-	"genders": [
-		{
-			"code": "F",
-			"desc": "Female"
-		},
-		{
-			"code": "M",
-			"desc": "Male"
+	{
+		"genders": [
+			{
+				"code": "F",
+				"desc": "Female"
+			},
+			{
+				"code": "M",
+				"desc": "Male"
+			}
+		],
+		"__tassversion": "01.053.3.000",
+		"token": {
+			"timestamp": "{ts '2021-01-19 09:37:57'}",
+			"codeonly": false
 		}
-	],
-	"__tassversion": "01.000.043.0",
-	"token": {
-		"timestamp": "{ts '2021-01-19 09:37:57'}",
-		"codeonly": false
 	}
-}
     ```
  
 * **Error Response:**
