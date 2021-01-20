@@ -30,8 +30,7 @@
 
 * **Success Response:**
 
-    ```javascript
-    
+	```javascript
 {
 	"languages": [
 		{
@@ -55,9 +54,10 @@
 		"timestamp": "{ts '2021-01-18 16:58:48'}",
 		"codeonly": false
 	}
-}
+}	
+	
+	```
 
-    ```
  
 * **Error Response:**
 
