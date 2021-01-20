@@ -31,30 +31,30 @@
 * **Success Response:**
 
     ```javascript
-{
-	"languages": [
-		{
-			"code": 3901,
-			"desc": "Albanian"
-		},
-		{
-			"code": 7301,
-			"desc": "Korean"
-		},
-		{
-			"code": 6900,
-			"desc": "Other Southeast Asian Languages"
+	{
+		"languages": [
+			{
+				"code": 3901,
+				"desc": "Albanian"
+			},
+			{
+				"code": 7301,
+				"desc": "Korean"
+			},
+			{
+				"code": 6900,
+				"desc": "Other Southeast Asian Languages"
+			}
+		],
+		"__status": "success",
+		"__tassversion": "01.053.3.000",
+		"__invalid": {},
+		"__locks": {},
+		"token": {
+			"timestamp": "{ts '2021-01-18 16:58:48'}",
+			"codeonly": false
 		}
-	],
-	"__status": "success",
-	"__tassversion": "01.053.3.000",
-	"__invalid": {},
-	"__locks": {},
-	"token": {
-		"timestamp": "{ts '2021-01-18 16:58:48'}",
-		"codeonly": false
 	}
-}
     ```
 
 
