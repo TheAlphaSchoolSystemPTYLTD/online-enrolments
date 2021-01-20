@@ -47,7 +47,7 @@
 	```javascript
 	{
 		"success": "You successfully saved 1 student(s).",
-		"__tassversion": "01.000.043.0",
+		"__tassversion": "01.053.3.000",
 		"token": {
 			"timestamp": "{ts '2021-01-19 15:27:50'}",
 			"area_code": 1,
