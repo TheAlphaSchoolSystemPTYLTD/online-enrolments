@@ -71,7 +71,7 @@
 	```javascript
 	{
 		"success": "You successfully uploaded 1 enrolment receipt(s).",
-		"__tassversion": "01.000.043.0",
+		"__tassversion": "01.053.3.000",
 		"token": {
 			"timestamp": "{ts '2021-01-19 15:23:30'}",
 			"enrolmentReceipts": [
