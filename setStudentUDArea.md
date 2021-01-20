@@ -225,25 +225,25 @@
 * **Sample Parameters:**
 
 	```javascript
- {
- 	"area_code":"1",
- 	"studentudarea":
- 	[
- 		{
- 			"id":"0021372",
- 			"eud1_flg":"Y",
- 			"eud11_code":"10",
- 			"eud12_code":"890",
- 			"eud21_text":"testing",
- 			"eud31_date":"2021-01-18",
- 			"eud41_attach_id":
- 			{
- 				"attachment_file_name":"test",
- 				"attachment_file":"ClRoaXMgaXMgYSB0ZXN0IGZpbGUuCkRvIG5vdCBpbmNsdWRlIGEgdGFibGUhISEKTmFtZQlRdWFudGl0eQlWYWx1ZQppUGFkCTEJNTAwCmlQaG9uZQkxCTEwMDAKVG90YWwJMgkxNTAw"
- 			}
- 		}
- 	]
- }
+	 {
+		"area_code":"1",
+		"studentudarea":
+		[
+			{
+				"id":"0021372",
+				"eud1_flg":"Y",
+				"eud11_code":"10",
+				"eud12_code":"890",
+				"eud21_text":"testing",
+				"eud31_date":"2021-01-18",
+				"eud41_attach_id":
+				{
+					"attachment_file_name":"test",
+					"attachment_file":"ClRoaXMgaXMgYSB0ZXN0IGZpbGUuCkRvIG5vdCBpbmNsdWRlIGEgdGFibGUhISEKTmFtZQlRdWFudGl0eQlWYWx1ZQppUGFkCTEJNTAwCmlQaG9uZQkxCTEwMDAKVG90YWwJMgkxNTAw"
+				}
+			}
+		]
+	 }
 	```
 
 * **Sample GET:** (With URL Encoded `token`)
