@@ -246,33 +246,33 @@
 * **Success Response:**
 
     ```javascript
-  {
-      "__status": "success",
-      "errors": [],
-      "__tassversion": "01.000.043.0",
-      "__invalid": {},
-      "__locks": {},
-      "token": {
-            "given_name": "Posy",
-            "sex": "F",
-            "application_id": 20211901,
-            "par_surname": "Renowa",
-            "stud_surname": "Renowa",
-            "f_p2_sex": "M",
-            "entry_ygrp": 1,
-            "batch_num": 612345678,
-            "preferred_name": "Posy",
-            "dob": "2000-01-01",
-            "par_name": "Hugh & Rachel",
-            "f_name": "Hugh Renowa",
-            "boarder": "N",
-            "doa": "2019-09-29",
-            "m_p1_sex": "F",
-            "timestamp": "{ts '2021-01-19 15:00:29'}",
-            "m_name": "Rachel Clearland",
-            "entry_yr": 2021
-      }
-  }
+    {
+        "__status": "success",
+        "errors": [],
+        "__tassversion": "01.053.3.000",
+        "__invalid": {},
+        "__locks": {},
+        "token": {
+                "given_name": "Posy",
+                "sex": "F",
+                "application_id": 20211901,
+                "par_surname": "Renowa",
+                "stud_surname": "Renowa",
+                "f_p2_sex": "M",
+                "entry_ygrp": 1,
+                "batch_num": 612345678,
+                "preferred_name": "Posy",
+                "dob": "2000-01-01",
+                "par_name": "Hugh & Rachel",
+                "f_name": "Hugh Renowa",
+                "boarder": "N",
+                "doa": "2019-09-29",
+                "m_p1_sex": "F",
+                "timestamp": "{ts '2021-01-19 15:00:29'}",
+                "m_name": "Rachel Clearland",
+                "entry_yr": 2021
+        }
+    }
     ```
  
 * **Error Response:**
