@@ -52,7 +52,7 @@
 					"area_code": 2
 				}
 		],
-		"__tassversion": "01.000.043.0",
+		"__tassversion": "01.053.3.000",
 		"token": {
 			"includelookups": true,
 			"timestamp": "{ts '2021-01-19 10:50:06'}"
@@ -88,7 +88,7 @@
 					"eudfld11_desc": "Gov Bus 1"
 				}
 		],
-		"__tassversion": "01.000.043.0",
+		"__tassversion": "01.053.3.000",
 		"area_code": 1,
 		"token": {
 			"includelookups": true,
@@ -99,37 +99,37 @@
 	```
 
     ```javascript
-{
-	"ud_area_ref_data": [
-			{
-				"eud_desc": "#523",
-				"eud_code": "052"
-			},
-			{
-				"eud_desc": "Love",
-				"eud_code": 10
-			},
-			{
-				"eud_desc": "#163",
-				"eud_code": 163
-			},
-			{
-				"eud_desc": "#486",
-				"eud_code": 486
-			},
-			{
-				"eud_desc": "#890",
-				"eud_code": 890
-			}
-	],
-	"__tassversion": "01.000.043.0",
-	"token": {
-		"eudfld_num": 11,
-		"includelookups": true,
-		"timestamp": "{ts '2021-01-19 10:58:37'}",
-		"area_code": 1
+	{
+		"ud_area_ref_data": [
+				{
+					"eud_desc": "#523",
+					"eud_code": "052"
+				},
+				{
+					"eud_desc": "Love",
+					"eud_code": 10
+				},
+				{
+					"eud_desc": "#163",
+					"eud_code": 163
+				},
+				{
+					"eud_desc": "#486",
+					"eud_code": 486
+				},
+				{
+					"eud_desc": "#890",
+					"eud_code": 890
+				}
+		],
+		"__tassversion": "01.053.3.000",
+		"token": {
+			"eudfld_num": 11,
+			"includelookups": true,
+			"timestamp": "{ts '2021-01-19 10:58:37'}",
+			"area_code": 1
+		}
 	}
-}
     ```
  
 * **Error Response:**
