@@ -31,40 +31,30 @@
 * **Success Response:**
 
     ```javascript
-    "religions": [
-		{
-			"code": "AN",
-			"desc": "Anglican"
-		},
-		{
-			"code": "AG",
-			"desc": "Assemblies of God"
-		},
-		{
-			"code": "BA",
-			"desc": "Baptist"
-		},
-		{
-			"code": "BU",
-			"desc": "Buddhist"
-		},
-		{
-			"code": "CH",
-			"desc": "Church of Christ"
-		},
-		{
-			"code": "LU",
-			"desc": "Lutheran"
-		},
-		{
-			"code": "ME",
-			"desc": "Methodist"
-		},
-		{
-			"code": "PR",
-			"desc": "Presbyterian"
+	{
+		"religions": [
+				{
+					"code": "AN",
+					"desc": "Anglican"
+				},
+				{
+					"code": "BA",
+					"desc": "Baptist"
+				},
+				{
+					"code": "BU",
+					"desc": "Buddhist"
+				}
+		],
+		"__status": "success",
+		"__tassversion": "01.053.3.000",
+		"__invalid": {},
+		"__locks": {},
+		"token": {
+			"timestamp": "{ts '2021-01-19 10:14:01'}",
+			"codeonly": false
 		}
-	]
+	}
     ```
  
 * **Error Response:**
