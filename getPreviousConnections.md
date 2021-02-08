@@ -31,24 +31,30 @@
 * **Success Response:**
 
     ```javascript
-    "connections": [
-		{
-			"code": "BR",
-			"desc": "Brother in School"
-		},
-		{
-			"code": "N",
-			"desc": "None"
-		},
-		{
-			"code": "PS",
-			"desc": "Parent Past Student"
-		},
-		{
-			"code": "SI",
-			"desc": "Sister in School"
+	{
+		"connections": [
+				{
+					"code": "BR",
+					"desc": "Brother in School"
+				},
+				{
+					"code": "N",
+					"desc": "None"
+				},
+				{
+					"code": "SC",
+					"desc": "Scholarship"
+				}
+		],
+		"__status": "success",
+		"__tassversion": "01.053.3.000",
+		"__invalid": {},
+		"__locks": {},
+		"token": {
+			"timestamp": "{ts '2021-01-19 10:06:25'}",
+			"codeonly": false
 		}
-	]
+	}
     ```
  
 * **Error Response:**
