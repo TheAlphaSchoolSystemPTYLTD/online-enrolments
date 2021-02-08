@@ -31,46 +31,79 @@
 * **Success Response:**
 
     ```javascript
-    "ud": [
-		{
-			"flag_name": "UD1_FLG",
-			"id": 1,
-			"flag_value": "01",
-			"desc": "Learning Support",
-			"name": "UD1_DESC"
-		},
-		...,
-		{
-			"flag_name": "UD11_FLG",
-			"id": 11,
-			"lookups": [
-				{
-					"code": "L",
-					"desc": "Learners"
-				},
-				{
-					"code": "O",
-					"desc": "Open"
-				},
-				{
-					"code": "P",
-					"desc": "Provisional"
-				}
-			],
-			"flag_value": 11,
-			"desc": "Drivers Licence",
-			"name": "UD11_DESC"
-		},
-		...,
-		{
-			"flag_name": "UD22_FLG",
-			"id": 22,
-			"flag_value": "",
-			"desc": "2nd Pref Yr",
-			"name": "UD22_DESC"
+	{
+		"ud": [
+			{
+				"flag_name": "UD1_FLG",
+				"id": 1,
+				"flag_value": "",
+				"desc": "Interviewed (Prin)",
+				"name": "UD1_DESC"
+			},
+			{
+				"flag_name": "UD2_FLG",
+				"id": 2,
+				"flag_value": "01",
+				"desc": "Repeat Year",
+				"name": "UD2_DESC"
+			},
+			...,
+			{
+				"flag_name": "UD11_FLG",
+				"id": 11,
+				"lookups": [
+					{
+						"code": "ARG",
+						"desc": "Argyle St"
+					},
+					{
+						"code": "AST",
+						"desc": "Asplet Terrace"
+					},
+					{
+						"code": "BH",
+						"desc": "Bisbane Home"
+					},
+					{
+						"code": "BWN",
+						"desc": "Bowen Hills"
+					}
+				]
+			},
+			{
+				"flag_name": "UD12_FLG",
+				"id": 12,
+				"lookups": [
+					{
+					"code": "USA",
+					"desc": "American"
+					},
+					{
+					"code": "AUS",
+					"desc": "Australian"
+					},
+					{
+					"code": "BRI",
+					"desc": "British"
+					}
+				]
+			},
+			...,
+			{
+				"flag_name": "UD21_FLG",
+				"id": 21,
+				"flag_value": 21,
+				"desc": "Visa Number/Date",
+				"name": "UD21_DESC"
+			},
+			...
+		],
+		"__tassversion": "01.053.3.000",
+		"token": {
+			"includelookups": true,
+			"timestamp": "{ts '2021-01-19 11:30:43'}"
 		}
-		...
-	]
+	}
     ```
  
 * **Error Response:**
