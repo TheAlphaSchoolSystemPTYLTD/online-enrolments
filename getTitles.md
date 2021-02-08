@@ -36,28 +36,29 @@
 
     ```javascript
 	{
-	    "titles":[
-	        {
-	            "code":"Miss",
-	            "desc":"Miss"
-	        },
-	        {
-	            "code":"Mrs",
-	            "desc":"Mrs"
-	        },
-	        {
-	            "code":"Ms",
-	            "desc":"Ms"
-	        },
-	        {
-	            "code":"Mr",
-	            "desc":"Mr"
-	        }
-	    ],
-	    "token":{
-	        "timestamp":"{ts '2020-05-21 16:33:48'}",
-	        "codeonly":false
-	    }
+		"titles": [
+			{
+				"code": "Dr",
+				"desc": "Dr"
+			},
+			{
+				"code": "Prof",
+				"desc": "Prof"
+			},
+			{
+				"code": "Mrs",
+				"desc": "Mrs"
+			},
+			{
+				"code": "Ms",
+				"desc": "Ms"
+			}
+		],
+		"__tassversion": "01.053.3.000",
+		"token": {
+			"timestamp": "{ts '2021-01-19 12:13:17'}",
+			"codeonly": false
+		}
 	}
     ```
  
