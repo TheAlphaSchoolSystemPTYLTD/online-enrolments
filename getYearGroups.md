@@ -31,64 +31,43 @@
 * **Success Response:**
 
     ```javascript
-    "yeargroups": [
-		{
-			"code": -1,
-			"desc": "K"
-		},
-		{
-			"code": 0,
-			"desc": "P"
-		},
-		{
-			"code": 1,
-			"desc": 1
-		},
-		{
-			"code": 2,
-			"desc": 2
-		},
-		{
-			"code": 3,
-			"desc": 3
-		},
-		{
-			"code": 4,
-			"desc": 4
-		},
-		{
-			"code": 5,
-			"desc": 5
-		},
-		{
-			"code": 6,
-			"desc": 6
-		},
-		{
-			"code": 7,
-			"desc": 7
-		},
-		{
-			"code": 8,
-			"desc": 8
-		},
-		{
-			"code": 9,
-			"desc": 9
-		},
-		{
-			"code": 10,
-			"desc": 10
-		},
-		{
-			"code": 11,
-			"desc": 11
-		},
-		{
-			"code": 12,
-			"desc": 12
+	{
+		"yeargroups": [
+			{
+				"code": -3,
+				"desc": "BB"
+			},
+			{
+				"code": -2,
+				"desc": "AA"
+			},
+			{
+				"code": -1,
+				"desc": "PK"
+			},
+			{
+				"code": 0,
+				"desc": "P"
+			},
+			{
+				"code": 1,
+				"desc": 1
+			},
+			{
+				"code": 2,
+				"desc": 2
+			},
+			...
+		],
+		"__status": "success",
+		"__tassversion": "01.053.3.000",
+		"__invalid": {},
+		"__locks": {},
+		"token": {
+			"timestamp": "{ts '2021-01-19 12:17:31'}",
+			"codeonly": false
 		}
-	]
+	}
     ```
  
 * **Error Response:**
