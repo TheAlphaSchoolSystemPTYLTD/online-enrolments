@@ -4,11 +4,15 @@
 
 * **Version History:**
 
-    TASS v55.0 - Method Added
+    TASS v48.0 - Method Added
+
+    TASS v51.4 - Return a new field par_e_mail2 as email2 in contacts.
+
+    TASS v52.0 - Return 3 new fields `preferred_surname`, `first_name`, `other_name` for each student. Return 16 new fields `m_description`, `m_title`, `m_initials`, `m_surname`, `m_first_name`, `m_other_name`, `m_preferred_name`, `m_suffix`, `f_description`, `f_title`, `f_initials`, `f_surname`, `f_first_name`, `f_other_name`, `f_preferred_name`, `f_suffix` for parent1 & parent2 per contact.
 
 * **Version:**
 
-  3
+  1
 
 * **Method:**
 
@@ -155,9 +159,7 @@
 * **Sample Parameters:**
 
   ```javascript
-    {
-        "commtype": "ALL"
-    }
+    commtype=ALL
   ```
 
 * **Sample GET:** (With URL Encoded `token`)

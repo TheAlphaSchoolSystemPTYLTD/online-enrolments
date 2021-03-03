@@ -4,11 +4,19 @@
 
 * **Version History:**
 
-    TASS v55.0 - Method Added
+    TASS v48.0 - Method Added
+
+    TASS v51.4 - Added a new field par_e_mail2. Added validation for e_mail, par_e_mail, and par_e_mail2.
+
+    TASS v52.0 - Add 17 new fields `stud_first_name`, `stud_other_names`, `stud_preferred_surname`, `f_title`, `f_initials`, `f_surname`, `f_first_name`, `f_other_names`, `f_preferred_name`, `f_suffix`, `m_title`, `m_initials`, `m_surname`, `m_first_name`, `m_other_names`, `m_preferred_name`, `m_suffix`. User needs to either supply parents' name tokens or `m_name` & `f_name`.
+
+    TASS v53.0 - Added two new fields m_p1_sex, f_p2_sex.
+
+    TASS v54.0 - Add validation for `m_p1_sex`, `f_p2_sex` against m_name and f_name or their name tokens.
 
 * **Version:**
 
-  3
+  1
 
 * **Method:**
 
@@ -395,25 +403,7 @@
 * **Sample Parameters:**
 
   ```javascript
-    {
-        "application_id": "ANTONY05",
-        "stud_surname": "Anton",
-        "given_name": "Edward",
-        "preferred_name": "Pie",
-        "dob": "2000-01-01",
-        "sex": "M",
-        "entry_yr": "2020",
-        "entry_ygrp": 11,
-        "boarder": "N",
-        "doa": "2019-09-29",
-        "par_surname": "Austin",
-        "par_name": "John %26 Mary",
-        "m_name": "Mrs Mary Mid Austin",
-        "f_name": "Mr John Fid Austin",
-        "m_p1_sex": "F",
-        "f_p2_sex": "M",
-        "batch_num": "612345678"
-    }
+    application_id=ANTONY05&stud_surname=Anton&given_name=Edward&preferred_name=Pie&dob=2000-01-01&sex=M&entry_yr=2020&entry_ygrp=11&boarder=N&doa=2019-09-29&par_surname=Austin&par_name=John %26 Mary&m_name=Mrs Mary Mid Austin&f_name=Mr John Fid Austin&m_p1_sex=F&f_p2_sex=M&batch_num=612345678
   ```
 
 * **Sample GET:** (With URL Encoded `token`)

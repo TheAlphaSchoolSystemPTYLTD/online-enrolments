@@ -4,11 +4,11 @@
 
 * **Version History:**
 
-	TASS v53.0 - Method Added
+    TASS v52.0 - Add 2 new fields `first_name`, `other_name`, and `preferred_surname`. `given_name` is now a conditional field that accepts 101 characters.
 
 * **Version:**
 
-	3
+	2
     
 * **Method:**
 
@@ -166,7 +166,7 @@
 					"sud6_flg": "Y",
 					"prosp_date": "2018-01-01 00:00:00.000",
 					"interview_date": "2018-01-01 00:00:00.000",
-					"entry_yr": 2021,
+					"entry_yr": 2019,
 					"sud12_code": "AUS",
 					"sud20_code": "ABC"
 				}
@@ -533,7 +533,7 @@
 				"date_arrival":"2014-02-13 00:00:00.000",
 				"dob":"1995-10-14 00:00:00.000",
 				"e_mail":"abc_news@abc.com",
-				"entry_yr":"2021",
+				"entry_yr":"2019",
 				"entry_ygrp":"7",
 				"sex":"M",
 				"mob_phone":"0420221002",

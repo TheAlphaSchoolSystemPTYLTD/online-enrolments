@@ -4,11 +4,11 @@
 
 * **Version History:**
 
-    TASS v55.0 - Method Added
+    TASS v48.0 - Method Added
 
 * **Version:**
 
-	3
+	1
 
 * **Method:**
 
@@ -90,10 +90,7 @@
 * **Sample Parameters:**
 
 	```javascript
-	{
-		"studcode": 20114,
-		"areacode": 1
-	}
+	studcode=20114&areacode=1
 	```
 
 * **Sample GET:** (With URL Encoded `token`)

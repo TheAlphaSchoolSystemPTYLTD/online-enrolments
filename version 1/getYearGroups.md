@@ -1,14 +1,14 @@
-**getLanguages**
+**getYearGroups**
 ----
-	Returns an array of structured language data in JSON format.
+	Returns an array of structured year group data in JSON format.
 	
 * **Version History:**
 
-	TASS v55.0 - Method Added
+	TASS v49.1 - Method Added
 
 * **Version:**
 
-	3
+	1
 
 * **Method:**
 
@@ -31,10 +31,62 @@
 * **Success Response:**
 
     ```javascript
-    "languages": [
+    "yeargroups": [
 		{
-			"code": "ENG",
-			"desc": "English"
+			"code": -1,
+			"desc": "K"
+		},
+		{
+			"code": 0,
+			"desc": "P"
+		},
+		{
+			"code": 1,
+			"desc": 1
+		},
+		{
+			"code": 2,
+			"desc": 2
+		},
+		{
+			"code": 3,
+			"desc": 3
+		},
+		{
+			"code": 4,
+			"desc": 4
+		},
+		{
+			"code": 5,
+			"desc": 5
+		},
+		{
+			"code": 6,
+			"desc": 6
+		},
+		{
+			"code": 7,
+			"desc": 7
+		},
+		{
+			"code": 8,
+			"desc": 8
+		},
+		{
+			"code": 9,
+			"desc": 9
+		},
+		{
+			"code": 10,
+			"desc": 10
+		},
+		{
+			"code": 11,
+			"desc": 11
+		},
+		{
+			"code": 12,
+			"desc": 12
 		}
 	]
     ```
@@ -54,22 +106,20 @@
 * **Sample Parameters:**
 
 	```javascript
-	{
-		"codeonly":"false"
-	}
+	codeonly=false
 	```
 
 * **Sample GET:** (With URL Encoded `token`)
 
 	```HTML
-	http://api.tasscloud.com.au/tassweb/api/?appcode=DEMOOE&v=1&method=GetLanguages&token=3w6XHPP1j163aHf%2FHRAnLA%3D%3D&company=10
+	http://api.tasscloud.com.au/tassweb/api/?appcode=DEMOOE&v=1&method=GetYearGroups&token=3w6XHPP1j163aHf%2FHRAnLA%3D%3D&company=10
 	```
   
 * **Sample POST:**
 
 	```HTML
 	<form id="postForm" name="postForm" method="POST" action="http://api.tasscloud.com.au/tassweb/api/">
-		<input type="hidden" name="method" value="GetLanguages" />
+		<input type="hidden" name="method" value="GetYearGroups" />
 		<input type="hidden" name="appcode" value="DEMOOE" />
 		<input type="hidden" name="company" value="10" />
 		<input type="hidden" name="v" value="1" />

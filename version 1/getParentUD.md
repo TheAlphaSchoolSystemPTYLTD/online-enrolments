@@ -4,11 +4,11 @@
 	
 * **Version History:**
 
-	TASS v55.0 - Method Added
+	TASS v49.1 - Method Added
 
 * **Version:**
 
-	3
+	1
 
 * **Method:**
 
@@ -70,9 +70,7 @@
 * **Sample Parameters:**
 
 	```javascript
-	{
-		"parcode":10040
-	}
+	parcode=10040
 	```
 
 * **Sample GET:** (With URL Encoded `token`)

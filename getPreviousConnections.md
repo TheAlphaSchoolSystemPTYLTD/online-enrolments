@@ -4,11 +4,11 @@
 	
 * **Version History:**
 
-	TASS v49.1 - Method Added
+	TASS v55.0 - Method Added
 
 * **Version:**
 
-	1
+	3
 
 * **Method:**
 
@@ -66,7 +66,9 @@
 * **Sample Parameters:**
 
 	```javascript
-	codeonly=false
+	{
+		"codeonly":"false"
+	}
 	```
 
 * **Sample GET:** (With URL Encoded `token`)

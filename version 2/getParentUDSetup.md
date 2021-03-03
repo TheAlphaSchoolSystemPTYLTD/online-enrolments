@@ -4,11 +4,11 @@
 	
 * **Version History:**
 
-	TASS v55.0- Method Added
+	TASS v49.3 - Method Added
 
 * **Version:**
 
-	3
+	2
 
 * **Method:**
 
@@ -112,9 +112,7 @@
 * **Sample Parameters:**
 
 	```javascript
-	{
-		"includelookups":"true"
-	}
+	{"includelookups":"true"}
 	```
 
 * **Sample GET:** (With URL Encoded `token`)

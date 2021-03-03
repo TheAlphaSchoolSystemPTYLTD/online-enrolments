@@ -4,11 +4,13 @@
 
 * **Version History:**
 
-    TASS v55.0 - Method Added
+    TASS v48.0 - Method Added
+
+    TASS v52.0 - Return 3 new fields `preferred_surname`, `first_name`, `other_name` in result.
 
 * **Version:**
 
-  3
+  1
 
 * **Method:**
 
@@ -170,9 +172,7 @@
 * **Sample Parameters:**
 
   ```javascript
-    {
-        "studcode":"0010245"
-    }
+    studcode=0010245
   ```
 
 * **Sample GET:** (With URL Encoded `token`)

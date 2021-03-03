@@ -76,7 +76,9 @@
 * **Sample Parameters:**
 
 	```javascript
-	{"codeonly":false}
+	{
+		"codeonly":"false"
+	}
 	```
 
 * **Sample GET:** (With URL Encoded `token`)

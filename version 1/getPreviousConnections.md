@@ -1,14 +1,14 @@
-**getResidencyStatuses**
+**getPreviousConnections**
 ----
-	Returns an array of structured residency status data in JSON format.
+	Returns an array of structured previous connection data in JSON format.
 	
 * **Version History:**
 
-	TASS v55.0- Method Added
+	TASS v49.1 - Method Added
 
 * **Version:**
 
-	3
+	1
 
 * **Method:**
 
@@ -31,42 +31,22 @@
 * **Success Response:**
 
     ```javascript
-    "statuses": [
+    "connections": [
 		{
-			"census_flg": "Y",
-			"code": "AV",
-			"expcode": "NACPR1",
-			"citizen_flg": "N",
-			"permres_flg": "N",
-			"res_exp_code": "NACPR1",
-			"desc": "Approved Student"
+			"code": "BR",
+			"desc": "Brother in School"
 		},
 		{
-			"census_flg": "Y",
-			"code": "AC",
-			"expcode": "AC",
-			"citizen_flg": "Y",
-			"permres_flg": "Y",
-			"res_exp_code": "AC",
-			"desc": "Australian Citizen"
+			"code": "N",
+			"desc": "None"
 		},
 		{
-			"census_flg": "N",
-			"code": "OS",
-			"expcode": "NACPR",
-			"citizen_flg": "N",
-			"permres_flg": "N",
-			"res_exp_code": "NACPR",
-			"desc": "Overseas Student"
+			"code": "PS",
+			"desc": "Parent Past Student"
 		},
 		{
-			"census_flg": "Y",
-			"code": "PR",
-			"expcode": "PRA",
-			"citizen_flg": "N",
-			"permres_flg": "Y",
-			"res_exp_code": "PRA",
-			"desc": "Permanent Resident"
+			"code": "SI",
+			"desc": "Sister in School"
 		}
 	]
     ```
@@ -86,22 +66,20 @@
 * **Sample Parameters:**
 
 	```javascript
-	{
-		"codeonly":"false"
-	}
+	codeonly=false
 	```
 
 * **Sample GET:** (With URL Encoded `token`)
 
 	```HTML
-	http://api.tasscloud.com.au/tassweb/api/?appcode=DEMOOE&v=1&method=GetResidencyStatuses&token=3w6XHPP1j163aHf%2FHRAnLA%3D%3D&company=10
+	http://api.tasscloud.com.au/tassweb/api/?appcode=DEMOOE&v=1&method=GetPreviousConnections&token=3w6XHPP1j163aHf%2FHRAnLA%3D%3D&company=10
 	```
   
 * **Sample POST:**
 
 	```HTML
 	<form id="postForm" name="postForm" method="POST" action="http://api.tasscloud.com.au/tassweb/api/">
-		<input type="hidden" name="method" value="GetResidencyStatuses" />
+		<input type="hidden" name="method" value="GetPreviousConnections" />
 		<input type="hidden" name="appcode" value="DEMOOE" />
 		<input type="hidden" name="company" value="10" />
 		<input type="hidden" name="v" value="1" />

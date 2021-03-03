@@ -1,14 +1,14 @@
-**getLanguages**
+**getCampuses**
 ----
-	Returns an array of structured language data in JSON format.
-	
+	Returns an array of structured campus data in JSON format.
+
 * **Version History:**
 
-	TASS v55.0 - Method Added
+	TASS v49.1 - Method Added
 
 * **Version:**
 
-	3
+	1
 
 * **Method:**
 
@@ -31,10 +31,14 @@
 * **Success Response:**
 
     ```javascript
-    "languages": [
+    "campuses": [
 		{
-			"code": "ENG",
-			"desc": "English"
+			"code": "JU",
+			"desc": "Junior School (Billabong Rd)"
+		},
+		{
+			"code": "SE",
+			"desc": "Senior School (Curlew St)"
 		}
 	]
     ```
@@ -54,22 +58,20 @@
 * **Sample Parameters:**
 
 	```javascript
-	{
-		"codeonly":"false"
-	}
+	codeonly=false
 	```
 
 * **Sample GET:** (With URL Encoded `token`)
 
 	```HTML
-	http://api.tasscloud.com.au/tassweb/api/?appcode=DEMOOE&v=1&method=GetLanguages&token=3w6XHPP1j163aHf%2FHRAnLA%3D%3D&company=10
+	http://api.tasscloud.com.au/tassweb/api/?appcode=DEMOOE&v=1&method=GetCampuses&token=3w6XHPP1j163aHf%2FHRAnLA%3D%3D&company=10
 	```
   
 * **Sample POST:**
 
 	```HTML
 	<form id="postForm" name="postForm" method="POST" action="http://api.tasscloud.com.au/tassweb/api/">
-		<input type="hidden" name="method" value="GetLanguages" />
+		<input type="hidden" name="method" value="GetCampuses" />
 		<input type="hidden" name="appcode" value="DEMOOE" />
 		<input type="hidden" name="company" value="10" />
 		<input type="hidden" name="v" value="1" />
