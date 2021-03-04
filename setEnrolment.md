@@ -237,11 +237,8 @@
 
     ```javascript
     {
-        "__status": "success",
         "errors": [],
         "__tassversion": "01.053.3.000",
-        "__invalid": {},
-        "__locks": {},
         "token": {
                 "given_name": "Posy",
                 "sex": "F",

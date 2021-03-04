@@ -32,46 +32,37 @@
 
     ```javascript
 	{
-		"ud": [
+		"__tassversion":"01.000.043.0",
+		"token":{
+			"includelookups":true,
+			"timestamp":"{ts '2021-03-04 12:17:49'}"
+		},
+		"ud":[
 			{
-				"flag_name": "UD1_FLG",
-				"id": 1,
-				"flag_value": "",
-				"desc": "Active Church Attend",
-				"name": "UD1_DESC"
+				"flag_name":"UD1_FLG",
+				"id":1,
+				"flag_value":"",
+				"desc":"Active Church Attend",
+				"name":"UD1_DESC"
 			},
-			...,
 			{
-				"flag_name": "UD12_FLG",
-				"id": 12,
-				"lookups": [
+				"flag_name":"UD11_FLG",
+				"id":11,
+				"lookups":[
 					{
-						"code": "BCC",
-						"desc": "Brisbane City Church"
+						"code":"CRI",
+						"desc":"Cricket Match"
 					},
 					{
-						"code": "BUL",
-						"desc": "Bulimba"
+						"code":"DEB",
+						"desc":"Debating"
 					}
 				],
-				"flag_value": "",
-				"desc": "Local Church",
-				"name": "UD12_DESC"
-			},
-			...,
-			{
-				"flag_name": "UD25_FLG",
-				"id": 25,
-				"flag_value": 22,
-				"desc": "Employer's Name",
-				"name": "UD25_DESC"
+				"flag_value":"",
+				"desc":"Sport Interest",
+				"name":"UD11_DESC"
 			}
-		],
-		"__tassversion": "01.053.3.000",
-		"token": {
-				"includelookups": true,
-				"timestamp": "{ts '2021-01-19 09:52:45'}"
-		}
+		]
 	}
     ```
  

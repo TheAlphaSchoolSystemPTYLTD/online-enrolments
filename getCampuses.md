@@ -46,10 +46,7 @@
 				"desc": "Junior School (Billabong Road)"
 			}
 		],
-		"__status": "success",
 		"__tassversion": "01.053.3.000",
-		"__invalid": {},
-		"__locks": {},
 		"token": {
 			"timestamp": "{ts '2021-01-18 15:28:13'}",
 			"codeonly": false

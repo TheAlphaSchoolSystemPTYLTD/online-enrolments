@@ -31,45 +31,33 @@
 * **Success Response:**
 
     ```javascript
-{
-	"schools": [
+	{
+		"__tassversion":"01.000.043.0",
+		"schools":[
 			{
-				"region_desc": "Melbourne City",
-				"code": "BALCC",
-				"region_code": "MELC",
-				"tass_cmpy_code_desc": "",
-				"export_code": "",
-				"tass_cmpy_code": "",
-				"desc": "Ballarat Christian College"
+				"region_desc":"Melbourne City",
+				"code":"BALCC",
+				"region_code":"MELC",
+				"tass_cmpy_code_desc":"",
+				"export_code":"",
+				"tass_cmpy_code":"",
+				"desc":"Ballarat Christian College"
 			},
 			{
-				"region_desc": "",
-				"code": "BSH",
-				"region_code": "",
-				"tass_cmpy_code_desc": "",
-				"export_code": "",
-				"tass_cmpy_code": "",
-				"desc": "Brisbane State High School"
-			},
-			{
-				"region_desc": "Bundaberg Cluster",
-				"code": "BUNDC",
-				"region_code": "BUND",
-				"tass_cmpy_code_desc": "",
-				"export_code": "",
-				"tass_cmpy_code": "",
-				"desc": "Bundaberg Christian School"
+				"region_desc":"",
+				"code":"BSH",
+				"region_code":"",
+				"tass_cmpy_code_desc":"",
+				"export_code":"",
+				"tass_cmpy_code":"",
+				"desc":"Brisbane State High School"
 			}
-	],
-	"__status": "success",
-	"__tassversion": "01.053.3.000",
-	"__invalid": {},
-	"__locks": {},
-	"token": {
-		"timestamp": "{ts '2021-01-18 16:42:43'}",
-		"codeonly": false
+		],
+		"token":{
+			"timestamp":"{ts '2021-03-04 12:13:56'}",
+			"codeonly":false
+		}
 	}
-}
     ```
  
 * **Error Response:**

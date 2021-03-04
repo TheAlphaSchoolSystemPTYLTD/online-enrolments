@@ -32,40 +32,44 @@
 
     ```javascript
 	{
-		"yeargroups": [
+		"__tassversion":"01.000.043.0",
+		"yeargroups":[
 			{
-				"code": -3,
-				"desc": "BB"
+				"code":-2,
+				"desc":"AA"
 			},
 			{
-				"code": -2,
-				"desc": "AA"
+				"code":-1,
+				"desc":"PK"
 			},
 			{
-				"code": -1,
-				"desc": "PK"
+				"code":0,
+				"desc":"P"
 			},
 			{
-				"code": 0,
-				"desc": "P"
+				"code":1,
+				"desc":1
 			},
 			{
-				"code": 1,
-				"desc": 1
+				"code":2,
+				"desc":2
 			},
 			{
-				"code": 2,
-				"desc": 2
+				"code":3,
+				"desc":3
 			},
-			...
+			{
+				"code":4,
+				"desc":4
+			},
+			{
+				"code":5,
+				"desc":5
+			}
 		],
-		"__status": "success",
-		"__tassversion": "01.053.3.000",
-		"__invalid": {},
-		"__locks": {},
-		"token": {
-			"timestamp": "{ts '2021-01-19 12:17:31'}",
-			"codeonly": false
+		"token":{
+			"timestamp":"{ts '2021-03-04 12:26:30'}",
+			"codeonly":false
 		}
 	}
     ```

@@ -32,43 +32,31 @@
 
     ```javascript
 	{
-		"statuses": [
+		"__tassversion":"01.000.043.0",
+		"token":{
+			"timestamp":"{ts '2021-03-04 12:21:07'}",
+			"codeonly":false
+		},
+		"statuses":[
 			{
-				"census_flg": "Y",
-				"code": "AUS",
-				"expcode": "XXXX34",
-				"citizen_flg": "Y",
-				"permres_flg": "N",
-				"res_exp_code": "XXXX34",
-				"desc": "Australian Citizen"
+				"census_flg":"Y",
+				"code":"AUS",
+				"expcode":"XXXX34",
+				"citizen_flg":"Y",
+				"permres_flg":"N",
+				"res_exp_code":"XXXX34",
+				"desc":"Australian Citizen"
 			},
 			{
-				"census_flg": "Y",
-				"code": "PR",
-				"expcode": "",
-				"citizen_flg": "N",
-				"permres_flg": "Y",
-				"res_exp_code": "",
-				"desc": "Australian Permanent Resident"
-			},
-			{
-				"census_flg": "N",
-				"code": "FFS",
-				"expcode": "FULLFEESTUD",
-				"citizen_flg": "N",
-				"permres_flg": "N",
-				"res_exp_code": "FULLFEESTUD",
-				"desc": "Full Fee paying Overseas Student"
+				"census_flg":"Y",
+				"code":"PR",
+				"expcode":"",
+				"citizen_flg":"N",
+				"permres_flg":"Y",
+				"res_exp_code":"",
+				"desc":"Australian Permanent Resident"
 			}
-		],
-		"__status": "success",
-		"__tassversion": "01.053.3.000",
-		"__invalid": {},
-		"__locks": {},
-		"token": {
-			"timestamp": "{ts '2021-01-19 10:17:57'}",
-			"codeonly": false
-		}
+		]
 	}
     ```
  

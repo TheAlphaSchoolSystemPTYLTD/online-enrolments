@@ -32,27 +32,24 @@
 
     ```javascript
 	{
-		"connections": [
-				{
-					"code": "BR",
-					"desc": "Brother in School"
-				},
-				{
-					"code": "N",
-					"desc": "None"
-				},
-				{
-					"code": "SC",
-					"desc": "Scholarship"
-				}
+		"__tassversion":"01.000.043.0",
+		"connections":[
+			{
+				"code":"N",
+				"desc":"None"
+			},
+			{
+				"code":"SC",
+				"desc":"Scholarship"
+			},
+			{
+				"code":"TC",
+				"desc":"Teacher in School"
+			}
 		],
-		"__status": "success",
-		"__tassversion": "01.053.3.000",
-		"__invalid": {},
-		"__locks": {},
-		"token": {
-			"timestamp": "{ts '2021-01-19 10:06:25'}",
-			"codeonly": false
+		"token":{
+			"timestamp":"{ts '2021-03-04 12:18:57'}",
+			"codeonly":false
 		}
 	}
     ```

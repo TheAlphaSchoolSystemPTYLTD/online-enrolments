@@ -32,27 +32,20 @@
 
     ```javascript
 	{
-		"religions": [
-				{
-					"code": "AN",
-					"desc": "Anglican"
-				},
-				{
-					"code": "BA",
-					"desc": "Baptist"
-				},
-				{
-					"code": "BU",
-					"desc": "Buddhist"
-				}
+		"religions":[
+			{
+				"code":"AN",
+				"desc":"Anglican"
+			},
+			{
+				"code":"BA",
+				"desc":"Baptist"
+			}
 		],
-		"__status": "success",
-		"__tassversion": "01.053.3.000",
-		"__invalid": {},
-		"__locks": {},
-		"token": {
-			"timestamp": "{ts '2021-01-19 10:14:01'}",
-			"codeonly": false
+		"__tassversion":"01.000.043.0",
+		"token":{
+			"timestamp":"{ts '2021-03-04 12:19:42'}",
+			"codeonly":false
 		}
 	}
     ```

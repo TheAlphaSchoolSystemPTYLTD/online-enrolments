@@ -32,27 +32,24 @@
 
     ```javascript
 	{
-		"languages": [
+		"__tassversion":"01.000.043.0",
+		"languages":[
 			{
-				"code": 3901,
-				"desc": "Albanian"
+				"code":9201,
+				"desc":"Acholi"
 			},
 			{
-				"code": 7301,
-				"desc": "Korean"
+				"code":8601,
+				"desc":"Adnymathanha (Yura Ngawarla)"
 			},
 			{
-				"code": 6900,
-				"desc": "Other Southeast Asian Languages"
+				"code":9200,
+				"desc":"African Languages (Excluding North Africa)"
 			}
 		],
-		"__status": "success",
-		"__tassversion": "01.053.3.000",
-		"__invalid": {},
-		"__locks": {},
-		"token": {
-			"timestamp": "{ts '2021-01-18 16:58:48'}",
-			"codeonly": false
+		"token":{
+			"timestamp":"{ts '2021-03-04 12:15:42'}",
+			"codeonly":false
 		}
 	}
     ```
