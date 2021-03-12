@@ -10,6 +10,10 @@
 
 	3
 
+* **Permission:**
+
+    Enrolments > Enrolments/Enrolled Parent - View
+
 * **Method:**
 
 	`GET | POST`

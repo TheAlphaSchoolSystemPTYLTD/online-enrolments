@@ -9,6 +9,10 @@
 * **Version:**
 
 	3
+
+* **Permission:**
+
+    Enrolments > Enrolments/Enrolled Parent - View
     
 * **Method:**
 

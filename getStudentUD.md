@@ -10,6 +10,10 @@
 
 	3
 
+* **Permission:**
+
+    Enrolments > Enrolments/Enrolled Student > User Defined tab - View
+
 * **Method:**
 
 	`GET | POST`

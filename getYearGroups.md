@@ -10,6 +10,10 @@
 
 	3
 
+* **Permission:**
+
+    Parent Records > Parent Records Setup - View
+
 * **Method:**
 
 	`GET | POST`

@@ -10,6 +10,10 @@
 
 	3
 
+* **Permission:**
+
+	Student Records Setup > Campuses tab - View
+
 * **Method:**
 
 	`GET | POST`

@@ -10,6 +10,10 @@
 
   3
 
+* **Permission:**
+
+    Enrolments > Online Enrolment Applications - View
+
 * **Method:**
 
   `GET | POST`

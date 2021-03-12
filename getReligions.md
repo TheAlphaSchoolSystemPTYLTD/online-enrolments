@@ -10,6 +10,10 @@
 
 	3
 
+* **Permission:**
+
+    Student Records > Student Records Setup > Religions Tab - View
+
 * **Method:**
 
 	`GET | POST`

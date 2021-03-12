@@ -10,6 +10,10 @@
 
   3
 
+* **Permission:**
+
+    Enrolments > Enrolments/Enrolled Student - View
+
 * **Method:**
 
   `GET | POST`

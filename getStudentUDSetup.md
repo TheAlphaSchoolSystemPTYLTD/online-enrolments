@@ -10,6 +10,10 @@
 
 	3
 
+* **Permission:**
+
+    Enrolments > Enrolments Setup - Student UD tab - View
+
 * **Method:**
 
 	`GET | POST`

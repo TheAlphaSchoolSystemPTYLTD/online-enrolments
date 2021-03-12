@@ -10,6 +10,10 @@
 
 	3
 
+* **Permission:**
+
+    Enrolments > Enrolments Setup > Occupations tab - View
+
 * **Method:**
 
 	`GET | POST`

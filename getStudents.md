@@ -10,6 +10,10 @@
 
   3
 
+* **Permission:**
+
+    Student Records > Students - View
+
 * **Method:**
 
   `GET | POST`

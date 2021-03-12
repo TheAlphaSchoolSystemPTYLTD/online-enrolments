@@ -10,6 +10,10 @@
 
 	3
 
+* **Permission:**
+
+    Student Records > Student Records Setup > UD Areas tab - View
+
 * **Method:**
 
 	`GET | POST`

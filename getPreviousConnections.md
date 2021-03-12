@@ -10,6 +10,10 @@
 
 	3
 
+* **Permission:**
+
+    Enrolments > Enrolments Setup > Previous Connection tab - View
+
 * **Method:**
 
 	`GET | POST`

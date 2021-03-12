@@ -10,6 +10,10 @@
 
 	3
 
+* **Permission:**
+
+    Enrolments > Enrolments Setup > Parent UD tab - View
+
 * **Method:**
 
 	`GET | POST`

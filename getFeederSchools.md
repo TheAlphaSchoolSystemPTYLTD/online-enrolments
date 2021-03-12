@@ -10,6 +10,10 @@
 
 	3
 
+* **Permission:**
+
+    Enrolments > Enrolments Setup - View
+
 * **Method:**
 
 	`GET | POST`
