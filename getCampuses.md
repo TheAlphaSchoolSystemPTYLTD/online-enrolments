@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-	Student Records Setup > Campuses tab - View
+	Student Records > Student Records Setup > Campuses tab - View
 
 * **Method:**
 

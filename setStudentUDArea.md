@@ -1,6 +1,10 @@
 **SetStudentUDArea**
 ----
 	Returns "success" and a count of updated students, or a structure of invalid validations "__invalid" belonging to student(s).
+  
+* **Version History:**
+
+  	TASS v55.0 - Method Added
 
 * **Version:**
 
@@ -9,10 +13,6 @@
 * **Permission:**
 
     Enrolments > Enrolments/Enrolled Student - Edit
-  
-* **Version History:**
-
-  	TASS v55.0 - Method Added
 
 * **Method:**
 

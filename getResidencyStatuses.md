@@ -4,7 +4,7 @@
 	
 * **Version History:**
 
-	TASS v55.0- Method Added
+	TASS v55.0 - Method Added
 
 * **Version:**
 
