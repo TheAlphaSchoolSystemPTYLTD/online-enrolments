@@ -4,7 +4,7 @@
 
 * **Version History:**
 
-	TASS v54.3 PR2 - Method Added
+	TASS v54.4 - Method Added
 
 * **Version:**
 
@@ -83,6 +83,8 @@
 	`sud11_code to sud20_code [string]` - Student user defined code - Length must be between 1 and 3 Characters
 
 	`sud21_text to sud25_text [string]` - Student user defined text - Length must be between 1 and 20 Characters
+
+	`usi [alphanumeric]` - Unique Student Identifier - Length must be under 10 Characters
 
 	**Conditional:**
 
@@ -519,6 +521,20 @@
 	```javascript
 	__invalid: {
 		"given_name": "given_name invalid when first_name supplied."
+	}
+	```
+
+	`usi` exceed 10 characters
+	```javascript
+	__invalid: {
+		"usi": "USI must be under 10 characters."
+	}
+	```
+
+	`usi` using non-alphanumeric character such as special characters
+	```javascript
+	__invalid: {
+		"usi": "USI must be alphanumeric."
 	}
 	```
 
