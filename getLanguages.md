@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-    Student Records > Student Records Setup > Countries/Languages/ResStatus - View
+    Student Records > Student Records Setup > Countries/Languages/ResStatus > Language tab - View
 
 * **Method:**
 
