@@ -4,11 +4,15 @@
 	
 * **Version History:**
 
-	TASS v49.1 - Method Added
+	TASS v54.4 - Method Added
 
 * **Version:**
 
-	1
+	3
+
+* **Permission:**
+
+    Enrolments > Enrolments Setup > Occupations tab - View
 
 * **Method:**
 
@@ -32,27 +36,24 @@
 
     ```javascript
 	{
-		"occupations": [
-				{
-					"code": "ACC",
-					"desc": "Accountant"
-				},
-				{
-					"code": "BAR",
-					"desc": "Barrister"
-				},
-				{
-					"code": "BUI",
-					"desc": "Builder"
-				},
+		"occupations":[
+			{
+				"code":"ACC",
+				"desc":"Accountant"
+			},
+			{
+				"code":"BAR",
+				"desc":"Barrister"
+			},
+			{
+				"code":"BUI",
+				"desc":"Builder"
+			}
 		],
-		"__status": "success",
-		"__tassversion": "01.053.3.000",
-		"__invalid": {},
-		"__locks": {},
-		"token": {
-			"timestamp": "{ts '2021-01-19 09:26:38'}",
-			"codeonly": false
+		"__tassversion":"01.000.043.0",
+		"token":{
+			"timestamp":"{ts '2021-03-04 12:16:34'}",
+			"codeonly":false
 		}
 	}
     ```
@@ -72,7 +73,9 @@
 * **Sample Parameters:**
 
 	```javascript
-	codeonly=false
+	{
+		"codeonly":"false"
+	}
 	```
 
 * **Sample GET:** (With URL Encoded `token`)

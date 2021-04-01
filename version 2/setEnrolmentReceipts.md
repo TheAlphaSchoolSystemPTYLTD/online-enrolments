@@ -4,15 +4,11 @@
 
 * **Version History:**
 
-	TASS v54.4 - Method Added
+    TASS v52.1 - Method Added.
 
 * **Version:**
 
-	3
-
-* **Permission:**
-
-    Enrolments > Enrolments/Enrolled Parent - View
+	2
     
 * **Method:**
 
@@ -75,29 +71,28 @@
 	```javascript
 	{
 		"success": "You successfully uploaded 1 enrolment receipt(s).",
-		"__tassversion": "01.053.3.000",
 		"token": {
-			"timestamp": "{ts '2021-01-19 15:23:30'}",
+			"timestamp": "{ts '2019-12-11 14:16:30'}",
 			"enrolmentReceipts": [
 				{
 					"receipt_num": "",
 					"seq_num": 1,
-					"sundry_name": "Renowa",
+					"sundry_name": "Fang",
 					"enrol_rec_type": "G",
-					"dist_amt": 1000,
+					"dist_amt": 10,
 					"comment": "Enrolment Fee",
-					"tax_amt": 100,
+					"tax_amt": 1,
 					"town_sub": "",
 					"state_code": "",
-					"trans_amt": 1100,
-					"par_code": "002629",
+					"trans_amt": 11,
+					"par_code": "002119",
 					"addr3": "",
 					"addr2": "",
-					"submit_time": "2020-12-19 10:00:00.000",
+					"submit_time": "2019-11-28 10:00:00.000",
 					"addr1": "",
-					"stud_code": "0021372",
+					"stud_code": "0020974",
 					"country": "",
-					"batch_num": 20211901,
+					"batch_num": 20191129,
 					"acct_code": "01-0290-00-00",
 					"post_code": "",
 					"id": 1,
@@ -452,26 +447,26 @@
 * **Sample Parameters:**
 
 	```javascript
-	 {
+	{
 		"enrolmentReceipts":
 		[
 			{
 				"id":"1",
-				"submit_time":"2020-12-19 10:00:00.000",
-				"trans_amt":"1100.00",
-				"batch_num":"20211901",
-				"sundry_name":"Renowa",
+				"submit_time":"2019-11-28 10:00:00.000",
+				"trans_amt":"11.00",
+				"batch_num":"20191129",
+				"sundry_name":"Fang",
 				"comment":"Enrolment Fee",
 				"acct_code":"01-0290-00-00",
-				"dist_amt":"1000.00",
-				"tax_amt":"100.00",
+				"dist_amt":"10.00",
+				"tax_amt":"1.00",
 				"tax_code":"AO",
 				"enrol_rec_type":"G",
-				"par_code":"002629",
-				"stud_code":"0021372"
+				"par_code":"002119",
+				"stud_code":"0020974"
 			}
 		]
-	 }
+	}
 	```
 
 * **Sample GET:** (With URL Encoded `token`)

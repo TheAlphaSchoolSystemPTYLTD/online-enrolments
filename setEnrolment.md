@@ -4,21 +4,15 @@
 
 * **Version History:**
 
-    TASS v48.0 - Method Added
-
-    TASS v51.4 - Added a new field par_e_mail2. Added validation for e_mail, par_e_mail, and par_e_mail2.
-
-    TASS v52.0 - Add 17 new fields `stud_first_name`, `stud_other_names`, `stud_preferred_surname`, `f_title`, `f_initials`, `f_surname`, `f_first_name`, `f_other_names`, `f_preferred_name`, `f_suffix`, `m_title`, `m_initials`, `m_surname`, `m_first_name`, `m_other_names`, `m_preferred_name`, `m_suffix`. User needs to either supply parents' name tokens or `m_name` & `f_name`.
-
-    TASS v53.0 - Added two new fields m_p1_sex, f_p2_sex.
-
-    TASS v54.0 - Add validation for `m_p1_sex`, `f_p2_sex` against m_name and f_name or their name tokens.
-    
-    TASS v54.2 - `stud_surname`, `given_name`, `preferred_name` fields will now accept 50, 101, 50 characters each.
+    TASS v54.4 - Method Added
 
 * **Version:**
 
-  1
+  3
+
+* **Permission:**
+
+    Enrolments > Online Enrolment Applications - View
 
 * **Method:**
 
@@ -247,11 +241,8 @@
 
     ```javascript
     {
-        "__status": "success",
         "errors": [],
         "__tassversion": "01.053.3.000",
-        "__invalid": {},
-        "__locks": {},
         "token": {
                 "given_name": "Posy",
                 "sex": "F",
@@ -409,9 +400,27 @@
 
 * **Sample Parameters:**
 
-    ```javascript
-  application_id=20211901&stud_surname=Renowa&given_name=Posy&preferred_name=Posy&dob=2000-01-01&sex=F&entry_yr=2021&entry_ygrp=1&boarder=N&doa=2019-09-29&par_surname=Renowa&par_name=Hugh %26 Rachel&m_name=Rachel Clearland&f_name=Hugh Renowa&m_p1_sex=F&f_p2_sex=M&batch_num=612345678
-    ```
+  ```javascript
+    {
+        "application_id": "ANTONY05",
+        "stud_surname": "Anton",
+        "given_name": "Edward",
+        "preferred_name": "Pie",
+        "dob": "2000-01-01",
+        "sex": "M",
+        "entry_yr": "2020",
+        "entry_ygrp": 11,
+        "boarder": "N",
+        "doa": "2019-09-29",
+        "par_surname": "Austin",
+        "par_name": "John %26 Mary",
+        "m_name": "Mrs Mary Mid Austin",
+        "f_name": "Mr John Fid Austin",
+        "m_p1_sex": "F",
+        "f_p2_sex": "M",
+        "batch_num": "612345678"
+    }
+  ```
 
 * **Sample GET:** (With URL Encoded `token`)
 

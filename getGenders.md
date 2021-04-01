@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-  	Community Plus > Genders Setup
+  	Community Plus > Genders Setup - View
 
 * **Method:**
 

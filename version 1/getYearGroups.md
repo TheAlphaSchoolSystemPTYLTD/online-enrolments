@@ -4,15 +4,11 @@
 	
 * **Version History:**
 
-	TASS v54.4 - Method Added
+	TASS v49.1 - Method Added
 
 * **Version:**
 
-	3
-
-* **Permission:**
-
-    Parent Records > Parent Records Setup - View
+	1
 
 * **Method:**
 
@@ -35,47 +31,64 @@
 * **Success Response:**
 
     ```javascript
-	{
-		"__tassversion":"01.000.043.0",
-		"yeargroups":[
-			{
-				"code":-2,
-				"desc":"AA"
-			},
-			{
-				"code":-1,
-				"desc":"PK"
-			},
-			{
-				"code":0,
-				"desc":"P"
-			},
-			{
-				"code":1,
-				"desc":1
-			},
-			{
-				"code":2,
-				"desc":2
-			},
-			{
-				"code":3,
-				"desc":3
-			},
-			{
-				"code":4,
-				"desc":4
-			},
-			{
-				"code":5,
-				"desc":5
-			}
-		],
-		"token":{
-			"timestamp":"{ts '2021-03-04 12:26:30'}",
-			"codeonly":false
+    "yeargroups": [
+		{
+			"code": -1,
+			"desc": "K"
+		},
+		{
+			"code": 0,
+			"desc": "P"
+		},
+		{
+			"code": 1,
+			"desc": 1
+		},
+		{
+			"code": 2,
+			"desc": 2
+		},
+		{
+			"code": 3,
+			"desc": 3
+		},
+		{
+			"code": 4,
+			"desc": 4
+		},
+		{
+			"code": 5,
+			"desc": 5
+		},
+		{
+			"code": 6,
+			"desc": 6
+		},
+		{
+			"code": 7,
+			"desc": 7
+		},
+		{
+			"code": 8,
+			"desc": 8
+		},
+		{
+			"code": 9,
+			"desc": 9
+		},
+		{
+			"code": 10,
+			"desc": 10
+		},
+		{
+			"code": 11,
+			"desc": 11
+		},
+		{
+			"code": 12,
+			"desc": 12
 		}
-	}
+	]
     ```
  
 * **Error Response:**
@@ -93,9 +106,7 @@
 * **Sample Parameters:**
 
 	```javascript
-	{
-		"codeonly":"false"
-	}
+	codeonly=false
 	```
 
 * **Sample GET:** (With URL Encoded `token`)

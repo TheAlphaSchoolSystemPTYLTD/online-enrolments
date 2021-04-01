@@ -4,15 +4,11 @@
 	
 * **Version History:**
 
-	TASS v54.4 - Method Added
+	TASS v49.1 - Method Added
 
 * **Version:**
 
-	3
-
-* **Permission:**
-
-    Enrolments > Enrolments Setup - View
+	1
 
 * **Method:**
 
@@ -35,33 +31,44 @@
 * **Success Response:**
 
     ```javascript
-	{
-		"__tassversion":"01.000.043.0",
-		"schools":[
-			{
-				"region_desc":"Melbourne City",
-				"code":"BALCC",
-				"region_code":"MELC",
-				"tass_cmpy_code_desc":"",
-				"export_code":"",
-				"tass_cmpy_code":"",
-				"desc":"Ballarat Christian College"
-			},
-			{
-				"region_desc":"",
-				"code":"BSH",
-				"region_code":"",
-				"tass_cmpy_code_desc":"",
-				"export_code":"",
-				"tass_cmpy_code":"",
-				"desc":"Brisbane State High School"
-			}
-		],
-		"token":{
-			"timestamp":"{ts '2021-03-04 12:13:56'}",
-			"codeonly":false
+    "schools": [
+		{
+			"region_desc": "",
+			"code": "APR",
+			"region_code": "",
+			"tass_cmpy_code_desc": "",
+			"export_code": "",
+			"tass_cmpy_code": "",
+			"desc": "Alpha Preparatory School"
+		},
+		{
+			"region_desc": "",
+			"code": "APRO",
+			"region_code": "",
+			"tass_cmpy_code_desc": "",
+			"export_code": "",
+			"tass_cmpy_code": "",
+			"desc": "Alpha Progressive School"
+		},
+		{
+			"region_desc": "",
+			"code": "APS",
+			"region_code": "",
+			"tass_cmpy_code_desc": "",
+			"export_code": "",
+			"tass_cmpy_code": "",
+			"desc": "Alpha Primary School"
+		},
+		{
+			"region_desc": "",
+			"code": "EVT",
+			"region_code": "",
+			"tass_cmpy_code_desc": "",
+			"export_code": "",
+			"tass_cmpy_code": "",
+			"desc": "Everton High"
 		}
-	}
+	]
     ```
  
 * **Error Response:**
@@ -79,9 +86,7 @@
 * **Sample Parameters:**
 
 	```javascript
-	{
-		"codeonly":"false"
-	}
+	codeonly=false
 	```
 
 * **Sample GET:** (With URL Encoded `token`)

@@ -4,15 +4,11 @@
 	
 * **Version History:**
 
-	TASS v54.4 - Method Added
+	TASS v49.1 - Method Added
 
 * **Version:**
 
-	3
-
-* **Permission:**
-
-    Enrolments > Enrolments/Enrolled Parent - View
+	1
 
 * **Method:**
 
@@ -35,39 +31,32 @@
 * **Success Response:**
 
     ```javascript
-	{
-		"__tassversion":"01.000.043.0",
-		"token":{
-			"timestamp":"{ts '2021-03-04 12:17:18'}",
-			"parcode":10040
-		},
-		"ud":{
-			"ud13_code":"",
-			"ud21_text":"",
-			"ud16_code":"",
-			"ud4_flg":"",
-			"ud24_text":"",
-			"ud9_flg":"",
-			"ud19_code":"",
-			"ud18_code":"",
-			"ud23_text":"",
-			"ud5_flg":"",
-			"ud12_code":"",
-			"ud15_code":"",
-			"ud20_code":"",
-			"ud1_flg":"",
-			"ud7_flg":"",
-			"ud6_flg":"",
-			"ud10_flg":"",
-			"ud22_text":"",
-			"ud25_text":"",
-			"ud14_code":"",
-			"ud11_code":"",
-			"ud2_flg":"",
-			"ud3_flg":"",
-			"ud8_flg":"",
-			"ud17_code":""
-		}
+    "ud": {
+		"ud13_code": "",
+		"ud21_text": "",
+		"ud16_code": "",
+		"ud4_flg": "Y",
+		"ud24_text": "",
+		"ud9_flg": "",
+		"ud19_code": "",
+		"ud18_code": "",
+		"ud23_text": "",
+		"ud5_flg": "Y",
+		"ud12_code": "",
+		"ud15_code": "",
+		"ud20_code": "",
+		"ud1_flg": "Y",
+		"ud7_flg": "",
+		"ud6_flg": "",
+		"ud10_flg": "",
+		"ud22_text": "",
+		"ud25_text": "",
+		"ud14_code": "",
+		"ud11_code": "",
+		"ud2_flg": "N",
+		"ud3_flg": "Y",
+		"ud8_flg": "",
+		"ud17_code": ""
 	}
     ```
  
@@ -81,9 +70,7 @@
 * **Sample Parameters:**
 
 	```javascript
-	{
-		"parcode":10040
-	}
+	parcode=10040
 	```
 
 * **Sample GET:** (With URL Encoded `token`)

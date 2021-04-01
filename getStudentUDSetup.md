@@ -4,11 +4,15 @@
 	
 * **Version History:**
 
-	TASS v49.3 - Method Added
+	TASS v54.4 - Method Added
 
 * **Version:**
 
-	2
+	3
+
+* **Permission:**
+
+    Enrolments > Enrolments Setup - Student UD tab - View
 
 * **Method:**
 
@@ -125,7 +129,9 @@
 * **Sample Parameters:**
 
 	```javascript
-	{"includelookups":"true"}
+	{
+		"includelookups":"true"
+	}
 	```
 
 * **Sample GET:** (With URL Encoded `token`)

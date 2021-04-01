@@ -4,15 +4,11 @@
 	
 * **Version History:**
 
-	TASS v54.4 - Method Added
+	TASS v49.3 - Method Added
 
 * **Version:**
 
-	3
-
-* **Permission:**
-
-    Enrolments > Enrolments Setup > Parent UD tab - View
+	2
 
 * **Method:**
 
@@ -35,39 +31,66 @@
 * **Success Response:**
 
     ```javascript
-	{
-		"__tassversion":"01.000.043.0",
-		"token":{
-			"includelookups":true,
-			"timestamp":"{ts '2021-03-04 12:17:49'}"
+    "ud": [
+		{
+			"flag_name": "UD1_FLG",
+			"id": 1,
+			"flag_value": "",
+			"desc": "Active Church Att.",
+			"name": "UD1_DESC"
 		},
-		"ud":[
-			{
-				"flag_name":"UD1_FLG",
-				"id":1,
-				"flag_value":"",
-				"desc":"Active Church Attend",
-				"name":"UD1_DESC"
-			},
-			{
-				"flag_name":"UD11_FLG",
-				"id":11,
-				"lookups":[
-					{
-						"code":"CRI",
-						"desc":"Cricket Match"
-					},
-					{
-						"code":"DEB",
-						"desc":"Debating"
-					}
-				],
-				"flag_value":"",
-				"desc":"Sport Interest",
-				"name":"UD11_DESC"
-			}
-		]
-	}
+		...,
+		{
+			"flag_name": "UD11_FLG",
+			"id": 11,
+			"lookups": [
+				{
+					"code": "CAN",
+					"desc": "Cantonese"
+				},
+				{
+					"code": "ENG",
+					"desc": "English"
+				},
+				{
+					"code": "FRE",
+					"desc": "French"
+				},
+				{
+					"code": "GER",
+					"desc": "German"
+				},
+				{
+					"code": "IND",
+					"desc": "Indonesian"
+				},
+				{
+					"code": "NZ",
+					"desc": "Kiwi"
+				},
+				{
+					"code": "MAL",
+					"desc": "Malaysian"
+				},
+				{
+					"code": "MAN",
+					"desc": "Mandarin"
+				}
+			],
+			"flag_value": 11,
+			"desc": "Mothers Religion",
+			"name": "UD11_DESC"
+		},
+		...,
+		{
+			"flag_name": "UD22_FLG",
+			"id": 22,
+			"flag_value": 21,
+			"desc": "Mothers Employer",
+			"name": "UD22_DESC"
+		}
+		...
+	]
     ```
  
 * **Error Response:**
@@ -89,9 +112,7 @@
 * **Sample Parameters:**
 
 	```javascript
-	{
-		"includelookups":"true"
-	}
+	{"includelookups":"true"}
 	```
 
 * **Sample GET:** (With URL Encoded `token`)

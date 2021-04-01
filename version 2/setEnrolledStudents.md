@@ -4,15 +4,11 @@
 
 * **Version History:**
 
-	TASS v54.4 - Method Added
+    TASS v52.0 - Add 2 new fields `first_name`, `other_name`, and `preferred_surname`. `given_name` is now a conditional field that accepts 101 characters.
 
 * **Version:**
 
-	3
-
-* **Permission:**
-
-    Enrolments > Enrolments/Enrolled Student - Edit
+	2
     
 * **Method:**
 
@@ -22,69 +18,67 @@
 
 	**Required:**
  
-	`id [string]` - student code - Length must be between 1 and 8 Characters
+	`id [string]` - student code.
 
-	`surname [string]` - Student Surname - Length must be between 1 and 50 Characters
+	`surname [string]` - Surname.
 
-	`boarder [string]` - Is the Student a Boarder - Length must be 1 Character(Y/N)
+	`boarder [string]` - Boarder.
 
-	`entry_yr [integer]` - Year of Student Entry
+	`entry_yr [string]` - Entry Year.
 
-	`entry_ygrp [integer]` - Student Year Group when Starting
+	`entry_ygrp [string]` - Entry Year Group.
 
-	`sex [string]` - Student Gender - Length must be between 1 and 3 Characters
+	`sex [string]` - Gender.
 
-	`preferred_name [string]` - Student Preferred Name - Length must be between 1 and 50 Characters
+	`preferred_name [string]` - Preferred Name.
 
-	`prosp_flg [string]` - Stage 1 Flag - Length must be 1 Character(Y/N)
+	`prosp_flg [string]` - Stage 1 flag.
 
-	`followup_flg [string]` - Stage 2 Flag - Length must be 1 Character(Y/N)
+	`followup_flg [string]` - Stage 2 flag.
 
-	`hold_paid [string]` - Stage 3 Flag - Length must be 1 Character(Y/N)
+	`hold_paid [string]` - Stage 3 flag.
 
-	`interview_flg [string]` - Stage 4 Flag - Length must be 1 Character(Y/N)
+	`interview_flg [string]` - Stage 4 flag.
 
-	`assess_flg [string]` - Stage 5 Flag - Length must be 1 Character(Y/N)
+	`assess_flg [string]` - Stage 5 flag.
 
-	`place_offered [string]` - Stage 6 Flag - Length must be 1 Character(Y/N)
+	`place_offered [string]` - Stage 6 flag.
 
-	`accept_paid [string]` - Stage 7 Flag - Length must be 1 Character(Y/N)
+	`accept_paid [string]` - Stage 7 flag.
 
 	**Optional:**
 
-	`other_name [string]` - Student Other name - Length must be between 1 and 50 Characters
+	`other_name [string]` - Other Name.
 
-	`preferred_surname [string]` - Student Preferred Surname (use surname if not supplied) - Length must be between 1 and 50 Characters
+	`preferred_surname [string]` - Preferred Surname (use surname if not supplied).
 	
-	`campus_code [string]` - Campus - Length must be between 1 and 3 Characters
+	`campus_code [string]` - Campus.
 
-	`curr_school [string]` - Current School - Length must be between 1 and 5 Characters
+	`curr_school [string]` - Current School.
 
-	`curr_year_grp [integer]` - Current Year Group
+	`curr_year_grp [string]` - Current Year Group.
 
 	`date_arrival [date dd/mm/yyyy or yyyy-mm-dd]` - Date of Arrival in Australia.
 
 	`dob [date dd/mm/yyyy or yyyy-mm-dd]` - Date of Birth.
 
-	`e_mail [string]` - Student Email - Length must be between 1 and 60 Characters
+	`e_mail [string]` - Email.
 
-	`mob_phone [string]` - Student Mobile Phone - Length must be between 1 and 30 Characters
+	`mob_phone [string]` - Mobile Phone.
 
-	`religion [string]` - Student Religion - Length must be between 1 and 2 Characters
+	`religion [string]` - Religion.
 
-	`resident_sts [string]` - Residency Status - Length must be between 1 and 3 Characters
+	`resident_sts [string]` - Residency Status.
 
-	`visa_expiry [date dd/mm/yyyy]` - Student Visa Expiry
+	`visa_expiry [string]` - Visa Expiry Date.
 
-	`visa_subclass [string]` - Student Visa Subclass - Length must be between 1 and 6 Characters
+	`visa_subclass [string]` - Visa Subclass.
 
-	`sud1_flg to sud10_flg [string]` - Student user defined flag - Length must be 1 Character
+	`sud1_flg [string]` to `sud9_flg [string]` - UD Flag Field 1 - 10.
 
-	`sud11_code to sud20_code [string]` - Student user defined code - Length must be between 1 and 3 Characters
+	`sud11_code [string]` to `sud20_code [string]` - Table Reference Fields 11 - 20.
 
-	`sud21_text to sud25_text [string]` - Student user defined text - Length must be between 1 and 20 Characters
-
-	`usi [alphanumeric]` - Unique Student Identifier - Length must be under 10 Characters
+	`sud21_text [string]` to `sud25_text [string]` - Table Reference Fields 20 - 25.
 
 	**Conditional:**
 
@@ -102,16 +96,15 @@
 
 	`accept_date [date dd/mm/yyyy or yyyy-mm-dd]` - Stage 7 date. Required if stage 7 Flag is set to "Y".
 
-	`given_name [string]` - Student Given Names (invalid when `first_name` supplied, required when not supplied) - Length must be between 1 and 101 Characters
+	`given_name [string]` - Given Names (invalid when `first_name` supplied, required when not supplied).
 
-	`first_name [string]` - Student First Name (invalid when `given_name` supplied, required when not supplied) - Length must be between 1 and 50 Characters
+	`first_name [string]` - First Name (invalid when `given_name` supplied, required when not supplied).
 
 * **Success Response:**
 
 	```javascript
 	{
 		"success": "You successfully saved 1 student(s).",
-        "__tassversion": "01.053.3.000",
 		"token": {
 			"enrolledstudent": [
 				{
@@ -173,7 +166,7 @@
 					"sud6_flg": "Y",
 					"prosp_date": "2018-01-01 00:00:00.000",
 					"interview_date": "2018-01-01 00:00:00.000",
-					"entry_yr": 2021,
+					"entry_yr": 2019,
 					"sud12_code": "AUS",
 					"sud20_code": "ABC"
 				}
@@ -524,20 +517,6 @@
 	}
 	```
 
-	`usi` exceed 10 characters
-	```javascript
-	__invalid: {
-		"usi": "USI must be under 10 characters."
-	}
-	```
-
-	`usi` using non-alphanumeric character such as special characters
-	```javascript
-	__invalid: {
-		"usi": "USI must be alphanumeric."
-	}
-	```
-
 * **Sample Parameters:**
 
 	```javascript
@@ -554,7 +533,7 @@
 				"date_arrival":"2014-02-13 00:00:00.000",
 				"dob":"1995-10-14 00:00:00.000",
 				"e_mail":"abc_news@abc.com",
-				"entry_yr":"2021",
+				"entry_yr":"2019",
 				"entry_ygrp":"7",
 				"sex":"M",
 				"mob_phone":"0420221002",

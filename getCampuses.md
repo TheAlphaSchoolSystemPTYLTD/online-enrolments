@@ -4,11 +4,15 @@
 
 * **Version History:**
 
-	TASS v49.1 - Method Added
+	TASS v54.4 - Method Added
 
 * **Version:**
 
-	1
+	3
+
+* **Permission:**
+
+	Student Records > Student Records Setup > Campuses tab - View
 
 * **Method:**
 
@@ -46,10 +50,7 @@
 				"desc": "Junior School (Billabong Road)"
 			}
 		],
-		"__status": "success",
 		"__tassversion": "01.053.3.000",
-		"__invalid": {},
-		"__locks": {},
 		"token": {
 			"timestamp": "{ts '2021-01-18 15:28:13'}",
 			"codeonly": false
@@ -72,7 +73,9 @@
 * **Sample Parameters:**
 
 	```javascript
-	codeonly=false
+	{
+		"codeonly":"false"
+	}
 	```
 
 * **Sample GET:** (With URL Encoded `token`)
