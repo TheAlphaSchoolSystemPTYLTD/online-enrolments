@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-    Student Records > Student Records Setup > Religions Tab - View
+    Student Records > Student Records Setup > Countries/Languages/ResStatus - View
 
 * **Method:**
 
