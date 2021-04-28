@@ -5,6 +5,8 @@
 * **Version History:**
 
     TASS v54.4 - Method Added
+    
+    TASS v54.4 - Update `f_suffix` and `m_suffix` to only allow up to 30 characters.
 
 * **Version:**
 
@@ -217,7 +219,7 @@
 
     `f_preferred_name [string]` - Father Preferred Name - Length must be between 1 and 50 Characters
 
-    `f_suffix [string]` - Father Suffix - Length must be between 1 and 50 Characters
+    `f_suffix [string]` - Father Suffix - Length must be between 1 and 30 Characters
 
     `m_title [string]` - Mother Title - Length must be between 1 and 10 Characters
 
@@ -231,7 +233,7 @@
 
     `m_preferred_name [string]` - Mother Preferred Name - Length must be between 1 and 50 Characters
 
-    `m_suffix [string]` - Mother Suffix - Length must be between 1 and 50 Characters
+    `m_suffix [string]` - Mother Suffix - Length must be between 1 and 30 Characters
 
     `m_p1_sex [string]` - Mother / Parent 1 [strPositionLabels.motherLabel] Gender - Length must be between 1 and 3 Characters
 
@@ -242,7 +244,7 @@
     ```javascript
     {
         "errors": [],
-        "__tassversion": "01.053.3.000",
+        "__tassversion": "01.054.4.000",
         "token": {
                 "given_name": "Posy",
                 "sex": "F",
