@@ -161,7 +161,7 @@
 	}
 	```
 
-	`eud1_flg` [string] to `eud10_flg` [string] is not an alphanumeric value fro A-Z and 0-9
+	`eud1_flg` [string] to `eud10_flg` [string] is not an alphanumeric value from A-Z and 0-9
 	```javascript
 	__invalid: {
 		"[field]": "Value is not a valid alphanumeric code."
