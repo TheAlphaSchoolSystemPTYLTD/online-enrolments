@@ -90,7 +90,7 @@
  
 * **Error Response:**
 
-    `codeonly` not supplied
+    `studcode` not supplied
     ```javascript
     "__msg": "'studcode' IS REQUIRED"
     ```
