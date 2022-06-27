@@ -96,9 +96,12 @@
   }
   ```
 
-  `TO BE ADDED:`
-
-  `doct_name` length check 30 or left(,30)
+  `doct_name` exceed 30 characters
+  ```javascript
+  __invalid: {
+    "doct_name": "exceed 30 characters."
+  } 
+  ```
     
 * **Sample Parameters:**
 

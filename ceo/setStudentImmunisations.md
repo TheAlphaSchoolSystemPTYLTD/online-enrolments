@@ -26,41 +26,34 @@
  
    `data [array]` - An array of Student Immunisations.
  
-   `imm_code [string]` - Immunisation Code required for each record in `data` array.
+   `imm_code [string]` - Immunisation Code required for each record in `data` array. (Use imm_code with imm_std = "Y" for the first record if the student has no record in studimm)
  
-   `imm_year [string]` - Immunisation Year required for each record in `data` array. When updating an existing record, if imm_year provided with empty string, the record will be deleted.
+   `imm_year [string]` - Immunisation Year required for each record in `data` array. When updating an existing record, if imm_year provided with empty string, the record will be DELETED.
 
    **Optional:**
 
-   `status_code [string]` - Use existing Immunisation status_code
-
-   `next_due_date [string]` - Next Due Date (Date Format: yyyy-mm-dd)
+   None
 
    **Conditional:**
 
-   `imm_attach_id [string]` - Immunisation Attachment. Field required when air_state_date is provided.
-
-   `air_state_date [string]` - Air State Date (Date Format: yyyy-mm-dd). Field required when imm_attach_id is provided.
-
-   `attachment_file [string]` - field is required where 'attachment_file_name' is supplied. (URLEncoded Format is RECOMMENDED)
-
-   `attachment_file_name [string]` - field is required where 'attachment_file' is supplied.
+   None
 
 * **Success Response:**
 
     ```javascript
     {
-      "success":"You successfully saved Enrolled Student Immunisation Status.",
+      "success":"You successfully saved Enrolled Student Immunisations.",
       "__tassversion":"01.054.4.000",
       "token":{
         "stud_code":"0009130",
-        "air_state_date":"01/01/2022",
-        "timestamp":"{ts '2022-06-27 07:48:03'}",
-        "status_code":"AIR",
-        "imm_attach_id":{
-          "attachment_file_name":"test",
-          "attachment_file":"ClRoaXMgaXMgYSB0ZXN0IGZpbGUuCkRvIG5vdCBpbmNsdWRlIGEgdGFibGUhISEKTmFtZQlRdWFudGl0eQlWYWx1ZQppUGFkCTEJNTAwCmlQaG9uZQkxCTEwMDAKVG90YWwJMgkxNTAw"
-        }
+        "data":[
+          {
+            "imm_code":"AA",
+            "MODE":"edit",
+            "imm_year":2022
+          }
+        ],
+        "timestamp":"{ts '2022-06-28 06:52:20'}"
       }
     }
     ```
@@ -88,10 +81,17 @@
   }
   ```
 
-  `imm_code`  is not a valid Immunisation Code
+  `imm_code` is not a valid Immunisation Code
   ```javascript
   __invalid: {
     "__msg": "[imm_code] is not a valid Immunisation Code for record [i];"
+  }
+  ```
+
+  `imm_code` use imm_code with imm_std = "Y" for the first record for this student
+  ```javascript
+  __invalid: {
+    "__msg": "[imm_code] must be a standard Immunisation Code for the record 1;"
   }
   ```
 
@@ -142,12 +142,12 @@
   ```javascript
   {
     "stud_code":"0009130",
-    "status_code":"AIR",
-    "air_state_date":"01/01/2022",
-    "imm_attach_id":{
-      "attachment_file_name":"test",
-      "attachment_file":"ClRoaXMgaXMgYSB0ZXN0IGZpbGUuCkRvIG5vdCBpbmNsdWRlIGEgdGFibGUhISEKTmFtZQlRdWFudGl0eQlWYWx1ZQppUGFkCTEJNTAwCmlQaG9uZQkxCTEwMDAKVG90YWwJMgkxNTAw"
-    }
+    "data":[
+      {
+        "imm_code":"AA",
+        "imm_year":"2021"
+      }
+    ]
   }
   ```
 

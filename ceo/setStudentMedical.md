@@ -103,11 +103,40 @@ Returns "success" and a count of updated and/or failed medical record(s), or a s
   }
   ```
 
-  `TO BE ADDED:`
+  `mud1-5_flg` Must be "Y" or "N"
+  ```javascript
+  __invalid: {
+    "[mud1-5_flg]": "Must be 'Y' or 'N'."
+  }
+  ```
 
-  `mud1-5_flg` "Y" OR "N" only
+  `mud6-10_code` is not a valid UD Code
+  ```javascript
+  __invalid: {
+    "[mud6-10_code]": "UD Code '[mud6-10_code]' is not a valid UD Code."
+  }
+  ```
 
-  `mud5-10_code` "Y" OR "N" only
+  `mud11-15_text` Must be "Y" or "N"
+  ```javascript
+  __invalid: {
+    "[mud6-10_code]": "UD Code '[mud6-10_code]' is not a valid UD Code."
+  }
+  ```
+
+  `mud11-15_text` exceed 20 characters
+  ```javascript
+  __invalid: {
+    "mud11-15_text": "exceed 20 characters."
+  } 
+  ```
+
+  `swim_code` is not valid
+  ```javascript
+  __invalid: {
+    "[swim_code]": "[swim_code] is not a valid Swimming Code."
+  }
+  ```
 
   `swim_code` validation
     
@@ -131,7 +160,7 @@ Returns "success" and a count of updated and/or failed medical record(s), or a s
     "mud13_text":"dd",
     "mud14_text":"",
     "mud15_text":"",
-    "swim_code":"X"
+    "swim_code":"1"
   }
   ```
 

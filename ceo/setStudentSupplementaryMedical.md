@@ -92,10 +92,6 @@
     "stud_code": "Enrolled student has been transferred to Current."
   }
   ```
-
-  `TO BE ADDED:`
-
-  `doct_name` length check 30 or left(,30)
     
 * **Sample Parameters:**
 
