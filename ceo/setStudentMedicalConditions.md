@@ -52,17 +52,17 @@
 
   For item(s) in the requirements array:
 
-  `med_text [string]` - field is required for each item in 'requirements' if adding a new record. Optional if editing an existing record.
+  `med_text [string]` - field is required for each item in 'requirements' if adding a new record. Optional if editing an existing record. (length limit 200)
 
   `med_num[string]` - field is optional for each item in 'requirements'. If the provided med_num exists, the program will try to update a record accordingly.
 
-  `med_meth [string]` - field is optional for each item in 'requirements'.
+  `med_meth [string]` - field is optional for each item in 'requirements'. (length limit 200)
 
-  `med_detl [string]` - field is optional for each item in 'requirements'.
+  `med_detl [string]` - field is optional for each item in 'requirements'. (length limit 200)
 
-  `note_date [date]` - field is optional for each item in 'notes', (Date Format: yyyy-mm-dd).
+  `note_date [date]` - field is optional for each item in 'notes'. (Date Format: yyyy-mm-dd)
 
-  `note_text [string]` - field is optional for each item in 'notes'.
+  `note_text [string]` - field is optional for each item in 'notes'. (length limit 4000)
 
 * **Success Response:**
 
@@ -164,6 +164,13 @@
   }
   ```
 
+  `smcud1-10_text` exceed 200 characters
+  ```javascript
+  __invalid: {
+    "smcudx_text": "'smcudx_text' exceed 200 characters."
+  } 
+  ```
+
   For each item in 'attachments': attachment_file is passed in but attachment_file_name is not passed in
   ```javascript
   __invalid: {
@@ -185,32 +192,74 @@
   }
   ```
 
+  `treat_text` exceed 4000 characters
+  ```javascript
+  __invalid: {
+    "treat_text": "'treat_text' exceed 4000 characters."
+  } 
+  ```
+
   med_text is required when adding new medical requirements
   ```javascript
   __invalid: {
-    "med_text": "med_text' IS REQUIRED in 'requirements' item."
+    "med_text": "med_text' is required when adding a new requirement for 'requirements' item x."
   }
   ```
 
-  med_num is required when adding new medical requirements
+  med_text exceed 200 characters
   ```javascript
   __invalid: {
-    "med_num": "med_num' IS REQUIRED in 'requirements' item."
+    "med_text": "'med_text' exceed 200 characters for 'requirements' item x."
   }
   ```
 
-  note_date is required when adding/editing medical notes
+  `med_meth` exceed 200 characters
   ```javascript
   __invalid: {
-    "note_date": "note_date' IS REQUIRED."
+    "med_meth": "'med_meth' exceed 200 characters for 'requirements' item x."
+  } 
+  ```
+
+  `med_detl` exceed 200 characters
+  ```javascript
+  __invalid: {
+    "med_detl": "'med_detl' exceed 200 characters for 'requirements' item x."
+  } 
+  ```
+
+  `med_num` is required when updating medical requirements
+  ```javascript
+  __invalid: {
+    "med_num": "'med_num' is not found with stud_code & med_code provided for 'requirements' item x."
   }
   ```
 
-  note is required when adding/editing medical notes
+  `note_date` is required when adding/editing medical notes
   ```javascript
   __invalid: {
-    "note": "note' IS REQUIRED."
+    "note_date": "'note_date' is required for 'notes' item x."
   }
+  ```
+
+  `note_date` is not in correct date format
+  ```javascript
+  __invalid: {
+    "note_date": "'note_date' date format is invalid  for 'notes' item x."
+  }
+  ```
+
+  `note_text` is required when adding/editing medical notes
+  ```javascript
+  __invalid: {
+    "note_text": "note_text' is required."
+  }
+  ```
+
+  `note_text` exceed 4000 characters
+  ```javascript
+  __invalid: {
+    "note_text": "'note_text' exceed 4000 characters."
+  } 
   ```
     
 * **Sample Parameters:**
