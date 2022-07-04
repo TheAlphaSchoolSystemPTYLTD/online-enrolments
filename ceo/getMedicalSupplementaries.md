@@ -1,6 +1,6 @@
-**getMedicalConditions**
+**getMedicalSupplementaries**
 ----
-  Returns an array of all structured student medical conditions details data in JSON format.
+  Returns an array of all structured student medical supplementaries details data in JSON format.
   
 * **Version History:**
 
@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-  Medical Setup > Student Medical > Medical Conditions tab > View
+  Medical Setup > Student Medical > Supplementary Info tab > View
 
 * **Method:**
 
@@ -41,40 +41,39 @@
     {
         "data":[
             {
-                "studcode":"0009130",
-                "medconditions":[
+                "supplementaries":[
                     {
-                        "last_occ_date":"2018-01-30 00:00:00.0",
-                        "mcond_desc":"Accident",
-                        "general_note": "",
-                        "mcond_code":"ACC",
-                        "severe_ind":"N"
+                        "msupp_code":"DEN",
+                        "msupp_desc":"Dental Test",
+                        "comm_text":"test"
                     },
                     {
-                        "last_occ_date":"2016-01-31 00:00:00.0",
-                        "mcond_desc":"Anaphylaxis",
-                        "general_note": "",
-                        "mcond_code":"ANA",
-                        "severe_ind":"Y"
+                        "msupp_code":"VIS",
+                        "msupp_desc":"Vision Tests",
+                        "comm_text":"can see stuff with and without her glasses."
                     }
-                ]
+                ],
+                "studcode":"0009130"
             },
             {
-                "studcode":"0009134",
-                "medconditions":[
+                "supplementaries":[
                     {
-                        "last_occ_date":"",
-                        "mcond_desc":"Asthma",
-                        "general_note": "Asthma requires monitoring.\r\nVentoline REquired",
-                        "mcond_code":"AST",
-                        "severe_ind":"N"
+                        "msupp_code":"HEA",
+                        "msupp_desc":"Hearing Test",
+                        "comm_text":"Has normal hearing range. J"
+                    },
+                    {
+                        "msupp_code":"VIS",
+                        "msupp_desc":"Vision Tests",
+                        "comm_text":"Now you can see me"
                     }
-                ]
+                ],
+                "studcode":"0009134"
             }
         ],
         "__tassversion":"01.000.043.0",
         "token":{
-            "timestamp":"{ts '2020-11-11 14:01:03'}",
+            "timestamp":"{ts '2020-11-11 15:04:47'}",
             "currentstatus":"current"
         }
     }
@@ -83,26 +82,23 @@
     when only `studcode` is supplied
     ```javascript
     {
-      "data": [
-        {
-          "last_occ_date": "2018-01-30 00:00:00.0",
-          "mcond_desc": "Accident",
-          "general_note": "",
-          "mcond_code": "ACC",
-          "severe_ind": "N"
-        },
-        {
-          "last_occ_date": "2016-01-31 00:00:00.0",
-          "mcond_desc": "Anaphylaxis",
-          "general_note": "",
-          "mcond_code": "ANA",
-          "severe_ind": "Y"
+        "data":[
+            {
+                "msupp_code":"DEN",
+                "msupp_desc":"Dental Test",
+                "comm_text":"test"
+            },
+            {
+                "msupp_code":"VIS",
+                "msupp_desc":"Vision Tests",
+                "comm_text":"can see stuff with and without her glasses."
+            }
+        ],
+        "__tassversion":"01.000.043.0",
+        "token":{
+            "timestamp":"{ts '2020-11-11 15:03:01'}",
+            "studcode":"0009130"
         }
-      ],
-      "token": {
-        "timestamp": "{ts '2020-02-13 16:56:20'}",
-        "studcode": "0009130"
-      }
     }
     ```
  
@@ -147,15 +143,15 @@
 * **Sample GET:** (With URL Encoded `token`)
 
   ```HTML
-    http://api.tasscloud.com.au/tassweb/api/?method=getMedicalConditions&appcode=API12&company=10&v=3&token=l1D8owEn111IHcXLRwXTB0oU2GX6rj%2BISqa9zXA8We3J3mwgjW5pdUvFK3%2FIZ4mJ4bMyfKTmEoup%2B3tTE9GeLQ%3D%3D
+    http://api.tasscloud.com.au/tassweb/api/?method=getMedicalSupplementaries&appcode=API10&company=10&v=3&token=l1D8owEn111IHcXLRwXTB0oU2GX6rj%2BISqa9zXA8We3J3mwgjW5pdUvFK3%2FIZ4mJ4bMyfKTmEoup%2B3tTE9GeLQ%3D%3D
   ```
   
 * **Sample POST:**
 
   ```HTML
     <form id="postForm" name="postForm" method="POST" action="http://api.tasscloud.com.au/tassweb/api/">
-       <input type="hidden" name="method" value="getMedicalConditions">
-       <input type="hidden" name="appcode" value="API12">
+       <input type="hidden" name="method" value="getMedicalSupplementaries">
+       <input type="hidden" name="appcode" value="API10">
        <input type="hidden" name="company" value="10">
        <input type="hidden" name="v" value="3">
        <textarea name="token">l1D8owEn111IHcXLRwXTB0oU2GX6rj+ISqa9zXA8We3J3mwgjW5pdUvFK3/IZ4mJ4bMyfKTmEoup+3tTE9GeLQ==</textarea>

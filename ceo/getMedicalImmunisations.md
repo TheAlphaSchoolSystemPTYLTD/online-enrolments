@@ -30,7 +30,7 @@
 
    **Conditional:**
 
-    `currentstatus [string]` - Required if `studcode` is not supplied. Must be 'current' or 'future' or 'past' or 'noncurrent'.
+    `currentstatus [string]` - Required if `studcode` is not supplied. Must be 'current' or 'enrolment' or 'future' or 'past' or 'noncurrent'.
 
     `studcode [string]` - Required if `currentstatus` is not supplied. Contains Only One Student Code if supplied.
 
