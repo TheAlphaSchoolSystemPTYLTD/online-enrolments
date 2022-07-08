@@ -86,6 +86,8 @@
 
 	`usi [alphanumeric]` - Unique Student Identifier - Length must be under 10 Characters
 
+	`addresses [array]` - An array of student's address(es)
+
 	**Conditional:**
 
 	`prosp_date [date dd/mm/yyyy or yyyy-mm-dd]` - Stage 1 date. Required if stage 1 Flag is set to "Y".
@@ -105,6 +107,22 @@
 	`given_name [string]` - Student Given Names (invalid when `first_name` supplied, required when not supplied) - Length must be between 1 and 101 Characters
 
 	`first_name [string]` - Student First Name (invalid when `given_name` supplied, required when not supplied) - Length must be between 1 and 50 Characters
+
+	`add_num [string]` - Required when `addresses` is provided. Must be a valid add_num in setup.
+
+	`par_name [string]` - Parent Name, required when `addresses` is provided.
+
+	`sms_flg1 [string]` - Must be "Y" or "N".
+
+	`sms_flg2 [string]` - Must be "Y" or "N".
+
+	`par_e_mail [string]` - Must be a valid email.
+
+	`par_e_mail [string]` - Length limit 140 characters.
+
+	`par_e_mail2 [string]` - Must be a valid email.
+
+	`par_e_mail2 [string]` - Length limit 140 characters.
 
 * **Success Response:**
 
@@ -524,7 +542,7 @@
 	}
 	```
 
-	`usi` exceed 10 characters
+	`usi` exceeds 10 characters
 	```javascript
 	__invalid: {
 		"usi": "USI must be under 10 characters."
@@ -535,6 +553,69 @@
 	```javascript
 	__invalid: {
 		"usi": "USI must be alphanumeric."
+	}
+	```
+
+	`addresses` must be an array
+	```javascript
+	__invalid: {
+		"addresses": "must be an array."
+	}
+	```
+
+	`add_num` is required for each array item in addresses
+	```javascript
+	__invalid: {
+		"enrolledstudents.[stud_code].addresses.[x].add_num": "[add_num] is not a valid Address Number."
+	}
+	```
+
+	`par_name` is required for each array item in addresses
+	```javascript
+	__invalid: {
+		"enrolledstudents.[stud_code].addresses.[x].add_num": "Parent Name must be specified."
+	}
+	```
+
+	`sms_flg1` is required for each array item in addresses
+	```javascript
+	__invalid: {
+		"enrolledstudents.[stud_code].addresses.[x].sms_flg1": "Value must be Y/N."
+	}
+	```
+
+	`sms_flg2` is required for each array item in addresses
+	```javascript
+	__invalid: {
+		"enrolledstudents.[stud_code].addresses.[x].sms_flg2": "Value must be Y/N."
+	}
+	```
+
+	`par_e_mail` exceeds 140 characters
+	```javascript
+	__invalid: {
+		"enrolledstudents.[stud_code].addresses.[x].add_num": "par_e_mail cannot be longer than 140 characters."
+	}
+	```
+
+	`par_e_mail` must be in email format
+	```javascript
+	__invalid: {
+		"enrolledstudents.[stud_code].addresses.[x].add_num": "par_e_mail is invalid."
+	}
+	```
+
+	`par_e_mail2` exceeds 140 characters
+	```javascript
+	__invalid: {
+		"enrolledstudents.[stud_code].addresses.[x].add_num": "par_e_mail2 cannot be longer than 140 characters."
+	}
+	```
+
+	`par_e_mail2` must be in email format
+	```javascript
+	__invalid: {
+		"enrolledstudents.[stud_code].addresses.[x].add_num": "par_e_mail2 is invalid."
 	}
 	```
 
@@ -605,7 +686,12 @@
 				"first_name" : "Ian",
 				"other_name" : "Peter",
 				"preferred_surname" : "Aardvaark"
-			}
+			},
+			"addresses": [
+				{
+					"other_name" : "Peter",
+				}
+			]
 		]
 	}
 	```
