@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-  Student Records > Student Information > Students > Notes tab > Add
+  Student Records > Student Information > Students > Confidential Notes tab > Add
 
 * **Method:**
 

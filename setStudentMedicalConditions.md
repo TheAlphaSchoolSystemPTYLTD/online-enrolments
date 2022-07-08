@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-  Medical Records > Student Medical > Medical Conditions > Edit
+  Medical Records > Student Medical > Medical Conditions tab > Edit
 
 * **Method:**
 
@@ -44,6 +44,8 @@
 
   **Conditional:**
 
+  `severe_ind` - field is required when adding new records. (must be "Y" or "N")
+
   For item(s) in the attachments array:
 
   `attachment_file [string]` - field is required where 'attachment_file_name' is supplied for each item in 'attachments'. (URLEncoded Format is RECOMMENDED)
@@ -59,6 +61,8 @@
   `med_meth [string]` - field is optional for each item in 'requirements'. (length limit 200)
 
   `med_detl [string]` - field is optional for each item in 'requirements'. (length limit 200)
+
+  For item(s) in the notes array:
 
   `note_date [date]` - field is optional for each item in 'notes'. (Date Format: yyyy-mm-dd)
 
@@ -133,6 +137,13 @@
   ```javascript
   __invalid: {
     "__msg": "'last_occ_date' date format is invalid."
+  }
+  ```
+
+  `severe_ind` not supplied when adding new records
+  ```javascript
+  __invalid: {
+    "severe_ind": "severe_ind is required when adding new records."
   }
   ```
 
@@ -251,7 +262,7 @@
   `note_text` is required when adding/editing medical notes
   ```javascript
   __invalid: {
-    "note_text": "note_text' is required."
+    "note_text": "note_text' is required for 'notes' item x."
   }
   ```
 

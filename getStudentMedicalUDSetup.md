@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-  Medical Records > Medical Setup > Initialise User Defined Fields (UD) > View
+  Medical Records > Medical Setup > View
 
 * **Method:**
 

@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-  Medical Records > Student Medical > Edit
+  Medical Records > Student Medical > Student Immunisations tab > Edit
 
 * **Method:**
 

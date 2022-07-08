@@ -1,6 +1,6 @@
-**getMedicalConditionSetup**
+**getParentAddressSetup**
 ----
-  Returns an array of structured student medical conditions setup details data in JSON format.
+  Returns an array of all structured student medical note category setup details data in JSON format.
   
 * **Version History:**
 
@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-  Medical Records > Medical Setup > Conditions tab > View
+  Parent Records > Parent Records Setup > Addresses tab > View
 
 * **Method:**
 
@@ -38,27 +38,21 @@
     {
       "data":[
         {
-          "mcud4_desc":"",
-          "mcond_desc":"Accident",
-          "mcud1_desc":"something",
-          "mcud8_desc":"",
-          "mcform_flg":"Y",
-          "mcud3_desc":"",
-          "mcud6_desc":"",
-          "mcud10_desc":"",
-          "mcond_aflg":"N",
-          "mcud9_desc":"",
-          "mcud5_desc":"",
-          "active_flg":"Y",
-          "mcond_code":"ACC",
-          "mcud2_desc":"",
-          "mcud7_desc":"",
-          "mcond_plflg":"N"
+          "addr_desc":"Postal",
+          "add_num":1,
+          "person_posn":"",
+          "posn_label":""
+        },
+        {
+          "addr_desc":"Residential",
+          "add_num":2,
+          "person_posn":"",
+          "posn_label":""
         }
       ],
       "__tassversion":"01.054.4.000",
       "token":{
-        "timestamp":"{ts '2022-06-24 13:00:40'}"
+        "timestamp":"{ts '2022-06-27 13:16:40'}"
       }
     }
     ```
@@ -76,14 +70,14 @@
 * **Sample GET:** (With URL Encoded `token`)
 
   ```HTML
-    http://api.tasscloud.com.au/tassweb/api/?method=getMedicalConditionSetup&appcode=API04&company=10&v=3&token=l1D8owEn111IHcXLRwXTB0oU2GX6rj%2BISqa9zXA8We3J3mwgjW5pdUvFK3%2FIZ4mJ4bMyfKTmEoup%2B3tTE9GeLQ%3D%3D
+    http://api.tasscloud.com.au/tassweb/api/?method=getParentAddressSetup&appcode=API04&company=10&v=3&token=l1D8owEn111IHcXLRwXTB0oU2GX6rj%2BISqa9zXA8We3J3mwgjW5pdUvFK3%2FIZ4mJ4bMyfKTmEoup%2B3tTE9GeLQ%3D%3D
   ```
   
 * **Sample POST:**
 
   ```HTML
     <form id="postForm" name="postForm" method="POST" action="http://api.tasscloud.com.au/tassweb/api/">
-       <input type="hidden" name="method" value="getMedicalConditionSetup">
+       <input type="hidden" name="method" value="getParentAddressSetup">
        <input type="hidden" name="appcode" value="API04">
        <input type="hidden" name="company" value="10">
        <input type="hidden" name="v" value="3">
