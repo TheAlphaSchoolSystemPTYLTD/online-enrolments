@@ -685,13 +685,24 @@
 				"sud25_text":"1",
 				"first_name" : "Ian",
 				"other_name" : "Peter",
-				"preferred_surname" : "Aardvaark"
-			},
-			"addresses": [
+				"preferred_surname" : "Aardvaark",
+				 "addresses": [{
+				    "add_num": "2",
+				    "par_name": "The Carrolls",
+				    "town_sub": "Mt Gravatt",
+				    "state_code": "QLD",
+				    "post_code": "4122"
+				},
 				{
-					"other_name" : "Peter",
+				    "add_num": "3",
+				    "par_name": "The Carroll's Business",
+				    "town_sub": "Mt Gravatt",
+				    "state_code": "QLD",
+				    "post_code": "4122"
 				}
-			]
+
+			    ]
+			}
 		]
 	}
 	```
