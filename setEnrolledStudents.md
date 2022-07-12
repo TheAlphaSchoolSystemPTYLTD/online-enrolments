@@ -86,7 +86,7 @@
 
 	`usi [alphanumeric]` - Unique Student Identifier - Length must be under 10 Characters
 
-	`addresses [array]` - An array of student's address(es)
+	`addresses [array]` - An array of parents's address(es) associated with the enrolled student
 
 	**Conditional:**
 
