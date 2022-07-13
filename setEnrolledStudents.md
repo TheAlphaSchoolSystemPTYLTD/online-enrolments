@@ -108,21 +108,49 @@
 
 	`first_name [string]` - Student First Name (invalid when `given_name` supplied, required when not supplied) - Length must be between 1 and 50 Characters
 
-	`add_num [string]` - Required when `addresses` is provided. Must be a valid add_num in setup.
+	For item(s) in the `addresses` array:
+	
+	`add_num [string]` - Field is mandatory. Must be a valid add_num in setup.
 
-	`par_name [string]` - Parent Name, required when `addresses` is provided.
+	`par_name [string]` - Parent Name, field is mandatory.
 
-	`sms_flg1 [string]` - Must be "Y" or "N".
+	`par_name2 [string]` - Field is optional. (length limit 30 chars)
 
-	`sms_flg2 [string]` - Must be "Y" or "N".
+	`addr1 [string]` - Field is optional. (length limit 50 chars)
 
-	`par_e_mail [string]` - Must be a valid email.
+	`addr2 [string]` - Field is optional. (length limit 50 chars)
 
-	`par_e_mail [string]` - Length limit 140 characters.
+	`addr3 [string]` - Field is optional. (length limit 50 chars)
 
-	`par_e_mail2 [string]` - Must be a valid email.
+	`town_sub [string]` - Field is optional. (length limit 30 chars)
 
-	`par_e_mail2 [string]` - Length limit 140 characters.
+	`state_code [string]` - Field is optional. (length limit 3 chars)
+
+	`post_code [string]` - Field is optional. (length limit 10 chars)
+
+	`country [string]` - Field is optional. (length limit 20 chars)
+
+	`dpid_text [string]` - Field is optional. (length limit 40 chars)
+
+	`home_phone [string]` - Field is optional. (length limit 30 chars)
+
+	`bus_phone [string]` - Field is optional. (length limit 30 chars)
+
+	`fax [string]` - Field is optional. (length limit 30 chars)
+
+	`salutation [string]` - Field is optional. (length limit 60 chars)
+
+	`mobile1 [string]` - Field is optional. (length limit 30 chars)
+
+	`sms_flg1 [string]` - Field is optional. (Y or N)
+
+	`mobile2 [string]` - Field is optional. (length limit 30 chars)
+
+	`sms_flg2 [string]` - Field is optional. (Y or N)
+	
+	`par_e_mail [string]` - Field is optional and must be a valid email address if supplied. (length limit 140 chars)
+	
+	`par_e_mail2 [string]` - Field is optional and must be a valid email address if supplied. (length limit 140 chars)
 
 * **Success Response:**
 
@@ -577,14 +605,14 @@
 	}
 	```
 
-	`sms_flg1` is required for each array item in addresses
+	`sms_flg1` must be Y or N if supplied
 	```javascript
 	__invalid: {
 		"enrolledstudents.[stud_code].addresses.[x].sms_flg1": "Value must be Y/N."
 	}
 	```
 
-	`sms_flg2` is required for each array item in addresses
+	`sms_flg2` must be Y or N if supplied
 	```javascript
 	__invalid: {
 		"enrolledstudents.[stud_code].addresses.[x].sms_flg2": "Value must be Y/N."
