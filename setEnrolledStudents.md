@@ -110,7 +110,7 @@
 
 	For item(s) in the `addresses` array:
 	
-	`add_num [string]` - Field is mandatory. Must be a valid add_num in setup.
+	`add_num [string]` - Field is mandatory. Must be a valid add_num in "getParentAddressSetup".
 
 	`par_name [string]` - Parent Name, field is mandatory.
 
