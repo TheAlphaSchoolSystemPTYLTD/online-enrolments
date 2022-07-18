@@ -108,6 +108,8 @@
 
 	`first_name [string]` - Student First Name (invalid when `given_name` supplied, required when not supplied) - Length must be between 1 and 50 Characters
 
+  	For item(s) in the addresses array:
+
 	`add_num [string]` - Required when `addresses` is provided. Must be a valid add_num in setup.
 
 	`par_name [string]` - Parent Name, required when `addresses` is provided.
@@ -687,9 +689,20 @@
 				"other_name" : "Peter",
 				"preferred_surname" : "Aardvaark"
 			},
-			"addresses": [
+			"addresses":[
 				{
-					"other_name" : "Peter",
+					"add_num":"2",
+					"par_name":"The Carrolls",
+					"town_sub":"Mt Gravatt",
+					"state_code":"QLD",
+					"post_code":"4122"
+				},
+				{
+					"add_num":"3",
+					"par_name":"The Carroll's Business",
+					"town_sub":"Mt Gravatt",
+					"state_code":"QLD",
+					"post_code":"4122"
 				}
 			]
 		]
