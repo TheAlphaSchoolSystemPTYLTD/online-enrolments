@@ -1,6 +1,6 @@
 **getParentAddressSetup**
 ----
-  Returns an array of all structured student medical note category setup details data in JSON format.
+  Returns an array of all structured parent address setup details data in JSON format.
   
 * **Version History:**
 
