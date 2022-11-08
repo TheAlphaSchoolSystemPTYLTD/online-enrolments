@@ -44,29 +44,29 @@
 
   **Conditional:**
 
-  `severe_ind` - field is required when adding new records. (must be "Y" or "N")
+  `severe_ind` - Field is required when adding new records. (must be "Y" or "N")
 
   For item(s) in the attachments array:
 
-  `attachment_file [string]` - field is required where 'attachment_file_name' is supplied for each item in 'attachments'. (URLEncoded Format is RECOMMENDED)
+  `attachment_file [string]` - Base64 Encoded. Field is required where 'attachment_file_name' is supplied for each item in 'attachments'. (URLEncoded Format is RECOMMENDED)
 
-  `attachment_file_name [string]` - field is required where 'attachment_file' is supplied for each item in 'attachments'.
+  `attachment_file_name [string]` - Field is required where 'attachment_file' is supplied for each item in 'attachments'.
 
   For item(s) in the requirements array:
 
-  `med_text [string]` - field is required for each item in 'requirements' if adding a new record. Optional if editing an existing record. (length limit 200)
+  `med_text [string]` - Field is required for each item in 'requirements' if adding a new record. Optional if editing an existing record. (length limit 200)
 
-  `med_num[string]` - field is optional for each item in 'requirements'. If the provided med_num exists, the program will try to update a record accordingly.
+  `med_num[string]` - Field is optional for each item in 'requirements'. If the provided med_num exists, the program will try to update a record accordingly.
 
-  `med_meth [string]` - field is optional for each item in 'requirements'. (length limit 200)
+  `med_meth [string]` - Field is optional for each item in 'requirements'. (length limit 200)
 
-  `med_detl [string]` - field is optional for each item in 'requirements'. (length limit 200)
+  `med_detl [string]` - Field is optional for each item in 'requirements'. (length limit 200)
 
   For item(s) in the notes array:
 
-  `note_date [date]` - field is optional for each item in 'notes'. (Date Format: yyyy-mm-dd)
+  `note_date [date]` - Field is optional for each item in 'notes'. (Date Format: yyyy-mm-dd)
 
-  `note_text [string]` - field is optional for each item in 'notes'. (length limit 4000)
+  `note_text [string]` - Field is optional for each item in 'notes'. (length limit 4000)
 
 * **Success Response:**
 

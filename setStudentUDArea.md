@@ -40,9 +40,9 @@
 
 	**Conditional:**
 
-	`attachment_file [string]` - field is required where ‘attachment_file_name’ is supplied. (URLEncoded Format is RECOMMENDED)
+	`attachment_file [string]` - Base64 Encoded. Field is required where 'attachment_file_name' is supplied. (URLEncoded Format is RECOMMENDED)
 
-	`attachment_file_name [string]` - field is required where ‘attachment_file’ is supplied.
+	`attachment_file_name [string]` - Field is required where 'attachment_file' is supplied.
 
 * **Success Response:**
 

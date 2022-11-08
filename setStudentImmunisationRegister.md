@@ -36,9 +36,9 @@
 
    `air_state_date [string]` - Air State Date (Date Format: yyyy-mm-dd). Field required when imm_attach_id is provided.
 
-   `attachment_file [string]` - field is required where 'attachment_file_name' is supplied for each item in 'attachments'. (URLEncoded Format is RECOMMENDED)
+   `attachment_file [string]` - Base64 Encoded. Field is required where 'attachment_file_name' is supplied for each item in 'attachments'. (URLEncoded Format is RECOMMENDED)
 
-   `attachment_file_name [string]` - field is required where 'attachment_file' is supplied for each item in 'attachments'.
+   `attachment_file_name [string]` - Field is required where 'attachment_file' is supplied for each item in 'attachments'.
 
 * **Success Response:**
 
