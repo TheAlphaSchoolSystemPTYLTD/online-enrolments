@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-  Medical Records > Medical Setup > Note Categories tab > View
+  Enrolments > Enrolments Setup > Student Note Categories tab (View)
 
 * **Method:**
 
