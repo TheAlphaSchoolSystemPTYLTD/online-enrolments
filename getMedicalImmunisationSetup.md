@@ -36,43 +36,33 @@
 
     ```javascript
     {
-      "__tassversion":"01.054.4.000",
-      "token":{
-        "includelookups":true,
-        "timestamp":"{ts '2022-06-24 13:06:10'}"
-      },
-      "ud":[
+      "data": [
         {
-          "flag_name":"MUD1_FLG",
-          "id":1,
-          "desc":"Diabeties",
-          "name":"UD1_DESC"
-        },...
+          "imm_desc": "Alcohol Ailment",
+          "imm_code": "AA"
+        },
         {
-          "flag_name":"MUD1_CODE",
-          "id":6,
-          "lookups":[
-            {
-              "code":"MA",
-              "desc":"Mater"
-            },
-            {
-              "code":"PC",
-              "desc":"Prince Charles"
-            },
-            {
-              "code":"RBH",
-              "desc":"Royal Brisbane"
-            },
-            {
-              "code":"WE",
-              "desc":"Wesley"
-            }
-          ],
-          "desc":"Preferred Hospital",
-          "name":"UD6_DESC"
-        }
-      ]
+          "imm_desc": "Australian Flu",
+          "imm_code": "AF"
+        },
+        {
+          "imm_desc": "Bird Flu",
+          "imm_code": "BF"
+        },
+        {
+          "imm_desc": "Canadain Flu",
+          "imm_code": "CF"
+        },
+        {
+          "imm_desc": "Chicken Pox",
+          "imm_code": "CP"
+        },
+        {...},
+      ],
+      "__tassversion": "01.057.8.100",
+      "token": {
+        "timestamp": "{ts '2023-01-24 14:44:19'}"
+      }
     }
     ```
 
