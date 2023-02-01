@@ -26,7 +26,7 @@
 
    **Optional:**
 
-	`area_code [string]` - Search for eud fields for this area_code
+	`areacode [string]` - Search for eud fields for this area_code
 
 	`eudfld__num [1 - 10] [string]` - Search for eud fields for this eudfld__num come with the area_code
 
@@ -93,7 +93,7 @@
 				}
 		],
 		"__tassversion": "01.053.3.000",
-		"area_code": 1,
+		"areacode": 1,
 		"token": {
 			"includelookups": true,
 			"timestamp": "{ts '2021-01-19 10:53:51'}",
@@ -161,14 +161,14 @@
 	```javascript
 	{
 		"includelookups":"true",
-		"area_code":"1"
+		"areacode":"1"
 	}
 	```
 
 	```javascript
 	{
 		"includelookups":"true",
-		"area_code":"1",
+		"areacode":"1",
 		"eudfld_num":"11"
 	}
 	```
