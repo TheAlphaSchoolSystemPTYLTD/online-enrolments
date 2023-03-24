@@ -22,13 +22,11 @@
 
    **Required:**
  
-	`includelookups [boolean]` - Include lookups                    
+	`includelookups [boolean]` - Include lookups
 
    **Optional:**
 
 	`areacode [string]` - Search for eud fields for this area_code
-
-	`eudfld__num [1 - 10] [string]` - Search for eud fields for this eudfld__num come with the area_code
 
    **Conditional:**
 
@@ -38,7 +36,7 @@
 
     ```javascript
 	{
-		"ud_area_setup": [
+		"ud_area": [
 				{
 					"area_desc": "Restrictions/Privileges",
 					"area_code": 8
@@ -56,7 +54,7 @@
 					"area_code": 2
 				}
 		],
-		"__tassversion": "01.053.3.000",
+		"__tassversion": "01.054.4.000",
 		"token": {
 			"includelookups": true,
 			"timestamp": "{ts '2021-01-19 10:50:06'}"
@@ -66,33 +64,30 @@
 
     ```javascript
 	{
-		"ud_area_field_setup": [
-				{
-					"eudfld1_desc": "Train pass",
-					"area_code": 1,
-					"eudfld1_trig": "",
-					"eudfld1_sort": 1
-				},
-				{
-					"eudfld2_sort": 1,
-					"area_code": 1,
-					"eudfld2_trig": "",
-					"eudfld2_desc": "Bus pass"
-				},
-				{
-					"eudfld3_trig": "Y",
-					"eudfld3_sort": 1,
-					"eudfld3_desc": "Authorised Tpt",
-					"area_code": 1
-				},
-				{
-					"eudfld11_sort": 1,
-					"eudfld11_trig": "",
-					"area_code": 1,
-					"eudfld11_desc": "Gov Bus 1"
-				}
+		"ud_area": [
+			{
+				"eudfld1_desc": "Train pass",
+				"area_code": 1,
+				"lookups": [],
+				"eudfld1_trig": "Y",
+				"eudfld1_sort": 1
+			},
+			{
+				"eudfld2_sort": 11,
+				"area_code": 1,
+				"lookups": [],
+				"eudfld2_trig": "Y",
+				"eudfld2_desc": "Bus pass"
+			},
+			{
+				"eudfld3_trig": "Y",
+				"eudfld3_sort": 2,
+				"eudfld3_desc": "Authorised Tpt",
+				"area_code": 1,
+				"lookups": []
+			}
 		],
-		"__tassversion": "01.053.3.000",
+		"__tassversion": "01.054.4.000",
 		"areacode": 1,
 		"token": {
 			"includelookups": true,
@@ -100,41 +95,8 @@
 			"area_code": 1
 		}
 	}	
-	```
-
-    ```javascript
-	{
-		"ud_area_ref_data": [
-				{
-					"eud_desc": "#523",
-					"eud_code": "052"
-				},
-				{
-					"eud_desc": "Love",
-					"eud_code": 10
-				},
-				{
-					"eud_desc": "#163",
-					"eud_code": 163
-				},
-				{
-					"eud_desc": "#486",
-					"eud_code": 486
-				},
-				{
-					"eud_desc": "#890",
-					"eud_code": 890
-				}
-		],
-		"__tassversion": "01.053.3.000",
-		"token": {
-			"eudfld_num": 11,
-			"includelookups": true,
-			"timestamp": "{ts '2021-01-19 10:58:37'}",
-			"area_code": 1
-		}
-	}
     ```
+
  
 * **Error Response:**
 
@@ -155,21 +117,15 @@
 * **Sample Parameters:**
 
 	```javascript
-	{"includelookups":"true"}
-	```
-
-	```javascript
 	{
-		"includelookups":"true",
-		"areacode":"1"
+		"includelookups":"true"
 	}
 	```
 
 	```javascript
 	{
 		"includelookups":"true",
-		"areacode":"1",
-		"eudfld_num":"11"
+		"areacode":"1"
 	}
 	```
 
@@ -186,7 +142,7 @@
 		<input type="hidden" name="method" value="getStudentUDAreaSetup">
 		<input type="hidden" name="appcode" value="DIGIENRO">
 		<input type="hidden" name="company" value="10">
-		<input type="hidden" name="v" value="2">
+		<input type="hidden" name="v" value="3">
 		<textarea name="token">+xYxT3JovxoE2deoaH6feDfyAn/cVL0KSCAUjcFpnXM=</textarea>
 	</form>
 	```
