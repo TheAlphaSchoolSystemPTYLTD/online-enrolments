@@ -52,8 +52,6 @@
 
 	**Optional:**
 
-	`other_name [string]` - Student Other name - Length must be between 1 and 50 Characters
-
 	`preferred_surname [string]` - Student Preferred Surname (use surname if not supplied) - Length must be between 1 and 50 Characters
 	
 	`campus_code [string]` - Campus - Length must be between 1 and 3 Characters
@@ -107,6 +105,8 @@
 	`given_name [string]` - Student Given Names (invalid when `first_name` supplied, required when not supplied) - Length must be between 1 and 101 Characters
 
 	`first_name [string]` - Student First Name (invalid when `given_name` supplied, required when not supplied) - Length must be between 1 and 50 Characters
+	
+	`other_name [string]` - Student Other name (pair with `first_name`, will get ignored if use with `given_name`) - Length must be between 1 and 50 Characters
 
 	For item(s) in the `addresses` array:
 	
