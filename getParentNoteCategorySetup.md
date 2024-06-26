@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-  Parent Records > Setup Information > Parent Records Setup > Parent Note Categories tab > View
+  Enrolments > Enrolments Setup > Parent Note Categories tab > View
 
 * **Method:**
 
