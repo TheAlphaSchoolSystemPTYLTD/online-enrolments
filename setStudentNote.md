@@ -12,7 +12,7 @@
 
 * **Permission:**
 
-  Student Records > Student Information > Students > Notes tab > Add
+  Enrolments > Enrolments/Enrolled Student > Notes > Add
 
 * **Method:**
 
