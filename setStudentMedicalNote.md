@@ -49,7 +49,7 @@
     "token":{
       "note_date":"16/06/2022",
       "stud_code":"0009130",
-      "attachments":{
+      "note_attach_id":{
         "attachment_file_name":"test",
         "attachment_file":"ClRoaXMgaXMgYSB0ZXN0IGZpbGUuCkRvIG5vdCBpbmNsdWRlIGEgdGFibGUhISEKTmFtZQlRdWFudGl0eQlWYWx1ZQppUGFkCTEJNTAwCmlQaG9uZQkxCTEwMDAKVG90YWwJMgkxNTAw"
       },
@@ -168,7 +168,7 @@
     "note_date":"16/06/2022",
     "note_cat":"GEN",
     "note_text":"note text test",
-    "attachments":{
+    "note_attach_id":{
         "attachment_file_name":"test",
         "attachment_file":"ClRoaXMgaXMgYSB0ZXN0IGZpbGUuCkRvIG5vdCBpbmNsdWRlIGEgdGFibGUhISEKTmFtZQlRdWFudGl0eQlWYWx1ZQppUGFkCTEJNTAwCmlQaG9uZQkxCTEwMDAKVG90YWwJMgkxNTAw"
     }
